@@ -1,7 +1,7 @@
 let permissions = 4
 
-let packMode = global.packMode
-let packLanguage = global.packLanguage
+let packMode = KJSutils.Analysis("config/greedycraft/config.json", "$.packMode")
+let packLanguage = KJSutils.Analysis("config/greedycraft/config.json", "$.language")
 
 if (Platform.isClientEnvironment) {
     permissions = 2
