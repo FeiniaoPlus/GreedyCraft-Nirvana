@@ -1,0 +1,4 @@
+kubejs/config/web_server.json
+.probe
+.vscode
+kubejs/*/jsconfig.json

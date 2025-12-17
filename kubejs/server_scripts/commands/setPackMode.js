@@ -1,6 +1,7 @@
 let permissions = 4
 
 let packMode = global.packMode
+let packLanguage = global.packLanguage
 
 if (Platform.isClientEnvironment) {
     permissions = 2
@@ -10,58 +11,70 @@ if (Platform.isClientEnvironment) {
 
 ServerEvents.basicCommand("setPackModeToCasual", event => {
     let player = event.player
+    let playerName = event.getPlayer().getName()
+    LOGGER("info", `${playerName} change packmode for casual`)
     if (player.hasPermissions(permissions)) {
         if (packMode == "casual") {
-            let message = Component.translatable("greedycraft.commands.setpackmode.noupdate");
+            let message = KJSutils.Analysis(`kubejs/assets/greedycraft/lang/${packLanguage}.json`, "$$.greedycraft.commands.setpackmode.noupdate")
             player.tell(message)
             return 0
         }
         KJSutils.ModifyJsonValue("config/greedycraft/config.json", "$.packMode", "casual");
-        event.server.runCommand("kubejs reload client-scripts")
-        event.server.runCommand("kubejs reload server-scripts")
-        let message = Component.translatable("greedycraft.commands.setpackmode").append(Component.translatable("greedycraft.packmode.casual"));
+        event.server.runCommandSilent("kubejs reload client-scripts")
+        event.server.runCommandSilent("kubejs reload server-scripts")
+        event.server.runCommandSilent("reload")
+        let message = KJSutils.Analysis(`kubejs/assets/greedycraft/lang/${packLanguage}.json`, "$$.greedycraft.commands.setpackmode") +
+            KJSutils.Analysis(`kubejs/assets/greedycraft/lang/${packLanguage}.json`, "$$.greedycraft.packmode.casual")
         player.tell(message)
-
         packMode = "casual"
     } else {
-        player.tell(Component.translatable("greedycraft.commands.error.permissions"))
+        player.tell(KJSutils.Analysis(`kubejs/assets/greedycraft/lang/${packLanguage}.json`, "$$.greedycraft.commands.error.permissions"))
+        LOGGER("info", `${playerName} change packmode error: No Permissions`)
     }
 });
 ServerEvents.basicCommand("setPackModeToAdventure", event => {
     let player = event.player
+    let playerName = event.getPlayer().getName()
+    LOGGER("info", `${playerName} change packmode for casual`)
     if (player.hasPermissions(permissions)) {
         if (packMode == "adventure") {
-            let message = Component.translatable("greedycraft.commands.setpackmode.noupdate");
+            let message = KJSutils.Analysis(`kubejs/assets/greedycraft/lang/${packLanguage}.json`, "$$.greedycraft.commands.setpackmode.noupdate")
             player.tell(message)
             return 0
         }
-        event.server.runCommand("kubejs reload client-scripts")
-        event.server.runCommand("kubejs reload server-scripts")
+        event.server.runCommandSilent("kubejs reload client-scripts")
+        event.server.runCommandSilent("kubejs reload server-scripts")
+        event.server.runCommandSilent("reload")
         KJSutils.ModifyJsonValue("config/greedycraft/config.json", "$.packMode", "adventure");
-        let message = Component.translatable("greedycraft.commands.setpackmode").append(Component.translatable("greedycraft.packmode.adventure"));
+        let message = KJSutils.Analysis(`kubejs/assets/greedycraft/lang/${packLanguage}.json`, "$$.greedycraft.commands.setpackmode") +
+            KJSutils.Analysis(`kubejs/assets/greedycraft/lang/${packLanguage}.json`, "$$.greedycraft.packmode.adventure")
+            LOGGER("info", `${playerName} change packmode error: No Permissions`)
         player.tell(message)
-
         packMode = "adventure"
     } else {
-        player.tell(Component.translatable("greedycraft.commands.error.permissions"))
+        player.tell(KJSutils.Analysis(`kubejs/assets/greedycraft/lang/${packLanguage}.json`, "$$.greedycraft.commands.error.permissions"))
     }
 });
 ServerEvents.basicCommand("setPackModeToExpert", event => {
     let player = event.player
+    let playerName = event.getPlayer().getName()
+    LOGGER("info", `${playerName} change packmode for casual`)
     if (player.hasPermissions(permissions)) {
         if (packMode == "expert") {
-            let message = Component.translatable("greedycraft.commands.setpackmode.noupdate");
+            let message = KJSutils.Analysis(`kubejs/assets/greedycraft/lang/${packLanguage}.json`, "$$.greedycraft.commands.setpackmode.noupdate")
             player.tell(message)
             return 0
         }
-        event.server.runCommand("kubejs reload client-scripts")
-        event.server.runCommand("kubejs reload server-scripts")
+        event.server.runCommandSilent("kubejs reload client-scripts")
+        event.server.runCommandSilent("kubejs reload server-scripts")
+        event.server.runCommandSilent("reload")
         KJSutils.ModifyJsonValue("config/greedycraft/config.json", "$.packMode", "expert");
-        let message = Component.translatable("greedycraft.commands.setpackmode").append(Component.translatable("greedycraft.packmode.expert"));
+        let message = KJSutils.Analysis(`kubejs/assets/greedycraft/lang/${packLanguage}.json`, "$$.greedycraft.commands.setpackmode") +
+            KJSutils.Analysis(`kubejs/assets/greedycraft/lang/${packLanguage}.json`, "$$.greedycraft.packmode.expert")
         player.tell(message)
-
         packMode = "expert"
     } else {
-        player.tell(Component.translatable("greedycraft.commands.error.permissions"))
+        player.tell(KJSutils.Analysis(`kubejs/assets/greedycraft/lang/${packLanguage}.json`, "$$.greedycraft.commands.error.permissions"))
+        LOGGER("info", `${playerName} change packmode error: No Permissions`)
     }
 });

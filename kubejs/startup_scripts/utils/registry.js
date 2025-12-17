@@ -1,6 +1,7 @@
 // priority: 500
 
 let materialList = []
+let registryList = []
 
 /**
  * 注册材料
@@ -78,7 +79,6 @@ registryMetals.prototype.beaconPaymentItem = function () {
 StartupEvents.registry("item", event => {
 	materialList.forEach(material => {
 		material.types.forEach(type => {
-
 			if (type == "dirtydust") {
 				if (!(material.name == "aqualite" || material.name == "cryonium" || material.name == "shadowium")) {
 					event.create(`greedycraft:${material.name}_dirtydust`)
@@ -116,6 +116,8 @@ StartupEvents.registry("item", event => {
 						.tag(`greedycraft:${type}`)
 				}
 			}
+			registryList.push(`greedycraft:${material.name}_${type}`)
 		})
 	})
+	LOGGER("info", registryList)
 })

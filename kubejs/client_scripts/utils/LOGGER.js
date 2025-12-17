@@ -3,15 +3,14 @@
 function LOGGER(level, message) {
     console.log("===== GCTN Log System =====")
     console.log(`Log Level: ${level}, message:`)
-    console.log("\n")
     switch (level) {
         case "error":
-            console.error(message)
+            console.error(`\n${message}`)
             break
         case "warn":
-            console.warn(message)
+            console.warn(`\n${message}`)
         default:
-            console.info(message)
+            console.info(`\n${message}`)
     }
     console.log("===========================")
 }
