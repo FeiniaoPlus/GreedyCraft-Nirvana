@@ -1,4 +1,5 @@
 // priority: 50
+let packLanguage = KJSutils.Analysis("config/greedycraft/config.json", "$.language")
 
 StartupEvents.modifyCreativeTab("kubejs:greedycraft_material", event => {
     let name = KJSutils.Analysis(`kubejs/assets/greedycraft/lang/${packLanguage}.json`, "$$.greedycraft.creativetab.greedycraft_material.name")
