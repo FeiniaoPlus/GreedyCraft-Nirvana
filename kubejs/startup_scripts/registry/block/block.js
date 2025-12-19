@@ -1,3 +1,5 @@
+// priority: 400
+
 StartupEvents.registry("block", event => {
      event.create("greedycraft:aeonsteel_block")
           .hardness(20.0)

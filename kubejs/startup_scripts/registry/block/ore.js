@@ -1,3 +1,5 @@
+// priority: 400
+
 StartupEvents.registry("block", event => {
      event.create("greedycraft:aeroite_ore")
           .renderType("translucent")

@@ -1,3 +1,5 @@
+// priority: 400
+
 new registryMetals("aeonsteel", 0x42b983)
     .dust()
     .rod()
