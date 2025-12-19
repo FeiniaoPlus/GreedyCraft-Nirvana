@@ -1,4 +1,5 @@
 kubejs/config/web_server.json
+kubejs/config/probe-settings.json
 .probe
 .vscode
 kubejs/*/jsconfig.json
