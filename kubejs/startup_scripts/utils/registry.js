@@ -119,5 +119,5 @@ StartupEvents.registry("item", event => {
 			registryList.push(`greedycraft:${material.name}_${type}`)
 		})
 	})
-	LOGGER("info", `Registry metals: \n${registryList}`)
+	LOGGER("info", `Registry Metals: \n${registryList}`)
 })

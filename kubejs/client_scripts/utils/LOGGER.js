@@ -2,7 +2,7 @@
 
 function LOGGER(level, message) {
     console.log("===== GCTN Log System =====")
-    console.log(`Log Level: ${level}, message:`)
+    console.log(`Log Level: ${level}, Message:`)
     switch (level) {
         case "error":
             console.error(`\n${message}`)

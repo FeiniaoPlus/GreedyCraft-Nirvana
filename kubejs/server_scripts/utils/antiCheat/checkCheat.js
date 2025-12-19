@@ -1,3 +1,5 @@
+// priority: 500
+
 function checkModList() {
     let unofficialModList = []
 
