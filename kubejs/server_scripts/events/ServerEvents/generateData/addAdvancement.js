@@ -1,6 +1,6 @@
 // priority: 100
 
-ServerEvents.generateData("advancement", event => {
+ServerEvents.generateData("AFTER_MODS", event => {
     event.json("greedycraft:advancement/init.json", {
         "criteria": {
             "impossible": {
