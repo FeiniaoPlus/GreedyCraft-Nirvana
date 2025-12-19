@@ -465,5 +465,7 @@
     "block.greedycraft.stainless_steel_block": "§eStainless Steel Block",
     "block.greedycraft.terra_alloy_block": "§2Terra Alloy Block",
     "block.greedycraft.titanium_block": "§eTitanium Block",
-    "block.greedycraft.unknown_block": "§5§ka§r §dUnknown_block §5§ka§r"
+    "block.greedycraft.unknown_block": "§5§ka§r §dUnknown_block §5§ka§r",
+
+    "greedycraft.advancement.description.init": "Initialize"
 }

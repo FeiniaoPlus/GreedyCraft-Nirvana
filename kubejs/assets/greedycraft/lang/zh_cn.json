@@ -465,5 +465,7 @@
     "block.greedycraft.stainless_steel_block": "§e不锈钢块",
     "block.greedycraft.terra_alloy_block": "§2大地合金块",
     "block.greedycraft.titanium_block": "§e钛金块",
-    "block.greedycraft.unknown_block": "§5§ka§r §d未知方块 §5§ka§r"
+    "block.greedycraft.unknown_block": "§5§ka§r §d未知方块 §5§ka§r",
+
+    "greedycraft.advancement.description.init": "初始化"
 }
