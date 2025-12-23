@@ -1,29 +1,17 @@
 PlayerEvents.loggedIn(event => {
     let player = event.player
-    let cheat = false
-    let creative = false
+    let cheat = checkCheat(player)
     let packMode = KJSutils.Analysis("config/greedycraft/config.json", "$.packMode")
     let packLanguage = KJSutils.Analysis("config/greedycraft/config.json", "$.language")
-    let unofficialModList = checkModList()
-
-    if (unofficialModList.length > 0) {
-        cheat = true
-    }
-    if (!(AStages.playerHasStage("init_creative", player)) && player.isCreative) {
-        cheat = true
-    } else if (player.isCreative) {
-        creative = true
-    }
-
     let packName = KJSutils.Analysis(`kubejs/assets/greedycraft/lang/${packLanguage}.json`, "$$.greedycraft.modpack.name") + ` §a§lv${global.localPackVersionName}`
     let original = KJSutils.Analysis(`kubejs/assets/greedycraft/lang/${packLanguage}.json`, "$$.greedycraft.scoreboard.original")
     let author = KJSutils.Analysis(`kubejs/assets/greedycraft/lang/${packLanguage}.json`, "$$.greedycraft.scoreboard.author")
-    let gameMode = KJSutils.Analysis(`kubejs/assets/greedycraft/lang/${packLanguage}.json`, `$$.greedycraft.packmode.${packMode}`)
-    + KJSutils.Analysis(`kubejs/assets/greedycraft/lang/${packLanguage}.json`, "$$.greedycraft.scoreboard.packmode.name")
+    let gameMode = KJSutils.Analysis(`kubejs/assets/greedycraft/lang/${packLanguage}.json`, `$$.greedycraft.packmode.${packMode}`) +
+    KJSutils.Analysis(`kubejs/assets/greedycraft/lang/${packLanguage}.json`, "$$.greedycraft.scoreboard.packmode.name")
 
     if (cheat) {
         gameMode = gameMode + "§7·" + KJSutils.Analysis(`kubejs/assets/greedycraft/lang/${packLanguage}.json`, "$$.greedycraft.scoreboard.packmode.cheat")
-    } else if (creative) {
+    } else if (AStages.playerHasStage("init_creative", player)) {
         gameMode = gameMode + "§7·" + KJSutils.Analysis(`kubejs/assets/greedycraft/lang/${packLanguage}.json`, "$$.greedycraft.scoreboard.packmode.creative")
     }
 
