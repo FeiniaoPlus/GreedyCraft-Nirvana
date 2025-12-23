@@ -2,13 +2,6 @@
 
 let materialList = []
 let registryList = []
-
-/**
- * 注册材料
- * @param {String} name 材料名字
- * @param {Internal.ItemTintFunction_ | Internal.BlockTintFunction_ | Color_} color 颜色
- * @constructor
- */
 function registryMetals(name, color) {
 	this.name = name
 	this.color = color

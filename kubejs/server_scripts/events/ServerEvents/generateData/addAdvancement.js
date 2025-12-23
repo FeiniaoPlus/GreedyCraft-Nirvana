@@ -18,7 +18,7 @@ ServerEvents.generateData("AFTER_MODS", event => {
             },
             "show_toast": false,
             "title": {
-                "translate": "greedycraft.advancement.description.init"
+                "translate": "greedycraft.advancement.title.init"
             }
         },
         "requirements": [
@@ -38,14 +38,14 @@ ServerEvents.generateData("AFTER_MODS", event => {
         "display": {
             "announce_to_chat": false,
             "description": {
-                "translate": "greedycraft.advancement.description.init"
+                "translate": "greedycraft.advancement.description.init_start"
             },
             "icon": {
                 "id": "minecraft:grass_block"
             },
             "show_toast": false,
             "title": {
-                "translate": "greedycraft.advancement.description.init"
+                "translate": "greedycraft.advancement.title.init_start"
             }
         },
         "requirements": [
@@ -65,14 +65,14 @@ ServerEvents.generateData("AFTER_MODS", event => {
         "display": {
             "announce_to_chat": false,
             "description": {
-                "translate": "greedycraft.advancement.description.init"
+                "translate": "greedycraft.advancement.description.init_creative"
             },
             "icon": {
                 "id": "minecraft:nether_star"
             },
             "show_toast": false,
             "title": {
-                "translate": "greedycraft.advancement.description.init"
+                "translate": "greedycraft.advancement.title.init_creative"
             }
         },
         "requirements": [
