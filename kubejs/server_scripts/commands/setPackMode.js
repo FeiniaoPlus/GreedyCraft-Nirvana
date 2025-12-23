@@ -11,7 +11,7 @@ if (Platform.isClientEnvironment) {
 
 ServerEvents.basicCommand("setPackModeToCasual", event => {
     let player = event.player
-    let playerName = event.getPlayer().getName()
+    let playerName = player.username
     LOGGER("info", `${playerName} Change PackMode for casual`)
     if (player.hasPermissions(permissions)) {
         if (packMode == "casual") {
@@ -34,7 +34,7 @@ ServerEvents.basicCommand("setPackModeToCasual", event => {
 });
 ServerEvents.basicCommand("setPackModeToAdventure", event => {
     let player = event.player
-    let playerName = event.getPlayer().getName()
+    let playerName = player.username
     LOGGER("info", `${playerName} Change PackMode for casual`)
     if (player.hasPermissions(permissions)) {
         if (packMode == "adventure") {
@@ -57,7 +57,7 @@ ServerEvents.basicCommand("setPackModeToAdventure", event => {
 });
 ServerEvents.basicCommand("setPackModeToExpert", event => {
     let player = event.player
-    let playerName = event.getPlayer().getName()
+    let playerName = player.username
     LOGGER("info", `${playerName} Change PackMode for casual`)
     if (player.hasPermissions(permissions)) {
         if (packMode == "expert") {
