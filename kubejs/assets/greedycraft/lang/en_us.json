@@ -467,5 +467,27 @@
     "block.greedycraft.titanium_block": "§eTitanium Block",
     "block.greedycraft.unknown_block": "§5§ka§r §dUnknown_block §5§ka§r",
 
-    "greedycraft.advancement.description.init": "Initialize"
+    "greedycraft.advancement.title.init": "§bGreedyCraft§7·§c§lNIRVANA",
+    "greedycraft.advancement.title.init_start": "A New Journey",
+    "greedycraft.advancement.title.init_creative": "Creativity Builds the Future",
+
+    "greedycraft.advancement.description.init": "Welcome to a brand-new world!",
+    "greedycraft.advancement.description.init_start": "Are you ready to begin? (Create a world in Survival Mode)",
+    "greedycraft.advancement.description.init_creative": "Creativity knows no bounds. (Create a world in Creative Mode)",
+
+    "greedycraft.message.playerlogging.system.title": "§9      //   §bGCTN Terminal System   §9//   ",
+    "greedycraft.message.playerlogging.system.text.1": "§e Welcome, User: ",
+    "greedycraft.message.playerlogging.system.text.2": "§a Now Showing the Latest Unread Announcement.",
+    "greedycraft.message.playerlogging.system.text.3": "§b ====================================================",
+    "greedycraft.message.playerlogging.system.text.4": "§c ////////WARNING////////FATAL SYSTEM FAILURE////////",
+    "greedycraft.message.playerlogging.system.text.5": "§e Player Count is Drastically Decreasing in the Virtual Network and Some has Turned Into Hostile Entities.",
+    "greedycraft.message.playerlogging.system.text.6": "§e The Reality is Probably Under Attack.",
+    "greedycraft.message.playerlogging.system.text.7": "§e Illusion Defense System is Failed and Plenty of Hostile Entities has Been Detected in the Public Interface.",
+    "greedycraft.message.playerlogging.system.text.8": "§e If You Can See This Announcement, Please Try to Escape the Elysian Simulation, Which is the Only way to Figure out What Happened.",
+    "greedycraft.message.playerlogging.system.text.9": "§e ONLY YOU CAN SAVE HUMANITY FROM THE WRONG PATH!",
+    "greedycraft.message.playerlogging.system.text.end": "§b ====================================================",
+
+    "greedycraft.message.creative.text": "§eSince this world was created in §d§n§lCreative Mode§e, all stages have been unlocked. Create freely!",
+    "greedycraft.message.cheat.text": "§c§lGCTN Anti-Cheat System: Cheating activity has been detected. We do not recommend that you continue, but this is your world and we will not stop you. However, if you can complete this modpack through your own effort, wouldn’t that be a truly rewarding achievement? If you believe that something in the modpack has affected your desire or ability to play normally, please contact us!",
+    "greedycraft.message.cheat.modlist.text": "§c§lGCTN Anti-Cheat System: Illegal modules have been detected. We strongly recommend that you immediately remove any mods you added yourself. Regardless of the reason, adding third-party mods without authorization will not receive any support from the GCTN team. Of course, if you believe the mods you added can improve the modpack, please contact us! Module Name: "
 }
