@@ -1,4 +1,4 @@
-let aotoSetLanguage = KJSutils.Analysis("config/greedycraft/config.json", "$.aotoSetLanguage")
+let aotoSetLanguage = global.aotoSetLanguage
 
 if (aotoSetLanguage == "true") {
     let language = KJSutils.GetSystemLanguage()
