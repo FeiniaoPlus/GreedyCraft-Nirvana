@@ -317,7 +317,8 @@ global.commandWhiteList = [
     "setPackModeToExpert",
     "hidescoreboard",
     "showscoreboard",
-    "sethome"
+    "sethome",
+    "home"
 ]
 
 global.commandBlackList = [
@@ -329,6 +330,7 @@ global.commandBlackList = [
     "execute",
     "summon",
     "xp",
+    "tp",
     "advancement",
     "fly",
     "mek",
