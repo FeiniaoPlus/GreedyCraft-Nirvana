@@ -15,7 +15,7 @@ function checkModList() {
 function checkCheat(player) {
     let cheat = false
     let unofficialModList = checkModList()
-    if (unofficialModList.length > 0) {
+    if (unofficialModList.length >= 0) {
         cheat = true
     }
     if (player.isCreative()) {
