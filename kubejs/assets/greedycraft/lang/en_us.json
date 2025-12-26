@@ -490,5 +490,7 @@
     "greedycraft.message.creative.text": "§eSince this world was created in §d§n§lCreative Mode§e, all stages have been unlocked. Create freely!",
     "greedycraft.message.cheat.text": "§c§lGCTN Anti-Cheat System: Cheating activity has been detected. We do not recommend that you continue, but this is your world and we will not stop you. However, if you can complete this modpack through your own effort, wouldn’t that be a truly rewarding achievement? If you believe that something in the modpack has affected your desire or ability to play normally, please contact us!",
     "greedycraft.message.cheat.modlist.text": "§c§lGCTN Anti-Cheat System: Illegal modules have been detected. We strongly recommend that you immediately remove any mods you added yourself. Regardless of the reason, adding third-party mods without authorization will not receive any support from the GCTN team. Of course, if you believe the mods you added can improve the modpack, please contact us! Module Name: ",
-    "greedycraft.message.anticheat.text": "§c§lGCTN Anti-Cheat System: Please do not do this! Prohibited command: "
+    "greedycraft.message.anticheat.text": "§c§lGCTN Anti-Cheat System: Please do not do this! Prohibited command: ",
+    "greedycraft.message.anticheat.off.text": "§c§lGCTN Anti-Cheat System is currently disabled!",
+    "greedycraft.message.anticheat.runing.text": "§a§lGCTN Anti-Cheat System is running, mode: "
 }
