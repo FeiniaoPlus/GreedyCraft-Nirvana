@@ -1,4 +1,5 @@
 // priority: 600
+
 global.modList = new Set([
     "enderzoology",
     "supermartijn642configlib",
@@ -294,3 +295,44 @@ global.modList = new Set([
     "openloader",
     "betterfoliage"
 ])
+
+global.commandWhiteList = [
+    "neoforge",
+    "reload",
+    "seed",
+    "say",
+    "help",
+    "list",
+    "msg",
+    "teammsg",
+    "tell",
+    "tellraw",
+    "title",
+    "trigger",
+    "backup",
+    "tpa",
+    "tpaccept",
+    "setPackModeToCasual",
+    "setPackModeToAdventure",
+    "setPackModeToExpert",
+    "hidescoreboard",
+    "showscoreboard",
+    "sethome"
+]
+
+global.commandBlackList = [
+    "gamemode",
+    "gamerule",
+    "give",
+    "setblock",
+    "fill",
+    "execute",
+    "summon",
+    "xp",
+    "advancement",
+    "fly",
+    "mek",
+    "astages",
+    "ftbquests",
+    "kubejs"
+]
