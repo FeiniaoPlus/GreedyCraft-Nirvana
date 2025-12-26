@@ -489,5 +489,6 @@
 
     "greedycraft.message.creative.text": "§e由于你以§d§n§l创造模式§e创建了该存档，所有阶段已经解锁，尽情创造吧！",
     "greedycraft.message.cheat.text": "§c§lGCTN反作弊系统: 检测到你正在进行作弊，我们不建议你继续下去，但是这是你的世界，我们不会阻止你，不过如果你能靠自己的努力游玩完该整合包，那何尝不是一件有成就感的事呢？如果你认为是整合包中的内容影响了你正常玩下去的欲望，请联系我们！",
-    "greedycraft.message.cheat.modlist.text": "§c§lGCTN反作弊系统: 检测到非法模块，我们建议你立刻删除自行添加的模组，无论出于何种原因，擅自添加第三方模组将不会获得GCTN团队的任何支持，当然，如果你认为你添加的模组可以让整合包更好请联系我们！模块名称: "
+    "greedycraft.message.cheat.modlist.text": "§c§lGCTN反作弊系统: 检测到非法模块，我们建议你立刻删除自行添加的模组，无论出于何种原因，擅自添加第三方模组将不会获得GCTN团队的任何支持，当然，如果你认为你添加的模组可以让整合包更好请联系我们！模块名称: ",
+    "greedycraft.message.anticheat.text": "§c§lGCTN反作弊系统: 请不要这样做！禁止执行的命令: "
 }
