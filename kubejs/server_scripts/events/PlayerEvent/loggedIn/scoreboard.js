@@ -1,3 +1,4 @@
+// 进入游戏时创建计分板
 PlayerEvents.loggedIn(event => {
     let player = event.player
     let cheat = checkCheat(player)
@@ -6,21 +7,8 @@ PlayerEvents.loggedIn(event => {
     let packName = KJSutils.Analysis(`kubejs/assets/greedycraft/lang/${packLanguage}.json`, "$$.greedycraft.modpack.name") + ` §a§lv${global.localPackVersionName}`
     let original = KJSutils.Analysis(`kubejs/assets/greedycraft/lang/${packLanguage}.json`, "$$.greedycraft.scoreboard.original")
     let author = KJSutils.Analysis(`kubejs/assets/greedycraft/lang/${packLanguage}.json`, "$$.greedycraft.scoreboard.author")
-    let gameMode = KJSutils.Analysis(`kubejs/assets/greedycraft/lang/${packLanguage}.json`, `$$.greedycraft.packmode.${packMode}`) +
-        KJSutils.Analysis(`kubejs/assets/greedycraft/lang/${packLanguage}.json`, "$$.greedycraft.scoreboard.packmode.name")
 
-    if (cheat) {
-        if (packMode == "casual") {
-            let unofficialModList = checkModList()
-            if (unofficialModList.length >= 0) {
-                gameMode = gameMode + "§7·" + KJSutils.Analysis(`kubejs/assets/greedycraft/lang/${packLanguage}.json`, "$$.greedycraft.scoreboard.packmode.cheat")
-            }
-        } else {
-            gameMode = gameMode + "§7·" + KJSutils.Analysis(`kubejs/assets/greedycraft/lang/${packLanguage}.json`, "$$.greedycraft.scoreboard.packmode.cheat")
-        }
-    } else if (AStages.playerHasStage("init_creative", player)) {
-        gameMode = gameMode + "§7·" + KJSutils.Analysis(`kubejs/assets/greedycraft/lang/${packLanguage}.json`, "$$.greedycraft.scoreboard.packmode.creative")
-    }
+    let gameMode = getScoreBoardGameMode(packLanguage, packMode, player)
 
     event.server.runCommandSilent("scoreboard objectives remove packinfo")
     event.server.runCommandSilent(`scoreboard objectives add packinfo dummy "${packName}"`)
