@@ -1,5 +1,11 @@
 // priority: 600
 
+// 整合包全局变量
+global.creatorList = [
+    "c764069d-485d-4907-bbe2-33d3b3d1486c",
+    "491969fe-807c-4c93-8574-90febb80d230"
+]
+
 global.modList = new Set([
     "enderzoology",
     "supermartijn642configlib",
@@ -331,7 +337,12 @@ global.commandBlackList = [
     "summon",
     "xp",
     "tp",
+    "kill",
+    "effect",
     "advancement",
+    "data",
+    "tick",
+    "damage",
     "fly",
     "mek",
     "astages",
