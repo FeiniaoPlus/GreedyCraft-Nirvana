@@ -1,3 +1,5 @@
+// 根据系统语言设置整合包语言
+
 let aotoSetLanguage = global.aotoSetLanguage
 
 if (aotoSetLanguage == "true") {
