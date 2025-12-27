@@ -2,7 +2,7 @@
 	#Number of hearts you start out with.
 	# Default: 10
 	# Range: 0 ~ 1000
-	baseHearts = 12
+	baseHearts = 6
 	#Number of hearts you gain for reaching a new milestone.
 	# Default: 2
 	# Range: 0 ~ 1000
