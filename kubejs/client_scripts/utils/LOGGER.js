@@ -9,6 +9,7 @@ function LOGGER(level, message) {
             break
         case "warn":
             console.warn(`\n${message}`)
+            break
         default:
             console.info(`\n${message}`)
     }
