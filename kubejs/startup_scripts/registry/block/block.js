@@ -1,5 +1,6 @@
 // priority: 400
 
+// 注册方块
 StartupEvents.registry("block", event => {
      event.create("greedycraft:aeonsteel_block")
           .hardness(20.0)

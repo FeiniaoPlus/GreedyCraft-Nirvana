@@ -1,5 +1,6 @@
 // priority: 400
 
+// 注册矿石
 StartupEvents.registry("block", event => {
      event.create("greedycraft:aeroite_ore")
           .renderType("translucent")

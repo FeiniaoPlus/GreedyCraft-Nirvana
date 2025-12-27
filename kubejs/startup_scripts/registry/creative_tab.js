@@ -1,5 +1,6 @@
 // priority: 100
 
+// 注册创造模式菜单
 StartupEvents.registry("creative_mode_tab", event => {
     event.create("greedycraft_material").icon(() => "greedycraft:cryonium_ingot").content(() => [
         "greedycraft:aeonsteel_ingot",

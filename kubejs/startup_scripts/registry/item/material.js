@@ -1,5 +1,6 @@
 // priority: 400
 
+// 注册材料
 new registryMetals("aeonsteel", 0x42b983)
     .dust()
     .rod()

@@ -1,5 +1,6 @@
 // priority: 600
 
+// 获取整合包基础配置
 global.packLanguage = KJSutils.Analysis("config/greedycraft/config.json", "$.language")
 global.aotoSetLanguage = KJSutils.Analysis("config/greedycraft/config.json", "$.aotoSetLanguage")
 global.packMode = KJSutils.Analysis("config/greedycraft/config.json", "$.packMode")

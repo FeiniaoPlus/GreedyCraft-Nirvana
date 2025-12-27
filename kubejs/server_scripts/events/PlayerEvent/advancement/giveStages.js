@@ -1,3 +1,5 @@
+// 根据解锁的进度给予玩家对应阶段
+
 PlayerEvents.advancement("greedycraft:init", event => {
     let player = event.player
     AStages.addStageToPlayer("init", player)

@@ -1,5 +1,6 @@
 // priority: 500
 
+// 函数：注册材料，无返回值，使用链式调用
 let materialList = []
 let registryList = []
 function registryMetals(name, color) {

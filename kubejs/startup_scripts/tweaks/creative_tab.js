@@ -1,4 +1,6 @@
 // priority: 50
+
+// 修改创造模式菜单名称
 let packLanguage = KJSutils.Analysis("config/greedycraft/config.json", "$.language")
 
 StartupEvents.modifyCreativeTab("kubejs:greedycraft_material", event => {

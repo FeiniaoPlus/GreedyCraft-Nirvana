@@ -1,5 +1,6 @@
 // priority: 100
 
+// 添加自定义进度
 ServerEvents.generateData("AFTER_MODS", event => {
     event.json("greedycraft:advancement/init.json", {
         "criteria": {
