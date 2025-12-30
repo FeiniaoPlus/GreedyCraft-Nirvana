@@ -1,6 +1,6 @@
 {
   "language": "en_us",
-  "aotoSetLanguage": "true",
+  "autoSetLanguage": "true",
   "packMode": "adventure",
   "checkVersionUpdate": "false",
   "antiCheat": "true",
