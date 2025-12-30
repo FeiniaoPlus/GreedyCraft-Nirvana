@@ -5,7 +5,8 @@ ServerEvents.command(event => {
     let player = commandSource.getPlayer()
 
     let antiCheatMode = KJSutils.Analysis("config/greedycraft/config.json", "$.antiCheatMode")
-    let packLanguage = KJSutils.Analysis("config/greedycraft/config.json", "$.language")
+    // 拦截功能不应随着游戏模式切换而热切换
+    let packLanguage = global.packLanguage
     let antiCheat = KJSutils.Analysis("config/greedycraft/config.json", "$.antiCheat")
 
     let message = KJSutils.Analysis(`kubejs/assets/greedycraft/lang/${packLanguage}.json`, "$$.greedycraft.message.anticheat.text")
