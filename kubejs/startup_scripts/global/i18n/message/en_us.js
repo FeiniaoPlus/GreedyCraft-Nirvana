@@ -1,6 +1,6 @@
 // priority: 600
 
-global.en_us_Message = [
+global.en_us_PlayerLogging_Message = [
   {
     text: "§eExperiencing lag? When memory usage is high, use the §6Free Memory§e button in the §6R§e key menu to manually clear memory!"
   },
@@ -44,3 +44,25 @@ global.en_us_Message = [
     text: "§eWhen updating the modpack version, move the §6saves§e folder from the old installation's root directory to the same location in the new version to preserve your worlds!"
   }
 ]
+
+global.en_us_StagesUnlock_Message = {
+  init: {
+    title: ["§e§lWelcome to GreedyCraft!"],
+    lore: [
+      "§aStart experiencing the game from now on!"
+    ],
+    unlock: [
+      "§bYou can view the game stage tree on the 'Progress' page."
+    ]
+  },
+  getting_started: {
+    title: ["§e§lNow It Begins..."],
+    lore: [
+      "§aDawn of Adventure"
+    ],
+    unlock: [
+      "§bVarious tools and weapons",
+      "§bCrafting table and wooden stuff"
+    ]
+  }
+}

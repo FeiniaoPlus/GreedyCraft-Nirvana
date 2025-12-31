@@ -1,11 +1,11 @@
 // priority: 600
 
-global.zh_cn_Message = [
+global.zh_cn_PlayerLogging_Message = [
   {
     text: "§e感到卡顿？请在内存占用较高时使用§6R§e键菜单中的§6释放内存§e按钮手动清理内存！"
   },
   {
-    text: "§e感谢游玩贪婪整合包！如果你在游戏中遇到了问题，请先查阅§6《贪婪整合包——从入门到精通》"
+    text: "§e感谢游玩贪婪整合包！如果你在游戏中遇到了问题，请先查阅§6《贪婪整合包——从入门到精通》。"
   },
   {
     text: "§e如果你遇到了模组相关的问题，请查阅§6百科全书§e！模组的指导手册都可以在这里找到。"
@@ -20,7 +20,7 @@ global.zh_cn_Message = [
     text: "§e你可以在进入游戏前就调整游戏模式！游戏模式的配置文件位于config/greedycraft/config.json，修改packmode=等号后面的内容就可以改变游戏模式！"
   },
   {
-    text: "§e你可以使用/setPackModeTo模式来切换游戏模式"
+    text: "§e你可以使用/setPackModeTo模式来切换游戏模式。"
   },
   {
     text: "§e如果遇到了背景音乐长时间停止播放的问题，你可以按Alt+小键盘上的-来重载动态音乐！"
@@ -44,3 +44,25 @@ global.zh_cn_Message = [
     text: "§e更新整合包版本时，将之前整合包根目录下的§6saves§e文件夹挪到新版本的相同位置即可保留存档！"
   }
 ]
+
+global.zh_cn_StagesUnlock_Message = {
+  init: {
+    title: ["§e欢迎来到贪婪整合包！"],
+    lore: [
+      "§a从现在开始体验游戏！"
+    ],
+    unlock: [
+      "§b可从 '进度' 页面查看游戏阶段树"
+    ]
+  },
+  getting_started: {
+    title: ["§e初出茅庐"],
+    lore: [
+      "§a冒险的黎明"
+    ],
+    unlock: [
+      "§b各种工具与武器",
+      "§b工作台与木制品"
+    ]
+  }
+}
