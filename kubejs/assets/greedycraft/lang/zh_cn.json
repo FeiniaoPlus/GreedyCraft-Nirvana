@@ -492,5 +492,7 @@
     "greedycraft.message.cheat.modlist.text": "§c§lGCTN反作弊系统: 检测到非法模块，我们建议你立刻删除自行添加的模组，无论出于何种原因，擅自添加第三方模组将不会获得GCTN团队的任何支持，当然，如果你认为你添加的模组可以让整合包更好请联系我们！模块名称: ",
     "greedycraft.message.anticheat.text": "§c§lGCTN反作弊系统: 请不要这样做！禁止执行的命令: ",
     "greedycraft.message.anticheat.off.text": "§c§lGCTN反作弊系统 当前为关闭状态！",
-    "greedycraft.message.anticheat.runing.text": "§a§lGCTN反作弊系统 正在运行，运行模式: "
+    "greedycraft.message.anticheat.runing.text": "§a§lGCTN反作弊系统 正在运行，运行模式: ",
+    "greedycraft.message.stage.unlock.title": "§b§l游戏阶段已解锁！",
+    "greedycraft.message.stage.unlock.message": "§b§l以下物品或功能已解锁:"
 }
