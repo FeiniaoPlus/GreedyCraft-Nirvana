@@ -48,18 +48,12 @@ global.en_us_PlayerLogging_Message = [
 global.en_us_StagesUnlock_Message = {
   init: {
     title: ["§e§lWelcome to GreedyCraft!"],
-    lore: [
-      "§aStart experiencing the game from now on!"
-    ],
-    unlock: [
-      "§bYou can view the game stage tree on the 'Progress' page."
-    ]
+    lore: ["§aStart experiencing the game from now on!"],
+    unlock: ["§bYou can view the game stage tree on the 'Progress' page."]
   },
   getting_started: {
     title: ["§e§lNow It Begins..."],
-    lore: [
-      "§aDawn of Adventure"
-    ],
+    lore: ["§aDawn of Adventure"],
     unlock: [
       "§bVarious tools and weapons",
       "§bCrafting table and wooden stuff"

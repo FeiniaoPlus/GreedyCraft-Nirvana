@@ -48,18 +48,14 @@ global.zh_cn_PlayerLogging_Message = [
 global.zh_cn_StagesUnlock_Message = {
   init: {
     title: ["§e欢迎来到贪婪整合包！"],
-    lore: [
-      "§a从现在开始体验游戏！"
-    ],
+    lore: ["§a从现在开始体验游戏！"],
     unlock: [
       "§b可从 '进度' 页面查看游戏阶段树"
     ]
   },
   getting_started: {
     title: ["§e初出茅庐"],
-    lore: [
-      "§a冒险的黎明"
-    ],
+    lore: ["§a冒险的黎明"],
     unlock: [
       "§b各种工具与武器",
       "§b工作台与木制品"
