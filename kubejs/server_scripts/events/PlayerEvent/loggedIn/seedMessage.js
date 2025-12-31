@@ -8,8 +8,8 @@ PlayerEvents.loggedIn(event => {
 
     let antiCheatMode = KJSutils.Analysis("config/greedycraft/config.json", "$.antiCheatMode")
     let antiCheat = KJSutils.Analysis("config/greedycraft/config.json", "$.antiCheat")
-
     let packLanguage = KJSutils.Analysis("config/greedycraft/config.json", "$.language")
+
     let messageTitle = KJSutils.Analysis(`kubejs/assets/greedycraft/lang/${packLanguage}.json`, "$$.greedycraft.message.playerlogging.system.title")
     let messageText1 = KJSutils.Analysis(`kubejs/assets/greedycraft/lang/${packLanguage}.json`, "$$.greedycraft.message.playerlogging.system.text.1") + `§6${playerName}`
     let messageText2 = KJSutils.Analysis(`kubejs/assets/greedycraft/lang/${packLanguage}.json`, "$$.greedycraft.message.playerlogging.system.text.2")
@@ -42,13 +42,13 @@ PlayerEvents.loggedIn(event => {
         // 根据整合包语言获取对应数组的文本（startup_scripts\global\i18n\xx_xx.js）
         switch (packLanguage) {
             case "zh_cn":
-                message = global.zh_cn_Message[randomInt(0, global.zh_cn_Message.length - 1)]
+                message = global.zh_cn_PlayerLogging_Message[randomInt(0, global.zh_cn_PlayerLogging_Message.length - 1)]
                 break
             case "en_us":
-                message = global.en_us_Message[randomInt(0, global.en_us_Message.length - 1)]
+                message = global.en_us_PlayerLogging_Message[randomInt(0, global.en_us_PlayerLogging_Message.length - 1)]
                 break
             default:
-                message = global.en_us_Message[randomInt(0, global.en_us_Message.length - 1)]
+                message = global.en_us_PlayerLogging_Message[randomInt(0, global.en_us_PlayerLogging_Message.length - 1)]
         }
 
         player.tell(message)
@@ -69,9 +69,7 @@ PlayerEvents.loggedIn(event => {
         if (unofficialModList.length > 0) {
             let message = KJSutils.Analysis(`kubejs/assets/greedycraft/lang/${packLanguage}.json`, "$$.greedycraft.message.cheat.modlist.text")
             player.tell(message)
-            for (mods in unofficialModList) {
-                player.tell(mods)
-            }
+            unofficialModList.forEach(modID => player.tell(modID))
             LOGGER("warn", `UnofficialModList: ${unofficialModList}`)
         } else {
             // 否则发送默认作弊消息

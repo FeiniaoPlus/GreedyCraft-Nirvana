@@ -8,7 +8,7 @@ PlayerEvents.loggedIn(event => {
     let original = KJSutils.Analysis(`kubejs/assets/greedycraft/lang/${packLanguage}.json`, "$$.greedycraft.scoreboard.original")
     let author = KJSutils.Analysis(`kubejs/assets/greedycraft/lang/${packLanguage}.json`, "$$.greedycraft.scoreboard.author")
 
-    let gameMode = getScoreBoardGameMode(packLanguage, packMode, player)
+    let gameMode = getScoreBoardGameMode(packMode, player)
 
     event.server.runCommandSilent("scoreboard objectives remove packinfo")
     event.server.runCommandSilent(`scoreboard objectives add packinfo dummy "${packName}"`)
