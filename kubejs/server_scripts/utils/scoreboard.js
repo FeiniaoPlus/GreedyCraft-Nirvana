@@ -10,7 +10,7 @@ function getScoreBoardGameMode(packMode, player) {
     if (cheat) {
         if (packMode == "casual") {
             let unofficialModList = checkModList()
-            if (unofficialModList.length > 0) {
+            if (!(unofficialModList.length == 0)) {
                 gameMode = gameMode + "§7·" + KJSutils.Analysis(`kubejs/assets/greedycraft/lang/${packLanguage}.json`, "$$.greedycraft.scoreboard.packmode.cheat")
             }
         } else {

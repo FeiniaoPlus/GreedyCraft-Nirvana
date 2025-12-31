@@ -54,6 +54,16 @@ PlayerEvents.loggedIn(event => {
         player.tell(message)
     }
 
+    if (AStages.playerHasStage("init_creative", player)) {
+        let message = KJSutils.Analysis(`kubejs/assets/greedycraft/lang/${packLanguage}.json`, "$$.greedycraft.message.creative.text")
+        player.tell(message)
+    } else if (!(AStages.playerHasStage("init_start", player))) {
+        if (player.isCreative()) {
+            let message = KJSutils.Analysis(`kubejs/assets/greedycraft/lang/${packLanguage}.json`, "$$.greedycraft.message.creative.text")
+            player.tell(message)
+        }
+    }
+
     // 判断反作弊是否开启
     if (antiCheat == "true") {
         let message = KJSutils.Analysis(`kubejs/assets/greedycraft/lang/${packLanguage}.json`, "$$.greedycraft.message.anticheat.runing.text")
@@ -71,15 +81,10 @@ PlayerEvents.loggedIn(event => {
             player.tell(message)
             unofficialModList.forEach(modID => player.tell(modID))
             LOGGER("warn", `UnofficialModList: ${unofficialModList}`)
-        } else if (!(player.isCreative)) {
+        } else if (!(player.isCreative())) {
             // 否则发送默认作弊消息
             let message = KJSutils.Analysis(`kubejs/assets/greedycraft/lang/${packLanguage}.json`, "$$.greedycraft.message.cheat.text")
             player.tell(message)
         }
-        // 判断是否是创造模式创建的存档，发送对应消息
-    }
-    if (AStages.playerHasStage("init_creative", player)) {
-        let message = KJSutils.Analysis(`kubejs/assets/greedycraft/lang/${packLanguage}.json`, "$$.greedycraft.message.creative.text")
-        player.tell(message)
     }
 })

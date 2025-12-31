@@ -4,8 +4,8 @@
 function checkModList() {
     let unofficialModList = []
 
-    Platform.mods.forEach((MOD_ID) => {
-        if (!global.modList.has(MOD_ID)) {
+    Platform.mods.forEach((MOD_ID, MOD_INFO) => {
+        if (!(global.modList.has(MOD_ID))) {
             unofficialModList.push(MOD_ID)
         }
     })
@@ -17,7 +17,7 @@ function checkModList() {
 function checkCheat(player) {
     let cheat = false
     let unofficialModList = checkModList()
-    if (unofficialModList.length > 0) {
+    if (!(unofficialModList.length == 0)) {
         cheat = true
     }
     if (player.isCreative()) {
