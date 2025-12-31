@@ -1,8 +1,9 @@
 // priority: 500
 
 // 函数：获取用于计分板的游戏模式项文本，返回字符串。要求提供整合包语言和整合包模式以及 event.player 三个形参
-function getScoreBoardGameMode(packLanguage, packMode, player) {
+function getScoreBoardGameMode(packMode, player) {
     let cheat = checkCheat(player)
+    let packLanguage = KJSutils.Analysis("config/greedycraft/config.json", "$.language")
     let gameMode = KJSutils.Analysis(`kubejs/assets/greedycraft/lang/${packLanguage}.json`, `$$.greedycraft.packmode.${packMode}`) +
         KJSutils.Analysis(`kubejs/assets/greedycraft/lang/${packLanguage}.json`, "$$.greedycraft.scoreboard.packmode.name")
 

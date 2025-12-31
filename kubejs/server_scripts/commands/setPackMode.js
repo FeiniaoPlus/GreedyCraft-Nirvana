@@ -34,7 +34,7 @@ ServerEvents.basicCommand("setPackModeToCasual", event => {
             KJSutils.Analysis(`kubejs/assets/greedycraft/lang/${packLanguage}.json`, "$$.greedycraft.packmode.casual")
         player.tell(message)
         // 修改计分板
-        let gameMode = getScoreBoardGameMode(packLanguage, packMode, player)
+        let gameMode = getScoreBoardGameMode(packMode, player)
         event.server.runCommandSilent(`scoreboard players display name gamemode packinfo "${gameMode}"`)
     } else {
         player.tell(KJSutils.Analysis(`kubejs/assets/greedycraft/lang/${packLanguage}.json`, "$$.greedycraft.commands.error.permissions"))
@@ -86,7 +86,7 @@ ServerEvents.basicCommand("setPackModeToExpert", event => {
         let message = KJSutils.Analysis(`kubejs/assets/greedycraft/lang/${packLanguage}.json`, "$$.greedycraft.commands.setpackmode") +
             KJSutils.Analysis(`kubejs/assets/greedycraft/lang/${packLanguage}.json`, "$$.greedycraft.packmode.expert")
         player.tell(message)
-        let gameMode = getScoreBoardGameMode(packLanguage, packMode, player)
+        let gameMode = getScoreBoardGameMode(packMode, player)
         event.server.runCommandSilent(`scoreboard players display name gamemode packinfo "${gameMode}"`)
     } else {
         player.tell(KJSutils.Analysis(`kubejs/assets/greedycraft/lang/${packLanguage}.json`, "$$.greedycraft.commands.error.permissions"))
