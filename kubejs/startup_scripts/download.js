@@ -1,4 +1,4 @@
-// priority: 700
+// priority: 1000
 
 // 下载版本文件
 if (global.checkVersionUpdate == "true") {

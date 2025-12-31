@@ -1,4 +1,4 @@
-// priority: 600
+// priority: 1000
 
 // 整合包全局变量
 global.creatorList = [

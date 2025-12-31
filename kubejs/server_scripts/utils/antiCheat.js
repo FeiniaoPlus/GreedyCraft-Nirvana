@@ -1,4 +1,4 @@
-// priority: 500
+// priority: 1000
 
 // 函数：检查是否有非官方模组，返回非官方模组列表
 function checkModList() {

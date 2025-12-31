@@ -1,4 +1,4 @@
-// priority: 600
+// priority: 1000
 
 global.zh_cn_PlayerLogging_Message = [
   {
@@ -47,15 +47,13 @@ global.zh_cn_PlayerLogging_Message = [
 
 global.zh_cn_StagesUnlock_Message = {
   init: {
-    title: ["§e欢迎来到贪婪整合包！"],
-    lore: ["§a从现在开始体验游戏！"],
-    unlock: [
-      "§b可从 '进度' 页面查看游戏阶段树"
-    ]
+    title: ["§e§l欢迎来到贪婪整合包！"],
+    lore: ["§a§o§n从现在开始体验游戏！"],
+    unlock: ["§b可从 '进度' 页面查看游戏阶段树"]
   },
   getting_started: {
-    title: ["§e初出茅庐"],
-    lore: ["§a冒险的黎明"],
+    title: ["§e§l初出茅庐"],
+    lore: ["§a§o§n冒险的黎明"],
     unlock: [
       "§b各种工具与武器",
       "§b工作台与木制品"

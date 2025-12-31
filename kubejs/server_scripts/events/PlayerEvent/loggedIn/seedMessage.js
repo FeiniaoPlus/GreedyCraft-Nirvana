@@ -66,18 +66,19 @@ PlayerEvents.loggedIn(event => {
     // 判断是否作弊
     if (cheat) {
         // 判断作弊类型是否是安装了非官方模组并发送对应消息
-        if (unofficialModList.length > 0) {
+        if (!(unofficialModList.length == 0)) {
             let message = KJSutils.Analysis(`kubejs/assets/greedycraft/lang/${packLanguage}.json`, "$$.greedycraft.message.cheat.modlist.text")
             player.tell(message)
             unofficialModList.forEach(modID => player.tell(modID))
             LOGGER("warn", `UnofficialModList: ${unofficialModList}`)
-        } else {
+        } else if (!(player.isCreative)) {
             // 否则发送默认作弊消息
             let message = KJSutils.Analysis(`kubejs/assets/greedycraft/lang/${packLanguage}.json`, "$$.greedycraft.message.cheat.text")
             player.tell(message)
         }
         // 判断是否是创造模式创建的存档，发送对应消息
-    } else if (AStages.playerHasStage("init_creative", player)) {
+    }
+    if (AStages.playerHasStage("init_creative", player)) {
         let message = KJSutils.Analysis(`kubejs/assets/greedycraft/lang/${packLanguage}.json`, "$$.greedycraft.message.creative.text")
         player.tell(message)
     }

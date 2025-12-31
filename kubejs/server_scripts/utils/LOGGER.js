@@ -1,4 +1,4 @@
-// priority: 500
+// priority: 1000
 
 function LOGGER(level, message) {
     console.log("===== GCTN Log System =====")

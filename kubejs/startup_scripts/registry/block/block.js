@@ -1,4 +1,4 @@
-// priority: 400
+// priority: 900
 
 // 注册方块
 StartupEvents.registry("block", event => {

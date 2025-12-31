@@ -1,4 +1,4 @@
-// priority: 400
+// priority: 900
 
 // 添加自定义进度
 ServerEvents.generateData("AFTER_MODS", event => {

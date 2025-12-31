@@ -21,8 +21,8 @@ AStageEvents.added(event => {
     if (!(stage == "init_start" || stage == "init_creative")) {
         player.tell(borderText)
         player.tell(stageUnlockTitleMessage)
-        stageUnlockMessageData.title.forEach(message => player.tell(`§6§o${stage}§r  - §l${message}`))
-        stageUnlockMessageData.lore.forEach(message => player.tell(`§o§n${message}`))
+        stageUnlockMessageData.title.forEach(message => player.tell(`§6§o${stage}§r  - ${message}`))
+        stageUnlockMessageData.lore.forEach(message => player.tell(`${message}`))
         player.tell(stageUnlockMessage)
         stageUnlockMessageData.unlock.forEach(message => player.tell(`§2✔ §r${message}`))
         player.tell(borderText)

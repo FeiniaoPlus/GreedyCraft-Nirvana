@@ -1,4 +1,4 @@
-// priority: 400
+// priority: 1000
 
 ServerEvents.tags("item", event => {
     event.add("c:player_workstations/crafting_tables", [

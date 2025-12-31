@@ -1,4 +1,5 @@
-// 进入游戏时创建计分板
+// priority: 100
+
 PlayerEvents.loggedIn(event => {
     let player = event.player
     let cheat = checkCheat(player)

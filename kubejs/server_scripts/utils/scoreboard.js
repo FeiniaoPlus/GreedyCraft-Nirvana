@@ -1,4 +1,4 @@
-// priority: 500
+// priority: 1000
 
 // 函数：获取用于计分板的游戏模式项文本，返回字符串。要求提供整合包语言和整合包模式以及 event.player 三个形参
 function getScoreBoardGameMode(packMode, player) {

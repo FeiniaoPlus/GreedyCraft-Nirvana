@@ -1,4 +1,4 @@
-// priority: 400
+// priority: 900
 
 // 注册材料
 new registryMetals("aeonsteel", 0x42b983)

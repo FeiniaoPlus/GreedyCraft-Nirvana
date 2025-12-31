@@ -1,4 +1,4 @@
-// priority: 50
+// priority: 700
 
 // 修改创造模式菜单名称
 let packLanguage = KJSutils.Analysis("config/greedycraft/config.json", "$.language")

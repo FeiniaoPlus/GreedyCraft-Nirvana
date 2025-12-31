@@ -1,4 +1,4 @@
-// priority: 400
+// priority: 900
 
 // 注册矿石
 StartupEvents.registry("block", event => {

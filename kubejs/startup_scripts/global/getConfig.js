@@ -1,4 +1,4 @@
-// priority: 600
+// priority: 1000
 
 // 获取整合包基础配置
 global.packLanguage = KJSutils.Analysis("config/greedycraft/config.json", "$.language")
