@@ -17,19 +17,16 @@ global.en_us_PlayerLogging_Message = [
     text: "§eYou can switch game modes in the Quest Menu! The Quest Menu can be found in the top-left corner of your inventory screen."
   },
   {
-    text: "§eYou can adjust the game mode before entering the world! The configuration file is located at §6config/greedycraft/config.json§e. Modify the content after §6packmode=§e to change the game mode!"
+    text: "§eYou can adjust the game mode before entering the game! The game mode configuration file is located at config/greedycraft/config.json. Changing the value after packmode will change the game mode!"
   },
   {
-    text: "§eYou can use §6/setPackModeTo <mode>§e to switch the game mode."
+    text: "§eYou can use the /greedycraft command to switch the modpack mode and to show or hide the scoreboard."
   },
   {
     text: "§eIf you experience background music stopping for long periods, you can press §6Alt + Numpad -§e to reload the dynamic music!"
   },
   {
     text: "§eIf you experience lag, try pressing §6R§e to open the menu and click the '§6Free Memory§e' button. Alternatively, try adjusting your render distance down and then back up."
-  },
-  {
-    text: "§eYou can use §6/hidescoreboard§e to hide the scoreboard on the right! Use §6/showscoreboard§e to show it again."
   },
   {
     text: "§eYou can use §6/hidedeathquotes§e to disable death message displays, or §6/showdeathquotes§e to re-enable them!"

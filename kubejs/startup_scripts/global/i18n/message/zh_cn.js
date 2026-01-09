@@ -17,19 +17,16 @@ global.zh_cn_PlayerLogging_Message = [
     text: "§e你可以在任务菜单中切换游戏模式！任务菜单可以在物品栏界面的左上角找到。"
   },
   {
-    text: "§e你可以在进入游戏前就调整游戏模式！游戏模式的配置文件位于config/greedycraft/config.json，修改packmode=等号后面的内容就可以改变游戏模式！"
+    text: "§e你可以在进入游戏前就调整游戏模式！游戏模式的配置文件位于config/greedycraft/config.json，修改packmode后面的内容就可以改变游戏模式！"
   },
   {
-    text: "§e你可以使用/setPackModeTo模式来切换游戏模式。"
+    text: "§e你可以使用/greedycraft命令来切换整合包模式和显示或隐藏计分板。"
   },
   {
     text: "§e如果遇到了背景音乐长时间停止播放的问题，你可以按Alt+小键盘上的-来重载动态音乐！"
   },
   {
     text: "§e如果感到卡顿，请尝试按§eR§6打开菜单并点击“§6清理内存§e”按钮。另外也可以试试调整下视距再调回来。"
-  },
-  {
-    text: "§e你可以使用§6/hidescoreboard§e指令来关闭右边的计分板！§6/showscoreboard§e可以重新打开计分板。"
   },
   {
     text: "§e你可以使用§6/hidedeathquotes§e指令来关闭死亡信息显示，或§6/showdeathquotes§e重新打开死亡信息显示！"
