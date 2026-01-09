@@ -349,3 +349,147 @@ global.commandBlackList = [
     "ftbquests",
     "kubejs"
 ]
+
+global.stages = {
+    item: {
+        getting_started: [
+            '#c:player_workstations/crafting_tables',
+            '#minecraft:planks',
+            '#c:chests',
+            '#c:cobblestones',
+            '#c:ingots/iron',
+            '#c:ingots/gold',
+            '#c:nuggets/iron',
+            '#c:nuggets/gold',
+            '#c:dusts/iron',
+            '#c:dusts/gold',
+            'minecraft:wooden_pickaxe',
+            'minecraft:stone_pickaxe',
+            'minecraft:diamond_pickaxe',
+            'minecraft:golden_pickaxe',
+            'minecraft:wooden_axe',
+            'minecraft:stone_axe',
+            'minecraft:diamond_axe',
+            'minecraft:golden_axe',
+            'minecraft:iron_axe',
+            'minecraft:iron_block',
+            'minecraft:gold_block',
+            'greedycraft:twilight_gem'
+        ],
+        twilight_forest: [
+            'greedycraft:twilight_shield'
+        ],
+        nether: [
+            '#c:dusts/quartz',
+            '#c:ores/quartz',
+            '#c:blocks/quartz_block',
+            '#minecraft:anvil',
+            '#greedycraft:material/aeroite',
+            '#greedycraft:material/asgardium',
+            '#greedycraft:material/aqualite',
+            '#greedycraft:material/durasteel',
+            '#ae2:all_quartz',
+            'ae2:certus_quartz_dust',
+            'ae2:fluix_dust',
+            'botania:life_essence',
+            'botania:gaia_ingot',
+            'minecraft:netherite_ingot',
+            'minecraft:netherite_block',
+            'minecraft:ancient_debris',
+            'minecraft:netherite_scrap',
+            'minecraft:glowstone',
+            'minecraft:glowstone_dust',
+            'minecraft:quartz',
+            'minecraft:beacon',
+            'minecraft:blaze_rod',
+            'minecraft:blaze_powder',
+            'minecraft:ender_eye',
+            'minecraft:enchanted_book',
+            'minecraft:enchanting_table',
+            'minecraft:brewing_stand',
+            'minecraft:ghast_tear',
+            'minecraft:magma_cream',
+            // 'greedycraft:sponsors_chest',
+            // 'greedycraft:shining_star',
+            // 'greedycraft:medkit_big',
+            // 'greedycraft:blood_sigil',
+            // 'greedycraft:bloody_sacrifice',
+            // 'greedycraft:awakened_eye',
+            // 'greedycraft:sponsor_chest_fragment',
+            'defiled_lands_reborn:ravaging_essence',
+            'defiled_lands_reborn:ravaging_ingot',
+            'defiled_lands_reborn:remorseful_essence',
+            'defiled_lands_reborn:remorseful_gem',
+            'extendedae:entro_ingot',
+            'extendedae:entro_dust',
+            'extendedae:entro_block',
+            'ae2:formation_core',
+            'ae2:annihilation_core',
+            'defiled_lands_reborn:idol_sorrow',
+            'defiled_lands_reborn:calling_stone',
+            'quark:blaze_lantern',
+            'enderio:dark_steel_sword',
+            'botania:enchanter',
+            'hooked:redstone_hook',
+            'enderio:withering_powder'
+        ],
+        gaia_killer: [
+            'minecraft:nether_star',
+            'minecraft:wither_skeleton_skull'
+        ],
+        wither_killer: [
+            // 'greedycraft:bravery_certificate',
+            // 'greedycraft:ender_charm',
+            'enderio:reinforced_obsidian_block',
+            'enderio:redstone_alloy_ingot',
+            'mysticalagriculture:witherproof_block',
+            'mysticalagriculture:witherproof_glass',
+            'minecraft:end_crystal'
+        ],
+    },
+    ore: {
+        getting_started: {
+            "#c:player_workstations/crafting_tables": "greedycraft:unknown_block",
+            "#c:chests": "greedycraft:unknown_block"
+        },
+        nether: {
+            "#minecraft:anvil": "greedycraft:unknown_block",
+            "minecraft:beacon": "greedycraft:unknown_block",
+            "minecraft:enchanting_table": "greedycraft:unknown_block",
+            "minecraft:nether_quartz_ore": "minecraft:netherrack",
+            "netherex:fiery_quartz_ore": "netherex:fiery_netherrack",
+            "netherex:gloomy_quartz_ore": "netherex:gloomy_netherrack",
+            "netherex:lively_quartz_ore": "netherex:lively_netherrack",
+            "greedycraft:aeroite_ore": "aether:cold_aercloud",
+            "greedycraft:asgardium_ore": "aether:holystone"
+        }
+    },
+    dimension: {
+        twilight_shield: [
+            "minecraft:the_nether"
+        ],
+        nether: [
+            "aether:the_aether"
+        ],
+    },
+    mod: {
+        nether: [
+            "aether"
+        ]
+    },
+    mob: {
+        twilight_shield: [
+            "minecraft:blaze",
+            "minecraft:wither_skeleton"
+        ],
+        gaia_killer: [
+            "minecraft:wither"
+        ]
+    }
+}
+
+global.dimensionDifficulty = {
+    "minecraft:the_nether": 25,
+    "minecraft:the_end": 50,
+    "aether:the_aether": 30
+}
