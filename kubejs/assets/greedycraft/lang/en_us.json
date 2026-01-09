@@ -22,7 +22,8 @@
 
     "greedycraft.modpack.name": "§bGreedyCraft§7·§c§lNIRVANA",
     "greedycraft.commands.setpackmode.noupdate": "§cYou are already using this mode.",
-    "greedycraft.commands.setpackmode": "§6Pack mode has been changed to: ",
+    "greedycraft.commands.setpackmode": "§6Player %s §6is changing the modpack mode to §7: ",
+    "greedycraft.commands.setpackmode.success": "§aSuccessfully switched to §7:",
     "greedycraft.commands.error.permissions": "§cYou do not have permission to execute this command!",
     "greedycraft.creativetab.greedycraft_material.name": "GreedyCraft Material",
     "greedycraft.creativetab.greedycraft_ore.name": "GreedyCraft Ore",
@@ -467,13 +468,27 @@
     "block.greedycraft.titanium_block": "§eTitanium Block",
     "block.greedycraft.unknown_block": "§5§ka§r §dUnknown_block §5§ka§r",
 
+    "item.greedycraft.twilight_gem": "§dTwilight Gem",
+    "item.greedycraft.twilight_shield": "§bTwilight Shield",
+
+    "greedycraft.item.twilight_gem.tooltip.1.text": "§bA gem that gives out a mystical glow.",
+    "greedycraft.item.twilight_gem.tooltip.2.text": "§6Used to activate the Twilight Forest portal.",
+    "greedycraft.item.twilight_shield.tooltip.1.text": "§6Can resist the heat from hell.",
+    "greedycraft.item.twilight_shield.tooltip.2.text": "§eRight click to unlock game stage: §6twilight_shield",
+
     "greedycraft.advancement.title.init": "§bGreedyCraft§7·§c§lNIRVANA",
     "greedycraft.advancement.title.init_start": "A New Journey",
     "greedycraft.advancement.title.init_creative": "Creativity Builds the Future",
+    "greedycraft.advancement.title.getting_started": "§e§lNow It Begins...",
+    "greedycraft.advancement.title.twilight_forest": "§a§lTwilight Explorer",
+    "greedycraft.advancement.title.twilight_shield": "§d§lNo Longer Afraid of Hell!",
 
     "greedycraft.advancement.description.init": "Welcome to a brand-new world!",
     "greedycraft.advancement.description.init_start": "Are you ready to begin? (Create a world in Survival Mode)",
     "greedycraft.advancement.description.init_creative": "Creativity knows no bounds. (Create a world in Creative Mode)",
+    "greedycraft.advancement.description.getting_started": "§aDawn of Adventure",
+    "greedycraft.advancement.description.twilight_forest": "§eWelcome to Twilight Forest!",
+    "greedycraft.advancement.description.twilight_shield": "§9§o§nYou can now stand the heat in the Nether.",
 
     "greedycraft.message.playerlogging.system.title": "§9      //   §bGCTN Terminal System   §9//   ",
     "greedycraft.message.playerlogging.system.text.1": "§e Welcome, User: ",
