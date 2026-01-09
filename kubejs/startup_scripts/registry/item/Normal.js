@@ -12,4 +12,8 @@ StartupEvents.registry("item", event => {
         .glow(true)
         .tooltip(Component.translatable("greedycraft.item.twilight_shield.tooltip.1.text"))
         .tooltip(Component.translatable("greedycraft.item.twilight_shield.tooltip.2.text"))
+    event.create("greedycraft:creative_soul")
+        .glow(true)
+        .tooltip(Component.translatable("greedycraft.item.creative_soul.tooltip.1.text"))
+        .tooltip(Component.translatable("greedycraft.item.creative_soul.tooltip.2.text"))
 })
