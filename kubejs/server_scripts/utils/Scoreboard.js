@@ -26,3 +26,25 @@ function getScoreBoardGameMode(packMode, player) {
     // 返回
     return gameMode
 }
+
+function addScoreBoard(player, server) {
+    let cheat = checkCheat(player)
+    let packMode = KJSutils.Analysis("config/greedycraft/config.json", "$.packMode")
+    let packName = Component.translatable("greedycraft.modpack.name").append(Component.string(` §a§lv${global.localPackVersionName}`)).getString()
+    let original = Component.translatable("greedycraft.scoreboard.original").getString()
+    let author = Component.translatable("greedycraft.scoreboard.author").getString()
+
+    let gameMode = getScoreBoardGameMode(packMode, player).getString()
+
+    server.runCommandSilent(`scoreboard objectives add packinfo dummy "${packName}"`)
+    server.runCommandSilent("scoreboard objectives modify packinfo numberformat blank")
+    server.runCommandSilent("scoreboard players set original packinfo 4")
+    server.runCommandSilent("scoreboard players set author packinfo 3")
+    server.runCommandSilent("scoreboard players set air packinfo 2")
+    server.runCommandSilent("scoreboard players set gamemode packinfo 1")
+    server.runCommandSilent(`scoreboard players display name original packinfo "${original}"`)
+    server.runCommandSilent(`scoreboard players display name author packinfo "${author}"`)
+    server.runCommandSilent('scoreboard players display name air packinfo ""')
+    server.runCommandSilent(`scoreboard players display name gamemode packinfo "${gameMode}"`)
+    server.runCommandSilent("scoreboard objectives setdisplay sidebar packinfo")
+}
