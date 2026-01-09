@@ -354,7 +354,7 @@ global.stages = {
     item: {
         getting_started: [
             '#c:player_workstations/crafting_tables',
-            '#minecraft:planks',
+            'c:blocks/planks',
             '#c:chests',
             '#c:cobblestones',
             '#c:ingots/iron',
@@ -363,6 +363,7 @@ global.stages = {
             '#c:nuggets/gold',
             '#c:dusts/iron',
             '#c:dusts/gold',
+            '#minecraft:planks',
             'minecraft:wooden_pickaxe',
             'minecraft:stone_pickaxe',
             'minecraft:diamond_pickaxe',
