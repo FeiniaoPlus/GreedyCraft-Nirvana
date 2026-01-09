@@ -2,14 +2,11 @@
 ServerEvents.command(event => {
     let command = event.commandName
     let commandSource = event.parseResults.context.source
-    let player = commandSource.getPlayer()
+    let player = commandSource.player
 
-    let antiCheatMode = KJSutils.Analysis("config/greedycraft/config.json", "$.antiCheatMode")
     // 拦截功能不应随着游戏模式切换而热切换
-    let packLanguage = global.packLanguage
-    let antiCheat = KJSutils.Analysis("config/greedycraft/config.json", "$.antiCheat")
-
-    let message = KJSutils.Analysis(`kubejs/assets/greedycraft/lang/${packLanguage}.json`, "$$.greedycraft.message.anticheat.text")
+    let antiCheatMode = global.antiCheatMode
+    let antiCheat = global.antiCheat
 
     // 判断执行命令的是否是玩家
     if (commandSource.isPlayer()) {
@@ -26,8 +23,8 @@ ServerEvents.command(event => {
                         // 判断执行的命令是否在黑名单里
                         if (global.commandBlackList.includes(command)) {
                             // 发送消息并取消
-                            event.server.tell(`${message}${command}`)
-                            LOGGER("warn", `The Player Tried to Execute an Illegal Command: ${command}.\nPlayer Name: ${playerName}\nPlayer UUID: ${playerUUID}`)
+                            player.tell(Component.translatable("greedycraft.message.anticheat.text").append(Component.string(command)))
+                            console.warn(`The Player Tried to Execute an Illegal Command: ${command}.\nPlayer Name: ${playerName}\nPlayer UUID: ${playerUUID}`)
                             event.cancel()
                         }
                         // 判断反作弊模式模式是否为专家模式
@@ -35,8 +32,8 @@ ServerEvents.command(event => {
                         // 判断执行的命令是否不在白名单里
                         if (!(global.commandWhiteList.includes(command))) {
                             // 发送消息并取消
-                            event.server.tell(`${message}${command}`)
-                            LOGGER("warn", `The Player Tried to Execute an Illegal Command: ${command}.\nPlayer Name: ${playerName}\nPlayer UUID: ${playerUUID}`)
+                            player.tell(Component.translatable("greedycraft.message.anticheat.text").append(Component.string(command)))
+                            console.warn(`The Player Tried to Execute an Illegal Command: ${command}.\nPlayer Name: ${playerName}\nPlayer UUID: ${playerUUID}`)
                             event.cancel()
                         }
                     }

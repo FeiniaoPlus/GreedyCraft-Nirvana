@@ -82,6 +82,7 @@ StartupEvents.registry("item", event => {
 						})
 						.color(0, material.color)
 						.tag("greedycraft:dirtydust")
+						.tag(`greedycraft:material/${material.name}`)
 				} else {
 					event.create(`greedycraft:${material.name}_dirtydust`)
 						.textures({
@@ -89,12 +90,13 @@ StartupEvents.registry("item", event => {
 							"layer1": "greedycraft:item/dirtydust/color/layer/1",
 						})
 						.tag("greedycraft:dirtydust")
+						.tag(`greedycraft:material/${material.name}`)
 				}
 			} else if (type == "ingot") {
 				let create = event.create(`greedycraft:${material.name}_ingot`)
 					create.texture(`greedycraft:item/ingot/${material.name}`)
 					create.tag("greedycraft:ingot")
-
+					create.tag(`greedycraft:material/${material.name}`)
 				if (material.beaconPayment) {
 					create.tag("minecraft:beacon_payment_items")
 				}
@@ -104,14 +106,18 @@ StartupEvents.registry("item", event => {
 						.texture(`greedycraft:item/${type}/color/${type}`)
 						.color(0, material.color)
 						.tag(`greedycraft:${type}`)
+						.tag(`greedycraft:material/${material.name}`)
 				} else {
 					event.create(`greedycraft:${material.name}_${type}`)
 						.texture(`greedycraft:item/${type}/${material.name}`)
 						.tag(`greedycraft:${type}`)
+						.tag(`greedycraft:material/${material.name}`)
 				}
 			}
 			registryList.push(`greedycraft:${material.name}_${type}`)
 		})
 	})
-	LOGGER("info", `Registry Metals: \n${registryList}`)
+	registryList.forEach(item => {
+		console.log(`Registry Metals: ${item}`)
+	})
 })
