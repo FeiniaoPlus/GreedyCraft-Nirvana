@@ -17,6 +17,7 @@ ServerEvents.commandRegistry(event => {
         Commands.literal("greedycraft")
             // 子参数
             .then(
+                // 修改整合包模式
                 Commands.literal("setpackmode")
                     // 子参数
                     .then(
@@ -66,7 +67,9 @@ ServerEvents.commandRegistry(event => {
                             })
                     )
             )
+            // 子参数
             .then(
+                // 隐藏计分板
                 Commands.literal("showscoreboard")
                     .then(
                         // 创建名为 boolean 的 Boolean 类型参数输入
@@ -79,9 +82,12 @@ ServerEvents.commandRegistry(event => {
                                 let server = ctx.source.server
                                 let player = ctx.source.player
 
+                                // 获取计分板项
                                 let scoreboard = server.scoreboard.getObjective("packinfo")
 
+                                // 判断是显示还是隐藏
                                 if (options) {
+                                    // 判空
                                     if (scoreboard != null) {
                                         player.tell(Component.translatable("greedycraft.message.showscoreboard.display"))
                                     } else {
