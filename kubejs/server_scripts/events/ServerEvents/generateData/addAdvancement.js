@@ -83,4 +83,67 @@ ServerEvents.generateData("AFTER_MODS", event => {
         ],
         "sends_telemetry_event": false
     })
+    event.json("greedycraft:advancement/stages/getting_started", {
+        "parent": "greedycraft:stages/init_start",
+        "criteria": {
+            "impossible": {
+                "trigger": "minecraft:impossible"
+            }
+        },
+        "display": {
+            "announce_to_chat": true,
+            "description": {
+                "translate": "greedycraft.advancement.description.getting_started"
+            },
+            "icon": {
+                "id": "minecraft:oak_log"
+            },
+            "show_toast": true,
+            "title": {
+                "translate": "greedycraft.advancement.title.getting_started"
+            }
+        },
+    })
+    event.json("greedycraft:advancement/stages/twilight_forest", {
+        "parent": "greedycraft:stages/init_start",
+        "criteria": {
+            "impossible": {
+                "trigger": "minecraft:impossible"
+            }
+        },
+        "display": {
+            "announce_to_chat": true,
+            "description": {
+                "translate": "greedycraft.advancement.description.twilight_forest"
+            },
+            "icon": {
+                "id": "greedycraft:twilight_gem"
+            },
+            "show_toast": true,
+            "title": {
+                "translate": "greedycraft.advancement.title.twilight_forest"
+            }
+        },
+    })
+    event.json("greedycraft:advancement/stages/twilight_shield", {
+        "parent": "greedycraft:stages/init_start",
+        "criteria": {
+            "impossible": {
+                "trigger": "minecraft:impossible"
+            }
+        },
+        "display": {
+            "announce_to_chat": true,
+            "description": {
+                "translate": "greedycraft.advancement.description.twilight_shield"
+            },
+            "icon": {
+                "id": "greedycraft:twilight_shield"
+            },
+            "show_toast": true,
+            "title": {
+                "translate": "greedycraft.advancement.title.twilight_shield"
+            }
+        },
+    })
 })

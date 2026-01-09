@@ -14,3 +14,18 @@ PlayerEvents.advancement("greedycraft:stages/init_creative", event => {
     let player = event.player
     AStages.addStageToPlayer("init_creative", player)
 })
+
+PlayerEvents.advancement("greedycraft:stages/getting_started", event => {
+    let player = event.player
+    AStages.addStageToPlayer("getting_started", player)
+})
+
+PlayerEvents.advancement("greedycraft:stages/twilight_forest", event => {
+    let player = event.player
+    AStages.addStageToPlayer("twilight_forest", player)
+})
+
+PlayerEvents.advancement("greedycraft:stages/twilight_shield", event => {
+    let player = event.player
+    AStages.addStageToPlayer("twilight_shield", player)
+})
