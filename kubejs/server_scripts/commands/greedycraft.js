@@ -15,17 +15,10 @@ ServerEvents.commandRegistry(event => {
     event.register(
         // 命令名称
         Commands.literal("greedycraft")
-            // 子命令
+            // 子参数
             .then(
-                // 创建名为 options 的 String 类型参数输入
-                Commands.argument("options", Arguments.STRING.create(event))
-                    // 补全提示
-                    .suggests((ctx, builder) => {
-                        return builder
-                            .suggest("setmode")
-                            .buildFuture()
-                    })
-                    // 子命令
+                Commands.literal("setpackmode")
+                    // 子参数
                     .then(
                         // 创建名为 packmode 的 String 类型参数输入
                         Commands.argument("packmode", Arguments.STRING.create(event))
@@ -69,6 +62,40 @@ ServerEvents.commandRegistry(event => {
                                 server.runCommandSilent(`scoreboard players display name gamemode packinfo "${gameMode}"`)
 
                                 server.tell(Component.translatable("greedycraft.commands.setpackmode.success").append(Component.translatable(`greedycraft.packmode.${options}`)))
+                                return 1
+                            })
+                    )
+            )
+            .then(
+                Commands.literal("showscoreboard")
+                    .then(
+                        // 创建名为 boolean 的 Boolean 类型参数输入
+                        Commands.argument("boolean", Arguments.BOOLEAN.create(event))
+                            // 权限检查
+                            .requires(source => source.hasPermission(permission))
+                            // 执行操作
+                            .executes(ctx => {
+                                let options = Arguments.BOOLEAN.getResult(ctx, "boolean")
+                                let server = ctx.source.server
+                                let player = ctx.source.player
+
+                                let scoreboard = server.scoreboard.getObjective("packinfo")
+
+                                if (options) {
+                                    if (scoreboard != null) {
+                                        player.tell(Component.translatable("greedycraft.message.showscoreboard.display"))
+                                    } else {
+                                        addScoreBoard(player, server)
+                                        server.tell(Component.translatable("greedycraft.message.showscoreboard.show", player.username))
+                                    }
+                                } else {
+                                    if (scoreboard != null) {
+                                        server.scoreboard.removeObjective(scoreboard)
+                                        server.tell(Component.translatable("greedycraft.message.showscoreboard.hide", player.username))
+                                    } else {
+                                        player.tell(Component.translatable("greedycraft.message.showscoreboard.null"))
+                                    }
+                                }
                                 return 1
                             })
                     )
