@@ -1,23 +1,21 @@
 // priority: 1000
 
-// 函数：获取用于计分板的游戏模式项文本，返回字符串。要求提供整合包语言和整合包模式以及 event.player 三个形参
+// 函数：获取用于计分板的游戏模式项文本，返回 MutableComponent。要求提供整合包模式以及 event.player 两个形参
 function getScoreBoardGameMode(packMode, player) {
     let cheat = checkCheat(player)
-    let packLanguage = KJSutils.Analysis("config/greedycraft/config.json", "$.language")
-    let gameMode = KJSutils.Analysis(`kubejs/assets/greedycraft/lang/${packLanguage}.json`, `$$.greedycraft.packmode.${packMode}`) +
-        KJSutils.Analysis(`kubejs/assets/greedycraft/lang/${packLanguage}.json`, "$$.greedycraft.scoreboard.packmode.name")
+    let gameMode = Component.translatable(`greedycraft.packmode.${packMode}`).append(Component.translatable("greedycraft.scoreboard.packmode.name"))
 
     if (cheat) {
         if (packMode == "casual") {
             let unofficialModList = checkModList()
             if (!(unofficialModList.length == 0)) {
-                gameMode = gameMode + "§7·" + KJSutils.Analysis(`kubejs/assets/greedycraft/lang/${packLanguage}.json`, "$$.greedycraft.scoreboard.packmode.cheat")
+                gameMode = gameMode.append(Component.string("§7·").append(Component.translatable("greedycraft.scoreboard.packmode.cheat")))
             }
         } else {
-            gameMode = gameMode + "§7·" + KJSutils.Analysis(`kubejs/assets/greedycraft/lang/${packLanguage}.json`, "$$.greedycraft.scoreboard.packmode.cheat")
+            gameMode = gameMode.append(Component.string("§7·").append(Component.translatable("greedycraft.scoreboard.packmode.cheat")))
         }
     } else if (AStages.playerHasStage("init_creative", player)) {
-        gameMode = gameMode + "§7·" + KJSutils.Analysis(`kubejs/assets/greedycraft/lang/${packLanguage}.json`, "$$.greedycraft.scoreboard.packmode.creative")
+        gameMode = gameMode.append(Component.string("§7·").append(Component.translatable("greedycraft.scoreboard.packmode.creative")))
     }
 
     return gameMode

@@ -4,12 +4,11 @@ PlayerEvents.loggedIn(event => {
     let player = event.player
     let cheat = checkCheat(player)
     let packMode = KJSutils.Analysis("config/greedycraft/config.json", "$.packMode")
-    let packLanguage = KJSutils.Analysis("config/greedycraft/config.json", "$.language")
-    let packName = KJSutils.Analysis(`kubejs/assets/greedycraft/lang/${packLanguage}.json`, "$$.greedycraft.modpack.name") + ` §a§lv${global.localPackVersionName}`
-    let original = KJSutils.Analysis(`kubejs/assets/greedycraft/lang/${packLanguage}.json`, "$$.greedycraft.scoreboard.original")
-    let author = KJSutils.Analysis(`kubejs/assets/greedycraft/lang/${packLanguage}.json`, "$$.greedycraft.scoreboard.author")
+    let packName = Component.translatable("greedycraft.modpack.name").append(Component.string(` §a§lv${global.localPackVersionName}`)).getString()
+    let original = Component.translatable("greedycraft.scoreboard.original").getString()
+    let author = Component.translatable("greedycraft.scoreboard.author").getString()
 
-    let gameMode = getScoreBoardGameMode(packMode, player)
+    let gameMode = getScoreBoardGameMode(packMode, player).getString()
 
     event.server.runCommandSilent("scoreboard objectives remove packinfo")
     event.server.runCommandSilent(`scoreboard objectives add packinfo dummy "${packName}"`)
