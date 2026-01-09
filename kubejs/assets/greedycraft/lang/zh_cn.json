@@ -22,7 +22,7 @@
 
     "greedycraft.modpack.name": "§b贪婪整合包§7·§c§l涅槃",
     "greedycraft.commands.setpackmode.noupdate": "§c当前已处于该模式",
-    "greedycraft.commands.setpackmode": "§6玩家 %s §6正在修改整合包模式为§7: ",
+    "greedycraft.commands.setpackmode": "§e玩家 §6%s §e正在修改整合包模式为§7: ",
     "greedycraft.commands.setpackmode.success": "§a已成功切换为§7: ",
     "greedycraft.commands.error.permissions": "§c你没有权限执行该命令！",
     "greedycraft.creativetab.greedycraft_material.name": "贪婪整合包·材料",
@@ -470,11 +470,14 @@
 
     "item.greedycraft.twilight_gem": "§d暮光宝石",
     "item.greedycraft.twilight_shield": "§b暮色之庇护",
+    "item.greedycraft.creative_soul": "§b§ka§r §d创造之魂 §b§ka§r",
 
     "greedycraft.item.twilight_gem.tooltip.1.text": "§b散发着神秘光辉的宝石",
     "greedycraft.item.twilight_gem.tooltip.2.text": "§6用于激活暮色传送门",
     "greedycraft.item.twilight_shield.tooltip.1.text": "§6能够抵抗地狱般的炎热",
     "greedycraft.item.twilight_shield.tooltip.2.text": "§e拿在手上右键以解锁游戏阶段§6twilight_shield",
+    "greedycraft.item.creative_soul.tooltip.1.text": "§5这仅仅是无限创造之力的一小部分。",
+    "greedycraft.item.creative_soul.tooltip.2.text": "§5即使如此，你还是感觉到了它蕴含的巨大能量。",
 
     "greedycraft.advancement.title.init": "§b贪婪整合包§7·§c§l涅槃",
     "greedycraft.advancement.title.init_start": "新的征程",
@@ -482,6 +485,10 @@
     "greedycraft.advancement.title.getting_started": "§e§l初出茅庐",
     "greedycraft.advancement.title.twilight_forest": "§a§l暮色探险家",
     "greedycraft.advancement.title.twilight_shield": "§d§l暮色庇护",
+    "greedycraft.advancement.title.nether": "§4§l地心深处",
+    "greedycraft.advancement.title.gaia_killer": "§d§l盖亚杀手",
+    "greedycraft.advancement.title.wither_killer": "§e§l凋零杀手",
+    "greedycraft.advancement.title.fearless_man": "§b§l勇气可嘉",
 
     "greedycraft.advancement.description.init": "欢迎来到全新的世界！",
     "greedycraft.advancement.description.init_start": "准备好开始了吗？（以生存模式创建存档）",
@@ -489,6 +496,10 @@
     "greedycraft.advancement.description.getting_started": "§a冒险的黎明",
     "greedycraft.advancement.description.twilight_forest": "§e欢迎来到暮色森林！",
     "greedycraft.advancement.description.twilight_shield": "§9§o§n再也不用惧怕地狱的炎热了！",
+    "greedycraft.advancement.description.nether": "§6§o§n欢迎来到充满宝藏的炼狱！",
+    "greedycraft.advancement.description.gaia_killer": "§e§o§n我想你准备好更进一步了",
+    "greedycraft.advancement.description.wither_killer": "§5§o§n邪恶的灵魂已被击败，世界终于从凋零的命运中逃脱...",
+    "greedycraft.advancement.description.fearless_man": "§6§o§n在与女武神的较量中，你已经证明了你的实力，你现在可以抵抗深谙之园的黑暗侵蚀了。",
 
     "greedycraft.message.playerlogging.system.title": "§9      //   §bGCTN 终端系统界面   §9//   ",
     "greedycraft.message.playerlogging.system.text.1": "§e 欢迎，用户: ",
@@ -509,5 +520,9 @@
     "greedycraft.message.anticheat.off.text": "§c§lGCTN反作弊系统 当前为关闭状态！",
     "greedycraft.message.anticheat.runing.text": "§a§lGCTN反作弊系统 正在运行，运行模式: ",
     "greedycraft.message.stage.unlock.title": "§b§l游戏阶段已解锁！",
-    "greedycraft.message.stage.unlock.message": "§b§l以下物品或功能已解锁:"
+    "greedycraft.message.stage.unlock.message": "§b§l以下物品或功能已解锁:",
+    "greedycraft.message.showscoreboard.display": "§c计分板已是显示状态",
+    "greedycraft.message.showscoreboard.show": "§e玩家 §6%s §e设置计分板状态为: 显示",
+    "greedycraft.message.showscoreboard.hide": "§e玩家 §6%s §e设置计分板状态为: 隐藏",
+    "greedycraft.message.showscoreboard.null": "§c当前不存在计分板，请先使用/greedycraft showscoreboard true命令开启计分板"
 }

@@ -22,7 +22,7 @@
 
     "greedycraft.modpack.name": "§bGreedyCraft§7·§c§lNIRVANA",
     "greedycraft.commands.setpackmode.noupdate": "§cYou are already using this mode.",
-    "greedycraft.commands.setpackmode": "§6Player %s §6is changing the modpack mode to §7: ",
+    "greedycraft.commands.setpackmode": "§ePlayer §6%s §eis changing the modpack mode to §7: ",
     "greedycraft.commands.setpackmode.success": "§aSuccessfully switched to §7:",
     "greedycraft.commands.error.permissions": "§cYou do not have permission to execute this command!",
     "greedycraft.creativetab.greedycraft_material.name": "GreedyCraft Material",
@@ -470,11 +470,14 @@
 
     "item.greedycraft.twilight_gem": "§dTwilight Gem",
     "item.greedycraft.twilight_shield": "§bTwilight Shield",
+    "item.greedycraft.creative_soul": "§b§ka§r §dCreative Soul §b§ka§r",
 
     "greedycraft.item.twilight_gem.tooltip.1.text": "§bA gem that gives out a mystical glow.",
     "greedycraft.item.twilight_gem.tooltip.2.text": "§6Used to activate the Twilight Forest portal.",
     "greedycraft.item.twilight_shield.tooltip.1.text": "§6Can resist the heat from hell.",
     "greedycraft.item.twilight_shield.tooltip.2.text": "§eRight click to unlock game stage: §6twilight_shield",
+    "greedycraft.item.creative_soul.tooltip.1.text": "§5Only a little bit of the infinite power of creativity.",
+    "greedycraft.item.creative_soul.tooltip.2.text": "§5You can already feel the pulse inside it.",
 
     "greedycraft.advancement.title.init": "§bGreedyCraft§7·§c§lNIRVANA",
     "greedycraft.advancement.title.init_start": "A New Journey",
@@ -482,6 +485,10 @@
     "greedycraft.advancement.title.getting_started": "§e§lNow It Begins...",
     "greedycraft.advancement.title.twilight_forest": "§a§lTwilight Explorer",
     "greedycraft.advancement.title.twilight_shield": "§d§lNo Longer Afraid of Hell!",
+    "greedycraft.advancement.title.nether": "§4§lJourney to Hell",
+    "greedycraft.advancement.title.gaia_killer": "§d§lGaia Killer",
+    "greedycraft.advancement.title.wither_killer": "§e§lWither Killer",
+    "greedycraft.advancement.title.fearless_man": "§b§lBravery Matters",
 
     "greedycraft.advancement.description.init": "Welcome to a brand-new world!",
     "greedycraft.advancement.description.init_start": "Are you ready to begin? (Create a world in Survival Mode)",
@@ -489,6 +496,10 @@
     "greedycraft.advancement.description.getting_started": "§aDawn of Adventure",
     "greedycraft.advancement.description.twilight_forest": "§eWelcome to Twilight Forest!",
     "greedycraft.advancement.description.twilight_shield": "§9§o§nYou can now stand the heat in the Nether.",
+    "greedycraft.advancement.description.nether": "§6§o§nWelcome to hell! Challenges and treasures await.",
+    "greedycraft.advancement.description.gaia_killer": "§e§o§nI think you're ready to take the next step",
+    "greedycraft.advancement.description.wither_killer": "§5§o§nThe evil soul has been defeated and the world has finally been freed from the destiny of withering...",
+    "greedycraft.advancement.description.fearless_man": "§6§o§nYou have proved yourself in the battle with Valkyrie. Now you can go to the Undergarden.",
 
     "greedycraft.message.playerlogging.system.title": "§9      //   §bGCTN Terminal System   §9//   ",
     "greedycraft.message.playerlogging.system.text.1": "§e Welcome, User: ",
@@ -509,5 +520,9 @@
     "greedycraft.message.anticheat.off.text": "§c§lGCTN Anti-Cheat System is currently disabled!",
     "greedycraft.message.anticheat.runing.text": "§a§lGCTN Anti-Cheat System is running, mode: ",
     "greedycraft.message.stage.unlock.title": "§b§lGame Stage Unlocked!",
-    "greedycraft.message.stage.unlock.message": "§b§lThe following items or features are now unlocked:"
+    "greedycraft.message.stage.unlock.message": "§b§lThe following items or features are now unlocked:",
+    "greedycraft.message.showscoreboard.display": "§cThe scoreboard is already displayed",
+    "greedycraft.message.showscoreboard.show": "§ePlayer §6%s §eset the scoreboard status to: Shown",
+    "greedycraft.message.showscoreboard.hide": "§ePlayer §6%s §eset the scoreboard status to: Hidden",
+    "greedycraft.message.showscoreboard.null": "§cNo scoreboard currently exists. Please use /greedycraft showscoreboard true to enable the scoreboard first."
 }
