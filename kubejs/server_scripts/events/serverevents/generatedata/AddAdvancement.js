@@ -10,7 +10,7 @@ ServerEvents.generateData("AFTER_MODS", event => {
         },
         "display": {
             "announce_to_chat": false,
-            "background": "greedycraft:textures/gui/advancements/backgrounds/background.png",
+            "background": "greedycraft:textures/block/infinity_block_block_block.png",
             "description": {
                 "translate": "greedycraft.advancement.description.init"
             },
@@ -69,7 +69,7 @@ ServerEvents.generateData("AFTER_MODS", event => {
                 "translate": "greedycraft.advancement.description.init_creative"
             },
             "icon": {
-                "id": "minecraft:nether_star"
+                "id": "greedycraft:creative_soul"
             },
             "show_toast": false,
             "title": {
@@ -105,7 +105,7 @@ ServerEvents.generateData("AFTER_MODS", event => {
         },
     })
     event.json("greedycraft:advancement/stages/twilight_forest", {
-        "parent": "greedycraft:stages/init_start",
+        "parent": "greedycraft:stages/getting_started",
         "criteria": {
             "impossible": {
                 "trigger": "minecraft:impossible"
@@ -126,7 +126,7 @@ ServerEvents.generateData("AFTER_MODS", event => {
         },
     })
     event.json("greedycraft:advancement/stages/twilight_shield", {
-        "parent": "greedycraft:stages/init_start",
+        "parent": "greedycraft:stages/twilight_forest",
         "criteria": {
             "impossible": {
                 "trigger": "minecraft:impossible"
@@ -143,6 +143,90 @@ ServerEvents.generateData("AFTER_MODS", event => {
             "show_toast": true,
             "title": {
                 "translate": "greedycraft.advancement.title.twilight_shield"
+            }
+        },
+    })
+    event.json("greedycraft:advancement/stages/nether", {
+        "parent": "greedycraft:stages/twilight_shield",
+        "criteria": {
+            "impossible": {
+                "trigger": "minecraft:impossible"
+            }
+        },
+        "display": {
+            "announce_to_chat": true,
+            "description": {
+                "translate": "greedycraft.advancement.description.nether"
+            },
+            "icon": {
+                "id": "minecraft:nether_bricks"
+            },
+            "show_toast": true,
+            "title": {
+                "translate": "greedycraft.advancement.title.nether"
+            }
+        },
+    })
+    event.json("greedycraft:advancement/stages/gaia_killer", {
+        "parent": "greedycraft:stages/nether",
+        "criteria": {
+            "impossible": {
+                "trigger": "minecraft:impossible"
+            }
+        },
+        "display": {
+            "announce_to_chat": true,
+            "description": {
+                "translate": "greedycraft.advancement.description.gaia_killer"
+            },
+            "icon": {
+                "id": "botania:life_essence"
+            },
+            "show_toast": true,
+            "title": {
+                "translate": "greedycraft.advancement.title.gaia_killer"
+            }
+        },
+    })
+    event.json("greedycraft:advancement/stages/wither_killer", {
+        "parent": "greedycraft:stages/gaia_killer",
+        "criteria": {
+            "impossible": {
+                "trigger": "minecraft:impossible"
+            }
+        },
+        "display": {
+            "announce_to_chat": true,
+            "description": {
+                "translate": "greedycraft.advancement.description.wither_killer"
+            },
+            "icon": {
+                "id": "minecraft:nether_star"
+            },
+            "show_toast": true,
+            "title": {
+                "translate": "greedycraft.advancement.title.wither_killer"
+            }
+        },
+    })
+    event.json("greedycraft:advancement/stages/fearless_man", {
+        "parent": "greedycraft:stages/nether",
+        "criteria": {
+            "impossible": {
+                "trigger": "minecraft:impossible"
+            }
+        },
+        "display": {
+            "announce_to_chat": true,
+            "description": {
+                "translate": "greedycraft.advancement.description.fearless_man"
+            },
+            "icon": {
+                "id": "aether:silver_dungeon_key"
+            },
+            "show_toast": true,
+            "title": {
+                "translate": "greedycraft.advancement.title.fearless_man"
             }
         },
     })
