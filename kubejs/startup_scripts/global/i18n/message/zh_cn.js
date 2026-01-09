@@ -49,14 +49,58 @@ global.zh_cn_StagesUnlock_Message = {
   init: {
     title: ["§e§l欢迎来到贪婪整合包！"],
     lore: ["§a§o§n从现在开始体验游戏！"],
-    unlock: ["§b可从 '进度' 页面查看游戏阶段树"]
+    unlock: ["§d§l可从 '进度' 页面查看游戏阶段树"]
   },
   getting_started: {
     title: ["§e§l初出茅庐"],
     lore: ["§a§o§n冒险的黎明"],
     unlock: [
-      "§b各种工具与武器",
-      "§b工作台与木制品"
+      "§d各种工具与武器",
+      "§d§l工作台与木制品"
     ]
-  }
+  },
+  twilight_forest: {
+    title: ["§a§l暮色探险家"],
+    lore: ["§e§o§n欢迎来到暮色森林！"],
+    unlock: ["§c§l难度有些许提升"]
+  },
+  twilight_shield: {
+    title: ["§d§l暮色庇护"],
+    lore: ["§9§o§n再也不用惧怕地狱的炎热了！"],
+    unlock: ["§e§l可以进入下界"]
+  },
+  nether: {
+    title: ["§4§l地心深处"],
+    lore: ["§6§o§n欢迎来到充满宝藏的炼狱！"],
+    unlock: [
+      "§d§l各种下界专属物品",
+      "§d§l怪物现在会拥有更强力的盔甲和武器",
+      "§d§l可以进入天境"
+    ]
+  },
+  gaia_killer: {
+    title: ["§d§l盖亚杀手"],
+    lore: ["§e§o§n我想你准备好更进一步了"],
+    unlock: ["§c§l可以挑战凋零"]
+  },
+  wither_killer: {
+    title: ["§e§l凋零杀手"],
+    lore: [
+      "§5§o§n邪恶的灵魂已被击败，世界终于从凋零的命运中逃脱...",
+      "§c§o§n§l终末之地的巨龙正在凝视着你的一举一动。"
+    ],
+    unlock: [
+      "§a§l使用下界之星制作的物品",
+      "§a§l可以制作防凋零方块",
+      "§a§l可以制作末影护符"
+    ]
+  },
+  fearless_man: {
+    title: ["§b§l勇气可嘉"],
+    lore: ["§6§o§n在与女武神的较量中，你已经证明了你的实力，你现在可以抵抗深谙之园的黑暗侵蚀了。"],
+    unlock: [
+      "§a§l可以制作深园催化石",
+      "§a§l可以进入深谙之园"
+    ]
+  },
 }

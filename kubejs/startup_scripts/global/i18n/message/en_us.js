@@ -49,14 +49,58 @@ global.en_us_StagesUnlock_Message = {
   init: {
     title: ["§e§lWelcome to GreedyCraft!"],
     lore: ["§a§o§nStart experiencing the game from now on!"],
-    unlock: ["§bYou can view the game stage tree on the 'Progress' page."]
+    unlock: ["§b§lYou can view the game stage tree on the 'Progress' page."]
   },
   getting_started: {
     title: ["§e§lNow It Begins..."],
     lore: ["§a§o§nDawn of Adventure"],
     unlock: [
       "§bVarious tools and weapons",
-      "§bCrafting table and wooden stuff"
+      "§b§lCrafting table and wooden stuff"
     ]
-  }
+  },
+  twilight_forest: {
+    title: ["§a§lTwilight Explorer"],
+    lore: ["§e§o§nWelcome to Twilight Forest!"],
+    unlock: ["§c§lDifficulty is slightly increased"]
+  },
+  twilight_shield: {
+    title: ["§d§lNo Longer Afraid of Hell!"],
+    lore: ["§9§o§nYou can now stand the heat in the Nether."],
+    unlock: ["§e§lAccess to the Nether"]
+  },
+  nether: {
+    title: ["§4§lJourney to Hell"],
+    lore: ["§6§o§nWelcome to hell! Challenges and treasures await."],
+    unlock: [
+      "§d§lBunch of Nether exclusive items",
+      "§d§lMobs now wear stronger armors and hold stronger weapons",
+      "§d§lAccess to the Aether"
+    ]
+  },
+  gaia_killer: {
+    title: ["§d§lGaia Killer"],
+    lore: ["§e§o§nI think you're ready to take the next step"],
+    unlock: ["§c§lCan challenge the Wither"]
+  },
+  wither_killer: {
+    title: ["§e§lWither Killer"],
+    lore: [
+      "§5§o§nThe evil soul has been defeated and the world has finally been freed from the destiny of withering...",
+      "§c§o§n§lA mighty presence in the End is watching you."
+    ],
+    unlock: [
+      "§a§lItems that uses Nether Star as ingredient",
+      "§a§lWither-proof blocks",
+      "§a§lEnder Charm can be crafted"
+    ]
+  },
+  fearless_man: {
+    title: ["§b§lBravery Matters"],
+    lore: ["§6§o§nYou have proved yourself in the battle with Valkyrie. Now you can go to the Undergarden."],
+    unlock: [
+      "§a§lCan craft the Catalyst",
+      "§a§lCan enter the Undergarden"
+    ]
+  },
 }
