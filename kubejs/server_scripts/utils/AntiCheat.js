@@ -4,12 +4,16 @@
 function checkModList() {
     let unofficialModList = []
 
+    // 获取模组列表
     Platform.mods.forEach((MOD_ID, MOD_INFO) => {
+        // 判断模组是否在全局变量 modList 中
         if (!(global.modList.has(MOD_ID))) {
+            // 不在则是非官方模组，添加到数组 MOD_ID
             unofficialModList.push(MOD_ID)
         }
     })
 
+    // 返回数组
     return unofficialModList
 }
 
@@ -17,14 +21,17 @@ function checkModList() {
 function checkCheat(player) {
     let cheat = false
     let unofficialModList = checkModList()
+
     if (!(unofficialModList.length == 0)) {
         cheat = true
     }
+    
     if (player.isCreative()) {
         // 判断玩家在创造模式下有没有 init_creative 阶段
         if (!AStages.playerHasStage("init_creative", player)) {
             cheat = true
         }
     }
+
     return cheat
 }

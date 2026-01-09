@@ -11,10 +11,13 @@ ServerEvents.tags("item", event => {
         'avaritia:end_crafting_table',
         'avaritia:extreme_crafting_table'
     ])
+    // 获取全局物品注册表
     Item.getList().forEach(item => {
+        // 判断物品是否满足正则条件：rechiseled 开头，包含 planks
         if (item.id.match(/^rechiseled.*planks/)) {
             event.add("c:blocks/planks", item.id)
         }
+        // 判断物品是否满足正则条件：包含 planks
         if (item.id.match(/.*quartz_block.*/)) {
             event.add("c:blocks/quartz_block", item.id)
         }
