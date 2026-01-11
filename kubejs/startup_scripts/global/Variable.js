@@ -299,7 +299,8 @@ global.modList = new Set([
     "chiselsandbits",
     "armor_visibility",
     "openloader",
-    "betterfoliage"
+    "betterfoliage",
+    "deeperdarker"
 ])
 
 global.commandWhiteList = [
@@ -318,11 +319,7 @@ global.commandWhiteList = [
     "backup",
     "tpa",
     "tpaccept",
-    "setPackModeToCasual",
-    "setPackModeToAdventure",
-    "setPackModeToExpert",
-    "hidescoreboard",
-    "showscoreboard",
+    "greedycraft",
     "sethome",
     "home"
 ]
@@ -350,11 +347,22 @@ global.commandBlackList = [
     "kubejs"
 ]
 
+global.stageList = [
+    "getting_started",
+    "twilight_forest",
+    "twilight_shield",
+    "nether",
+    "gaia_killer",
+    "wither_killer",
+    "fearless_man",
+    "ender_charm"
+]
+
 global.stages = {
     item: {
         getting_started: [
             '#c:player_workstations/crafting_tables',
-            'c:blocks/planks',
+            '#c:blocks/planks',
             '#c:chests',
             '#c:cobblestones',
             '#c:ingots/iron',
@@ -435,18 +443,30 @@ global.stages = {
             'enderio:withering_powder'
         ],
         gaia_killer: [
-            'minecraft:nether_star',
             'minecraft:wither_skeleton_skull'
         ],
         wither_killer: [
             // 'greedycraft:bravery_certificate',
-            // 'greedycraft:ender_charm',
+            'greedycraft:ender_charm',
             'enderio:reinforced_obsidian_block',
             'enderio:redstone_alloy_ingot',
             'mysticalagriculture:witherproof_block',
             'mysticalagriculture:witherproof_glass',
-            'minecraft:end_crystal'
+            'minecraft:end_crystal',
+            'minecraft:nether_star'
         ],
+        fearless_man: [
+            'deeperdarker:heart_of_the_deep'
+        ],
+        ender_charm: [
+            '#c:blocks/end_stone',
+            'minecraft:end_rod',
+            'minecraft:end_stone_bricks',
+            'minecraft:end_portal_frame',
+            'minecraft:chorus_fruit',
+            'prefab:item_ender_gateway',
+            'hooked:ender_hook',
+        ]
     },
     ore: {
         getting_started: {
@@ -463,6 +483,9 @@ global.stages = {
             "netherex:lively_quartz_ore": "netherex:lively_netherrack",
             "greedycraft:aeroite_ore": "aether:cold_aercloud",
             "greedycraft:asgardium_ore": "aether:holystone"
+        },
+        ender_charm: {
+            "minecraft:end_portal_frame": "greedycraft:unknown_block"
         }
     },
     dimension: {
@@ -472,6 +495,12 @@ global.stages = {
         nether: [
             "aether:the_aether"
         ],
+        fearless_man: [
+            "deeperdarker:otherside"
+        ],
+        ender_charm: [
+            "minecraft:the_end"
+        ]
     },
     mod: {
         nether: [
@@ -492,5 +521,6 @@ global.stages = {
 global.dimensionDifficulty = {
     "minecraft:the_nether": 25,
     "minecraft:the_end": 50,
-    "aether:the_aether": 30
+    "aether:the_aether": 30,
+    "deeperdarker:otherside": 65
 }

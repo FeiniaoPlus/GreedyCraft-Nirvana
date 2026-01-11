@@ -94,10 +94,18 @@ global.en_us_StagesUnlock_Message = {
   },
   fearless_man: {
     title: ["§b§lBravery Matters"],
-    lore: ["§6§o§nYou have proved yourself in the battle with Valkyrie. Now you can go to the Undergarden."],
-    unlock: [
-      "§a§lCan craft the Catalyst",
-      "§a§lCan enter the Undergarden"
-    ]
+    lore: ["§6§o§nYou have proved yourself in the battle with Valkyrie. Now you can go to the Otherside."],
+    unlock: ["§a§lCan enter the Otherside"]
   },
+  ender_charm: {
+    title: ["§5§l§nThe End of the Road"],
+    lore: [
+      "§c§n§lBe prepared, you are going to begin a journey that has no return.",
+      "§c§o§lBe prepared because difficulty will greatly increase after defeating Ender Dragon"
+    ],
+    unlock: [
+      "§5§lAccess to the End",
+      "§5§lYou can now challenge the Ender Dragon",
+    ]
+  }
 }
