@@ -16,4 +16,7 @@ StartupEvents.registry("item", event => {
         .glow(true)
         .tooltip(Component.translatable("greedycraft.item.creative_soul.tooltip.1.text"))
         .tooltip(Component.translatable("greedycraft.item.creative_soul.tooltip.2.text"))
+    event.create("greedycraft:ender_charm")
+        .tooltip(Component.translatable("greedycraft.item.ender_charm.tooltip.1.text"))
+        .tooltip(Component.translatable("greedycraft.item.ender_charm.tooltip.2.text"))
 })
