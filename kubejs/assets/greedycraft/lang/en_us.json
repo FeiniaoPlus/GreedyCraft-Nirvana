@@ -471,6 +471,7 @@
     "item.greedycraft.twilight_gem": "§dTwilight Gem",
     "item.greedycraft.twilight_shield": "§bTwilight Shield",
     "item.greedycraft.creative_soul": "§b§ka§r §dCreative Soul §b§ka§r",
+    "item.greedycraft.ender_charm": "§3Ender Charm",
 
     "greedycraft.item.twilight_gem.tooltip.1.text": "§bA gem that gives out a mystical glow.",
     "greedycraft.item.twilight_gem.tooltip.2.text": "§6Used to activate the Twilight Forest portal.",
@@ -478,6 +479,8 @@
     "greedycraft.item.twilight_shield.tooltip.2.text": "§eRight click to unlock game stage: §6twilight_shield",
     "greedycraft.item.creative_soul.tooltip.1.text": "§5Only a little bit of the infinite power of creativity.",
     "greedycraft.item.creative_soul.tooltip.2.text": "§5You can already feel the pulse inside it.",
+    "greedycraft.item.ender_charm.tooltip.1.text": "§3Only those who has once fell into the Otherside shall enter the End.",
+    "greedycraft.item.ender_charm.tooltip.2.text": "§eRight click to unlock game stage: §6ender_charm§e.",
 
     "greedycraft.advancement.title.init": "§bGreedyCraft§7·§c§lNIRVANA",
     "greedycraft.advancement.title.init_start": "A New Journey",
@@ -489,6 +492,7 @@
     "greedycraft.advancement.title.gaia_killer": "§d§lGaia Killer",
     "greedycraft.advancement.title.wither_killer": "§e§lWither Killer",
     "greedycraft.advancement.title.fearless_man": "§b§lBravery Matters",
+    "greedycraft.advancement.title.ender_charm": "§5§l§nThe End of the Road",
 
     "greedycraft.advancement.description.init": "Welcome to a brand-new world!",
     "greedycraft.advancement.description.init_start": "Are you ready to begin? (Create a world in Survival Mode)",
@@ -500,6 +504,7 @@
     "greedycraft.advancement.description.gaia_killer": "§e§o§nI think you're ready to take the next step",
     "greedycraft.advancement.description.wither_killer": "§5§o§nThe evil soul has been defeated and the world has finally been freed from the destiny of withering...",
     "greedycraft.advancement.description.fearless_man": "§6§o§nYou have proved yourself in the battle with Valkyrie. Now you can go to the Undergarden.",
+    "greedycraft.advancement.description.ender_charm": "§c§n§lBe prepared, you are going to begin a journey that has no return.",
 
     "greedycraft.message.playerlogging.system.title": "§9      //   §bGCTN Terminal System   §9//   ",
     "greedycraft.message.playerlogging.system.text.1": "§e Welcome, User: ",

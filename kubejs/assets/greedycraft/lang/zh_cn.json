@@ -471,6 +471,7 @@
     "item.greedycraft.twilight_gem": "§d暮光宝石",
     "item.greedycraft.twilight_shield": "§b暮色之庇护",
     "item.greedycraft.creative_soul": "§b§ka§r §d创造之魂 §b§ka§r",
+    "item.greedycraft.ender_charm": "§3末影护符",
 
     "greedycraft.item.twilight_gem.tooltip.1.text": "§b散发着神秘光辉的宝石",
     "greedycraft.item.twilight_gem.tooltip.2.text": "§6用于激活暮色传送门",
@@ -478,6 +479,8 @@
     "greedycraft.item.twilight_shield.tooltip.2.text": "§e拿在手上右键以解锁游戏阶段§6twilight_shield",
     "greedycraft.item.creative_soul.tooltip.1.text": "§5这仅仅是无限创造之力的一小部分。",
     "greedycraft.item.creative_soul.tooltip.2.text": "§5即使如此，你还是感觉到了它蕴含的巨大能量。",
+    "greedycraft.item.ender_charm.tooltip.1.text": "§3只有历经幽冥之人才被准许进入终末之地。",
+    "greedycraft.item.ender_charm.tooltip.2.text": "§e拿在手上右键以解锁游戏阶段§6ender_charm§e。",
 
     "greedycraft.advancement.title.init": "§b贪婪整合包§7·§c§l涅槃",
     "greedycraft.advancement.title.init_start": "新的征程",
@@ -489,6 +492,7 @@
     "greedycraft.advancement.title.gaia_killer": "§d§l盖亚杀手",
     "greedycraft.advancement.title.wither_killer": "§e§l凋零杀手",
     "greedycraft.advancement.title.fearless_man": "§b§l勇气可嘉",
+    "greedycraft.advancement.title.ender_charm": "§5§l§n终末之路",
 
     "greedycraft.advancement.description.init": "欢迎来到全新的世界！",
     "greedycraft.advancement.description.init_start": "准备好开始了吗？（以生存模式创建存档）",
@@ -499,7 +503,8 @@
     "greedycraft.advancement.description.nether": "§6§o§n欢迎来到充满宝藏的炼狱！",
     "greedycraft.advancement.description.gaia_killer": "§e§o§n我想你准备好更进一步了",
     "greedycraft.advancement.description.wither_killer": "§5§o§n邪恶的灵魂已被击败，世界终于从凋零的命运中逃脱...",
-    "greedycraft.advancement.description.fearless_man": "§6§o§n在与女武神的较量中，你已经证明了你的实力，你现在可以抵抗深谙之园的黑暗侵蚀了。",
+    "greedycraft.advancement.description.fearless_man": "§6§o§n在与女武神的较量中，你已经证明了你的实力，你现在可以抵抗幽冥之地的黑暗侵蚀了。",
+    "greedycraft.advancement.description.ender_charm": "§c§n§l请做好准备，你即将开启一段不归之旅。",
 
     "greedycraft.message.playerlogging.system.title": "§9      //   §bGCTN 终端系统界面   §9//   ",
     "greedycraft.message.playerlogging.system.text.1": "§e 欢迎，用户: ",
