@@ -1,5 +1,6 @@
 // priority: 1000
 
+// 添加Tag
 ServerEvents.tags("item", event => {
     event.add("c:player_workstations/crafting_tables", [
         'actuallyadditions:crafter_on_a_stick',
@@ -11,11 +12,20 @@ ServerEvents.tags("item", event => {
         'avaritia:end_crafting_table',
         'avaritia:extreme_crafting_table'
     ])
+    event.add("c:blocks/end_stone", 'minecraft:end_stone')
     // 获取全局物品注册表
     Item.getList().forEach(item => {
-        // 判断物品是否满足正则条件：rechiseled 开头，包含 planks
-        if (item.id.match(/^rechiseled.*planks/)) {
+        // 判断物品是否满足正则条件：rechiseled: 开头，包含 planks
+        if (item.id.match(/^rechiseled:.*planks/)) {
             event.add("c:blocks/planks", item.id)
+        }
+        // 判断物品是否满足正则条件：chisel: 开头，包含 planks
+        if (item.id.match(/^chisel:.*planks/)) {
+            event.add("c:blocks/planks", item.id)
+        }
+        // 判断物品是否满足正则条件：rechiseled: 开头，包含 end_stone
+        if (item.id.match(/^rechiseled:.*end_stone/)) {
+            event.add("c:blocks/end_stone", item.id)
         }
         // 判断物品是否满足正则条件：包含 planks
         if (item.id.match(/.*quartz_block.*/)) {
