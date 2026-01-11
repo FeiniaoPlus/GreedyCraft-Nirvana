@@ -29,5 +29,5 @@ ItemEvents.rightClicked("greedycraft:ender_charm", event => {
 
     // 生成粒子
     server.runCommandSilent(`execute at ${playerName} run particle minecraft:totem_of_undying ~ ~ ~ 2 2 2 5 1000 force`)
-    console.log(`Give ${playerName} for greedycraft:stages/twilight_shield Advancement`)
+    console.log(`Give ${playerName} for greedycraft:stages/ender_charm Advancement`)
 })
