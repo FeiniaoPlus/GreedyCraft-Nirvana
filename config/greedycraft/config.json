@@ -5,6 +5,6 @@
   "checkVersionUpdate": "false",
   "antiCheat": "true",
   "antiCheatMode": "adventure",
-  "localPackVersionCode": "9",
-  "localPackVersionName": "zeta-0.0.0.7"
+  "localPackVersionCode": "10",
+  "localPackVersionName": "zeta-0.0.0.8"
 }
