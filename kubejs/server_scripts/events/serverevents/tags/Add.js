@@ -3,16 +3,16 @@
 // 添加Tag
 ServerEvents.tags("item", event => {
     event.add("c:player_workstations/crafting_tables", [
-        'actuallyadditions:crafter_on_a_stick',
-        'tofucraft:tf_crafter',
-        'avaritia:compressed_crafting_table',
-        'avaritia:double_compressed_crafting_table',
-        'avaritia:sculk_crafting_table',
-        'avaritia:nether_crafting_table',
-        'avaritia:end_crafting_table',
-        'avaritia:extreme_crafting_table'
+        "actuallyadditions:crafter_on_a_stick",
+        "tofucraft:tf_crafter",
+        "avaritia:compressed_crafting_table",
+        "avaritia:double_compressed_crafting_table",
+        "avaritia:sculk_crafting_table",
+        "avaritia:nether_crafting_table",
+        "avaritia:end_crafting_table",
+        "avaritia:extreme_crafting_table"
     ])
-    event.add("c:blocks/end_stone", 'minecraft:end_stone')
+    event.add("c:blocks/end_stone", "minecraft:end_stone")
     // 获取全局物品注册表
     Item.getList().forEach(item => {
         // 判断物品是否满足正则条件：rechiseled: 开头，包含 planks
@@ -33,19 +33,19 @@ ServerEvents.tags("item", event => {
         }
     })
     event.add("c:blocks/planks", [
-        'defiled_lands_reborn:tenebra_planks',
-        'twilightforest:encased_towerwood'
+        "defiled_lands_reborn:tenebra_planks",
+        "twilightforest:encased_towerwood"
     ])
 })
 
 ServerEvents.tags("block", event => {
     event.add("c:player_workstations/crafting_tables", [
-        'tofucraft:tf_crafter',
-        'avaritia:compressed_crafting_table',
-        'avaritia:double_compressed_crafting_table',
-        'avaritia:sculk_crafting_table',
-        'avaritia:nether_crafting_table',
-        'avaritia:end_crafting_table',
-        'avaritia:extreme_crafting_table'
+        "tofucraft:tf_crafter",
+        "avaritia:compressed_crafting_table",
+        "avaritia:double_compressed_crafting_table",
+        "avaritia:sculk_crafting_table",
+        "avaritia:nether_crafting_table",
+        "avaritia:end_crafting_table",
+        "avaritia:extreme_crafting_table"
     ])
 })

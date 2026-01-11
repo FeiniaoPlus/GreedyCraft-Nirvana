@@ -1,9 +1,9 @@
 // priority: 900
 
 // 注册基础 Astages 阶段
-AStages.addRestrictionForItem("greedycraft_stage/item/init", "init", ['greedycraft:placeholder'])
-AStages.addRestrictionForItem("greedycraft_stage/item/init", "init_start", ['greedycraft:placeholder'])
-AStages.addRestrictionForItem("greedycraft_stage/item/init", "init_creative", ['greedycraft:placeholder'])
+AStages.addRestrictionForItem("greedycraft_stage/item/init", "init", ["greedycraft:placeholder"])
+AStages.addRestrictionForItem("greedycraft_stage/item/init", "init_start", ["greedycraft:placeholder"])
+AStages.addRestrictionForItem("greedycraft_stage/item/init", "init_creative", ["greedycraft:placeholder"])
 
 // 从全局变量 stages 中提取阶段类型与阶段对象
 Object.entries(global.stages).forEach(([stageType, stageMap]) => {

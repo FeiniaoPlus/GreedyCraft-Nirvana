@@ -44,7 +44,7 @@ function addScoreBoard(player, server) {
     server.runCommandSilent("scoreboard players set gamemode packinfo 1")
     server.runCommandSilent(`scoreboard players display name original packinfo "${original}"`)
     server.runCommandSilent(`scoreboard players display name author packinfo "${author}"`)
-    server.runCommandSilent('scoreboard players display name air packinfo ""')
+    server.runCommandSilent("scoreboard players display name air packinfo ''")
     server.runCommandSilent(`scoreboard players display name gamemode packinfo "${gameMode}"`)
     server.runCommandSilent("scoreboard objectives setdisplay sidebar packinfo")
 }
