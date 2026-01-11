@@ -230,4 +230,25 @@ ServerEvents.generateData("AFTER_MODS", event => {
             }
         },
     })
+    event.json("greedycraft:advancement/stages/ender_charm", {
+        "parent": "greedycraft:stages/wither_killer",
+        "criteria": {
+            "impossible": {
+                "trigger": "minecraft:impossible"
+            }
+        },
+        "display": {
+            "announce_to_chat": true,
+            "description": {
+                "translate": "greedycraft.advancement.description.ender_charm"
+            },
+            "icon": {
+                "id": "greedycraft:ender_charm"
+            },
+            "show_toast": true,
+            "title": {
+                "translate": "greedycraft.advancement.title.ender_charm"
+            }
+        },
+    })
 })
