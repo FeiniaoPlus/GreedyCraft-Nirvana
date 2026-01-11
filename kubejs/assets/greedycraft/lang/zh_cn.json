@@ -482,6 +482,8 @@
     "greedycraft.item.ender_charm.tooltip.1.text": "§3只有历经幽冥之人才被准许进入终末之地。",
     "greedycraft.item.ender_charm.tooltip.2.text": "§e拿在手上右键以解锁游戏阶段§6ender_charm§e。",
 
+    "deeperdarker.item.heart_of_the_deep.tooltip": "§e对准§l强化深板岩§e右键以进入§9§l§n幽冥§e维度",
+
     "greedycraft.advancement.title.init": "§b贪婪整合包§7·§c§l涅槃",
     "greedycraft.advancement.title.init_start": "新的征程",
     "greedycraft.advancement.title.init_creative": "以创意，建未来",

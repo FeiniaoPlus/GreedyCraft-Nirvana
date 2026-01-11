@@ -482,6 +482,8 @@
     "greedycraft.item.ender_charm.tooltip.1.text": "§3Only those who has once fell into the Otherside shall enter the End.",
     "greedycraft.item.ender_charm.tooltip.2.text": "§eRight click to unlock game stage: §6ender_charm§e.",
 
+    "deeperdarker.item.heart_of_the_deep.tooltip": "§eRight-click on §lReinforced Deepslate§e to enter the §9§l§nAbyssal§e dimension",
+
     "greedycraft.advancement.title.init": "§bGreedyCraft§7·§c§lNIRVANA",
     "greedycraft.advancement.title.init_start": "A New Journey",
     "greedycraft.advancement.title.init_creative": "Creativity Builds the Future",
