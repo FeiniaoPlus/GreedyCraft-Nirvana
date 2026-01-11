@@ -21,12 +21,14 @@ AStageEvents.added(event => {
 
     // 排除掉基础阶段
     if (!(stage == "init_start" || stage == "init_creative")) {
-        player.tell(borderText)
-        player.tell(Component.translatable("greedycraft.message.stage.unlock.title"))
-        stageUnlockMessageData.title.forEach(message => player.tell(`§6§o${stage}§r  - ${message}`))
-        stageUnlockMessageData.lore.forEach(message => player.tell(`${message}`))
-        player.tell(Component.translatable("greedycraft.message.stage.unlock.message"))
-        stageUnlockMessageData.unlock.forEach(message => player.tell(`§2✔ §r${message}`))
-        player.tell(borderText)
+        if (!(AStages.playerHasStage("init_creative", player))) {
+            player.tell(borderText)
+            player.tell(Component.translatable("greedycraft.message.stage.unlock.title"))
+            stageUnlockMessageData.title.forEach(message => player.tell(`§6§o${stage}§r  - ${message}`))
+            stageUnlockMessageData.lore.forEach(message => player.tell(`${message}`))
+            player.tell(Component.translatable("greedycraft.message.stage.unlock.message"))
+            stageUnlockMessageData.unlock.forEach(message => player.tell(`§2✔ §r${message}`))
+            player.tell(borderText)
+        }
     }
 })
