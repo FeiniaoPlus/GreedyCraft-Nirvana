@@ -1,7 +1,13 @@
-// priority: 1000
+// priority: 900
 
 // 下载版本文件
-if (global.checkVersionUpdate == "true") {
-    KJSutils.Download("http://v4.shenhua2233.cn:20002/Update/GreedyCraft-Nirvana/version.json", "config/greedycraft", "version.json")
-    console.log("Download File: http://v4.shenhua2233.cn:20002/Update/GreedyCraft-Nirvana/version.json")
+if (global.checkVersionUpdate) {
+    for (let link of global.updateLink) {
+        let download = KJSutils.Download( link, "config/greedycraft", "version.json")
+        if (download) {
+            break
+        } else {
+            console.log(`Download version.json Error, link: ${link}`)
+        }
+    }
 }
