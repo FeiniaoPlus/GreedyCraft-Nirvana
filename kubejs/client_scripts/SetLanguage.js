@@ -2,7 +2,7 @@
 
 let autoSetLanguage = global.autoSetLanguage
 
-if (autoSetLanguage == "true") {
+if (autoSetLanguage) {
     let language = KJSutils.GetSystemLanguage()
     console.log(`System Language: ${language}`)
     switch (language) {

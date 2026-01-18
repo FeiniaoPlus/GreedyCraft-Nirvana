@@ -1,10 +1,14 @@
 {
   "language": "en_us",
-  "autoSetLanguage": "true",
+  "autoSetLanguage": true,
   "packMode": "adventure",
-  "checkVersionUpdate": "false",
-  "antiCheat": "true",
+  "checkVersionUpdate": true,
+  "antiCheat": true,
   "antiCheatMode": "adventure",
-  "localPackVersionCode": "10",
-  "localPackVersionName": "zeta-0.0.0.8"
+  "localPackVersionCode": 10,
+  "localPackVersionName": "zeta-0.0.0.8",
+  "updateLink": [
+    "https://github.com/GreedyCraftNirvanaMC/GreedyCraft-Nirvana/raw/refs/heads/main/version.json",
+    "https://gitee.com/create_xiaoyu/GreedyCraft-Nirvana/raw/main/version.json"
+  ]
 }

@@ -62,7 +62,7 @@ PlayerEvents.loggedIn(event => {
     }
 
     // 判断反作弊是否开启
-    if (antiCheat == "true") {
+    if (antiCheat) {
         player.tell(Component.translatable("greedycraft.message.anticheat.runing.text").append(Component.string(antiCheatMode)))
     } else {
         player.tell(Component.translatable("greedycraft.message.anticheat.off.text"))

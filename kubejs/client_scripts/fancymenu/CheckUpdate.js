@@ -4,7 +4,7 @@
 KJSutils.FMsetVariable("packLocalVersion", global.localPackVersionName)
 
 // 判断检查更新是否开启
-if (global.checkVersionUpdate == "true") {
+if (global.checkVersionUpdate) {
     // 获取从网络中下载的版本文件内的值
     let newVersionCode = KJSutils.Analysis("config/greedycraft/version.json", "$.versionCode")
     let newVersionName = KJSutils.Analysis("config/greedycraft/version.json", "$.versionName")
