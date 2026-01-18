@@ -195,6 +195,7 @@
     "item.greedycraft.stainless_steel_ingot": "§e不锈钢锭",
     "item.greedycraft.terra_alloy_ingot": "§2大地合金锭",
     "item.greedycraft.titanium_ingot": "§e钛金锭",
+    "item.greedycraft.sculk_ingot": "§3幽匿金属锭",
 
     "item.greedycraft.aeonsteel_dust": "§3恒钢粉",
     "item.greedycraft.aeroite_dust": "§b云浮粉",
@@ -218,6 +219,7 @@
     "item.greedycraft.stainless_steel_dust": "§e不锈钢粉",
     "item.greedycraft.terra_alloy_dust": "§2大地合金粉",
     "item.greedycraft.titanium_dust": "§e钛金粉",
+    "item.greedycraft.sculk_dust": "§3幽匿金属粉",
 
     "item.greedycraft.aeonsteel_rod": "§3恒钢杆",
     "item.greedycraft.aeroite_rod": "§b云浮杆",
@@ -241,6 +243,7 @@
     "item.greedycraft.stainless_steel_rod": "§e不锈钢杆",
     "item.greedycraft.terra_alloy_rod": "§2大地合金杆",
     "item.greedycraft.titanium_rod": "§e钛金杆",
+    "item.greedycraft.sculk_rod": "§3幽匿金属杆",
 
     "item.greedycraft.aeonsteel_gear": "§3恒钢齿轮",
     "item.greedycraft.aeroite_gear": "§b云浮齿轮",
@@ -264,6 +267,7 @@
     "item.greedycraft.stainless_steel_gear": "§e不锈钢齿轮",
     "item.greedycraft.terra_alloy_gear": "§2大地合金齿轮",
     "item.greedycraft.titanium_gear": "§e钛金齿轮",
+    "item.greedycraft.sculk_gear": "§3幽匿金属齿轮",
 
     "item.greedycraft.aeonsteel_dirtydust": "§3污浊恒钢粉",
     "item.greedycraft.aeroite_dirtydust": "§b污浊云浮粉",
@@ -287,6 +291,7 @@
     "item.greedycraft.stainless_steel_dirtydust": "§e污浊不锈钢粉",
     "item.greedycraft.terra_alloy_dirtydust": "§2污浊大地合金粉",
     "item.greedycraft.titanium_dirtydust": "§e污浊钛金粉",
+    "item.greedycraft.sculk_dirtydust": "§3污浊幽匿金属粉",
 
     "item.greedycraft.aeonsteel_clump": "§3恒钢碎块",
     "item.greedycraft.aeroite_clump": "§b云浮碎块",
@@ -310,6 +315,7 @@
     "item.greedycraft.stainless_steel_clump": "§e不锈钢碎块",
     "item.greedycraft.terra_alloy_clump": "§2大地合金碎块",
     "item.greedycraft.titanium_clump": "§e钛金碎块",
+    "item.greedycraft.sculk_clump": "§e幽匿金属碎块",
 
     "item.greedycraft.aeonsteel_crystal": "§3恒钢晶体",
     "item.greedycraft.aeroite_crystal": "§b云浮晶体",
@@ -333,6 +339,7 @@
     "item.greedycraft.stainless_steel_crystal": "§e不锈钢晶体",
     "item.greedycraft.terra_alloy_crystal": "§2大地合金晶体",
     "item.greedycraft.titanium_crystal": "§e钛金晶体",
+    "item.greedycraft.sculk_crystal": "§3幽匿金属晶体",
 
     "item.greedycraft.aeonsteel_shard": "§3恒钢碎片",
     "item.greedycraft.aeroite_shard": "§b云浮碎片",
@@ -356,6 +363,7 @@
     "item.greedycraft.stainless_steel_shard": "§e不锈钢碎片",
     "item.greedycraft.terra_alloy_shard": "§2大地合金碎片",
     "item.greedycraft.titanium_shard": "§e钛金碎片",
+    "item.greedycraft.sculk_shard": "§3幽匿金属碎片",
 
     "item.greedycraft.aeonsteel_rawore": "§3粗恒钢",
     "item.greedycraft.aeroite_rawore": "§b粗云浮",
@@ -379,6 +387,7 @@
     "item.greedycraft.stainless_steel_rawore": "§e粗不锈钢",
     "item.greedycraft.terra_alloy_rawore": "§2粗大地合金",
     "item.greedycraft.titanium_rawore": "§e粗钛金",
+    "item.greedycraft.sculk_rawore": "§3粗幽匿金属",
 
     "item.greedycraft.aeonsteel_nugget": "§3恒钢粒",
     "item.greedycraft.aeroite_nugget": "§b云浮粒",
@@ -402,6 +411,7 @@
     "item.greedycraft.stainless_steel_nugget": "§e不锈钢粒",
     "item.greedycraft.terra_alloy_nugget": "§2大地合金粒",
     "item.greedycraft.titanium_nugget": "§e钛金粒",
+    "item.greedycraft.sculk_nugget": "§3幽匿金属粒",
 
     "item.greedycraft.aeonsteel_plate": "§3恒钢板",
     "item.greedycraft.aeroite_plate": "§b云浮板",
@@ -425,22 +435,23 @@
     "item.greedycraft.stainless_steel_plate": "§e不锈钢板",
     "item.greedycraft.terra_alloy_plate": "§2大地合金板",
     "item.greedycraft.titanium_plate": "§e钛金板",
+    "item.greedycraft.sculk_plate": "§3幽匿金属板",
 
     "block.greedycraft.aeroite_ore": "§b云浮矿石",
     "block.greedycraft.aqualite_ore": "§b水华矿石",
     "block.greedycraft.asgardium_ore": "§e神金矿石",
     "block.greedycraft.chromium_ore": "§3铬矿石",
-    "block.greedycraft.deepslate_chromium_ore": "深层§3铬矿石",
+    "block.greedycraft.deepslate_chromium_ore": "§3深层铬矿石",
     "block.greedycraft.cryonium_ore": "§b极寒矿石",
-    "block.greedycraft.deepslate_cryonium_ore": "深层§b极寒矿石",
+    "block.greedycraft.deepslate_cryonium_ore": "§b深层极寒矿石",
     "block.greedycraft.cytosinite_ore": "§a胞嘧矿石",
     "block.greedycraft.knowledge_essence_ore": "§a知识精华矿石",
-    "block.greedycraft.deepslate_knowledge_essence_ore": "深层§a知识精华矿石",
+    "block.greedycraft.deepslate_knowledge_essence_ore": "§a深层知识精华矿石",
     "block.greedycraft.infernium_ore": "§6永燃矿石",
     "block.greedycraft.manganese_iron_ore": "§3锰铁矿石",
-    "block.greedycraft.deepslate_manganese_iron_ore": "深层§3锰铁矿石",
+    "block.greedycraft.deepslate_manganese_iron_ore": "§3深层锰铁矿石",
     "block.greedycraft.shadowium_ore": "§5暗影矿石",
-    "block.greedycraft.deepslate_shadowium_ore": "深层§5暗影矿石",
+    "block.greedycraft.deepslate_shadowium_ore": "§5深层暗影矿石",
     "block.greedycraft.titanium_ore": "§e钛金矿石",
 
     "block.greedycraft.aeonsteel_block": "§3恒钢块",
