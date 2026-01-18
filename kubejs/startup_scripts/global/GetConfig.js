@@ -9,3 +9,15 @@ global.antiCheat = KJSutils.Analysis("config/greedycraft/config.json", "$.antiCh
 global.antiCheatMode = KJSutils.Analysis("config/greedycraft/config.json", "$.antiCheatMode")
 global.localPackVersionCode = KJSutils.Analysis("config/greedycraft/config.json", "$.localPackVersionCode")
 global.localPackVersionName = KJSutils.Analysis("config/greedycraft/config.json", "$.localPackVersionName")
+global.updateLink = KJSutils.AnalysisAll("config/greedycraft/config.json", "$.updateLink")
+
+console.log(`Get GreedyCraft Config:
+    packLanguage: ${global.packLanguage}
+    autoSetLanguage: ${global.autoSetLanguage}
+    packMode: ${global.packMode}
+    checkVersionUpdate: ${global.checkVersionUpdate}
+    antiCheat: ${global.antiCheat}
+    antiCheatMode: ${global.antiCheatMode}
+    localPackVersionCode: ${global.localPackVersionCode}
+    localPackVersionName: ${global.localPackVersionName}
+    updateLink: ${global.updateLink}`)
