@@ -93,14 +93,25 @@ StartupEvents.registry("item", event => {
 				}
 			} else if (type == "ingot") {
 				let create = event.create(`greedycraft:${material.name}_ingot`)
-					create.texture(`greedycraft:item/ingot/${material.name}`)
-					create.tag("greedycraft:ingot")
-					create.tag(`greedycraft:material/${material.name}`)
+				create.texture(`greedycraft:item/ingot/${material.name}`)
+				create.tag("greedycraft:ingot")
+				create.tag(`greedycraft:material/${material.name}`)
 				if (material.beaconPayment) {
 					create.tag("minecraft:beacon_payment_items")
 				}
 			} else {
-				if (!(material.name == "aqualite" || material.name == "astral_metal" || material.name == "chromasteel" || material.name == "cosmilite" || material.name == "cryonium" || material.name == "electronium" || material.name == "manganese_steel" || material.name == "protonium" || material.name == "shadowium" || material.name == "terra_alloy" || material.name == "sculk")) {
+				if (!(material.name == "aqualite" ||
+					material.name == "astral_metal" ||
+					material.name == "chromasteel" ||
+					material.name == "cosmilite" ||
+					material.name == "cryonium" ||
+					material.name == "electronium" ||
+					material.name == "manganese_steel" ||
+					material.name == "protonium" ||
+					material.name == "shadowium" ||
+					material.name == "terra_alloy" ||
+					material.name == "sculk" ||
+					material.name == "fusion_matrix")) {
 					event.create(`greedycraft:${material.name}_${type}`)
 						.texture(`greedycraft:item/${type}/color/${type}`)
 						.color(0, material.color)

@@ -196,6 +196,7 @@
     "item.greedycraft.terra_alloy_ingot": "§2Terra Alloy Ingot",
     "item.greedycraft.titanium_ingot": "§eTitanium Ingot",
     "item.greedycraft.sculk_ingot": "§3Sculk Ingot",
+    "item.greedycraft.fusion_matrix_ingot": "Fusion Matrix Ingot",
 
     "item.greedycraft.aeonsteel_dust": "§3Aeonsteel Dust",
     "item.greedycraft.aeroite_dust": "§bAeroite Dust",
@@ -220,6 +221,7 @@
     "item.greedycraft.terra_alloy_dust": "§2Terra Alloy Dust",
     "item.greedycraft.titanium_dust": "§eTitanium Dust",
     "item.greedycraft.sculk_dust": "§3Sculk Dust",
+    "item.greedycraft.fusion_matrix_dust": "Fusion Matrix Dust",
 
     "item.greedycraft.aeonsteel_rod": "§3Aeonsteel Rod",
     "item.greedycraft.aeroite_rod": "§bAeroite Rod",
@@ -244,6 +246,7 @@
     "item.greedycraft.terra_alloy_rod": "§2Terra Alloy Rod",
     "item.greedycraft.titanium_rod": "§eTitanium Rod",
     "item.greedycraft.sculk_rod": "§3Sculk Rod",
+    "item.greedycraft.fusion_matrix_rod": "Fusion Matrix Rod",
 
     "item.greedycraft.aeonsteel_gear": "§3Aeonsteel Gear",
     "item.greedycraft.aeroite_gear": "§bAeroite Gear",
@@ -268,6 +271,7 @@
     "item.greedycraft.terra_alloy_gear": "§2Terra Alloy Gear",
     "item.greedycraft.titanium_gear": "§eTitanium Gear",
     "item.greedycraft.sculk_gear": "§3Sculk Gear",
+    "item.greedycraft.fusion_matrix_gear": "Fusion Matrix Gear",
 
     "item.greedycraft.aeonsteel_dirtydust": "§3Dirty Aeonsteel Dust",
     "item.greedycraft.aeroite_dirtydust": "§bDirty Aeroite Dust",
@@ -292,6 +296,7 @@
     "item.greedycraft.terra_alloy_dirtydust": "§2Dirty Terra Alloy Dust",
     "item.greedycraft.titanium_dirtydust": "§eDirty Titanium Dust",
     "item.greedycraft.sculk_dirtydust": "§3Dirty Sculk Dust",
+    "item.greedycraft.fusion_matrix_dirtydust": "Dirty Fusion Matrix Dust",
 
     "item.greedycraft.aeonsteel_clump": "§3Aeonsteel Clump",
     "item.greedycraft.aeroite_clump": "§bAeroite Clump",
@@ -316,6 +321,7 @@
     "item.greedycraft.terra_alloy_clump": "§2Terra Alloy Clump",
     "item.greedycraft.titanium_clump": "§eTitanium Clump",
     "item.greedycraft.sculk_clump": "§3sculk Clump",
+    "item.greedycraft.fusion_matrix_clump": "Fusion Matrix Clump",
 
     "item.greedycraft.aeonsteel_crystal": "§3Aeonsteel Crystal",
     "item.greedycraft.aeroite_crystal": "§bAeroite Crystal",
@@ -340,6 +346,7 @@
     "item.greedycraft.terra_alloy_crystal": "§2Terra Alloy Crystal",
     "item.greedycraft.titanium_crystal": "§eTitanium Crystal",
     "item.greedycraft.sculk_crystal": "§3Sculk Crystal",
+    "item.greedycraft.fusion_matrix_crystal": "Fusion Matrix Crystal",
 
     "item.greedycraft.aeonsteel_shard": "§3Aeonsteel Shard",
     "item.greedycraft.aeroite_shard": "§bAeroite Shard",
@@ -364,6 +371,7 @@
     "item.greedycraft.terra_alloy_shard": "§2Terra Alloy Shard",
     "item.greedycraft.titanium_shard": "§eTitanium Shard",
     "item.greedycraft.sculk_shard": "§3Sculk Shard",
+    "item.greedycraft.fusion_matrix_shard": "Fusion Matrix Shard",
 
     "item.greedycraft.aeonsteel_rawore": "§3Raw Aeonsteel",
     "item.greedycraft.aeroite_rawore": "§bRaw Aeroite",
@@ -388,6 +396,7 @@
     "item.greedycraft.terra_alloy_rawore": "§2Raw Terra Alloy",
     "item.greedycraft.titanium_rawore": "§eRaw Titanium",
     "item.greedycraft.sculk_rawore": "§3Raw Sculk",
+    "item.greedycraft.fusion_matrix_rawore": "Raw Fusion Matrix",
 
     "item.greedycraft.aeonsteel_nugget": "§3Aeonsteel Nugget",
     "item.greedycraft.aeroite_nugget": "§bAeroite Nugget",
@@ -412,6 +421,7 @@
     "item.greedycraft.terra_alloy_nugget": "§2Terra Alloy Nugget",
     "item.greedycraft.titanium_nugget": "§eTitanium Nugget",
     "item.greedycraft.sculk_nugget": "§3Sculk Nugget",
+    "item.greedycraft.fusion_matrix_nugget": "Fusion Matrix Nugget",
 
     "item.greedycraft.aeonsteel_plate": "§3Aeonsteel Plate",
     "item.greedycraft.aeroite_plate": "§bAeroite Plate",
@@ -436,6 +446,7 @@
     "item.greedycraft.terra_alloy_plate": "§2Terra Alloy Plate",
     "item.greedycraft.titanium_plate": "§eTitanium Plate",
     "item.greedycraft.sculk_plate": "§3Sculk Plate",
+    "item.greedycraft.fusion_matrix_plate": "Fusion Matrix Plate",
 
     "block.greedycraft.aeroite_ore": "§bAeroite Ore",
     "block.greedycraft.aqualite_ore": "§bAqualite Ore",
