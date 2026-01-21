@@ -356,7 +356,9 @@ global.commandBlackList = [
     "mek",
     "astages",
     "ftbquests",
-    "kubejs"
+    "kubejs",
+    "projecte",
+    "projectexpansion"
 ]
 
 global.stageList = [
