@@ -261,14 +261,14 @@ ServerEvents.generateData("AFTER_MODS", event => {
         "display": {
             "announce_to_chat": true,
             "description": {
-                "translate": "greedycraft.advancement.description.ender_charm"
+                "translate": "greedycraft.advancement.description.hardmode"
             },
             "icon": {
                 "id": "minecraft:dragon_head"
             },
             "show_toast": true,
             "title": {
-                "translate": "greedycraft.advancement.title.ender_charm"
+                "translate": "greedycraft.advancement.title.hardmode"
             }
         },
     })
