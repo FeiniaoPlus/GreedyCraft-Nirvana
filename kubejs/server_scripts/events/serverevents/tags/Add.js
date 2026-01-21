@@ -36,6 +36,9 @@ ServerEvents.tags("item", event => {
         "defiled_lands_reborn:tenebra_planks",
         "twilightforest:encased_towerwood"
     ])
+    Object.entries(global.mysticalAgricultureSeedLevelMap).forEach(([seed, level]) => {
+        event.add(`greedycraft:mysticalagriculture_level_${level}`, seed)
+    })
 })
 
 ServerEvents.tags("block", event => {

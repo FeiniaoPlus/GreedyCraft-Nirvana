@@ -517,6 +517,7 @@
     "greedycraft.advancement.title.wither_killer": "§e§l凋零杀手",
     "greedycraft.advancement.title.fearless_man": "§b§l勇气可嘉",
     "greedycraft.advancement.title.ender_charm": "§5§l§n终末之路",
+    "greedycraft.advancement.title.hardmode": "§4§l§n困难模式",
 
     "greedycraft.advancement.description.init": "欢迎来到全新的世界！",
     "greedycraft.advancement.description.init_start": "准备好开始了吗？（以生存模式创建存档）",
@@ -529,6 +530,7 @@
     "greedycraft.advancement.description.wither_killer": "§5§o§n邪恶的灵魂已被击败，世界终于从凋零的命运中逃脱...",
     "greedycraft.advancement.description.fearless_man": "§6§o§n在与女武神的较量中，你已经证明了你的实力，你现在可以抵抗幽冥之地的黑暗侵蚀了。",
     "greedycraft.advancement.description.ender_charm": "§c§n§l请做好准备，你即将开启一段不归之旅。",
+    "greedycraft.advancement.description.hardmode": "§5§o§l巨龙之力影响到了每一个维度，无尽的挑战在等着你...",
 
     "greedycraft.message.playerlogging.system.title": "§9      //   §bGCTN 终端系统界面   §9//   ",
     "greedycraft.message.playerlogging.system.text.1": "§e 欢迎，用户: ",

@@ -251,4 +251,25 @@ ServerEvents.generateData("AFTER_MODS", event => {
             }
         },
     })
+    event.json("greedycraft:advancement/stages/hardmode", {
+        "parent": "greedycraft:stages/ender_charm",
+        "criteria": {
+            "impossible": {
+                "trigger": "minecraft:impossible"
+            }
+        },
+        "display": {
+            "announce_to_chat": true,
+            "description": {
+                "translate": "greedycraft.advancement.description.ender_charm"
+            },
+            "icon": {
+                "id": "minecraft:dragon_head"
+            },
+            "show_toast": true,
+            "title": {
+                "translate": "greedycraft.advancement.title.ender_charm"
+            }
+        },
+    })
 })

@@ -107,5 +107,24 @@ global.en_us_StagesUnlock_Message = {
       "§5§lAccess to the End",
       "§5§lYou can now challenge the Ender Dragon",
     ]
+  },
+  hardmode: {
+    title: ["§4§l§nAs Hard as It Seems"],
+    lore: [
+      "§5§n§lThe cursed soul within the dragon has been unleashed.",
+      "§5§o§lIn that battle, the dragon didn't use its full power because it knows that it will be freed.",
+      "§5§o§lThe draconic force spreads to every dimension, bringing the world with strong opponents and ways to eliminate them."
+    ],
+    unlock: [
+      "§4§lDifficulty comes to a whole new level",
+      "§a§lNew mobs begin to spawn",
+      "§a§lNew ores can be found across every dimension",
+      "§a§lDraconic Evolution content",
+      "§a§lAvaritia content",
+      "§a§lProjectE (EX) content",
+      "§a§lMobs now wear stronger armors and hold stronger weapons",
+      "§a§lYou can now explore the outer islands of the End.",
+      "§a§lNew treasures can be found in dungeon loot",
+    ]
   }
 }
