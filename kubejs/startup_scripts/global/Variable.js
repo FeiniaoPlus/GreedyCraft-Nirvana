@@ -367,7 +367,8 @@ global.stageList = [
     "gaia_killer",
     "wither_killer",
     "fearless_man",
-    "ender_charm"
+    "ender_charm",
+    "hardmode"
 ]
 
 global.stages = {
