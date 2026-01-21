@@ -27,6 +27,7 @@ function getScoreBoardGameMode(packMode, player) {
     return gameMode
 }
 
+// 函数：用于添加计分板，要求提供 event.player 以及 event.server 两个形参
 function addScoreBoard(player, server) {
     let cheat = checkCheat(player)
     let packMode = KJSutils.Analysis("config/greedycraft/config.json", "$.packMode")
@@ -44,7 +45,7 @@ function addScoreBoard(player, server) {
     server.runCommandSilent("scoreboard players set gamemode packinfo 1")
     server.runCommandSilent(`scoreboard players display name original packinfo "${original}"`)
     server.runCommandSilent(`scoreboard players display name author packinfo "${author}"`)
-    server.runCommandSilent("scoreboard players display name air packinfo ''")
+    server.runCommandSilent('scoreboard players display name air packinfo ""')
     server.runCommandSilent(`scoreboard players display name gamemode packinfo "${gameMode}"`)
     server.runCommandSilent("scoreboard objectives setdisplay sidebar packinfo")
 }
