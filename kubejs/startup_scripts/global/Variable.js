@@ -311,7 +311,8 @@ global.modList = new Set([
     "chiselsandbits",
     "armor_visibility",
     "openloader",
-    "betterfoliage"
+    "betterfoliage",
+    "iconexporter"
 ])
 
 global.commandWhiteList = [
