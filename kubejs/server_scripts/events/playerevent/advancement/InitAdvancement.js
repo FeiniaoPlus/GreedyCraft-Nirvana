@@ -2,6 +2,7 @@
 
 PlayerEvents.advancement("greedycraft:stages/init", event => {
     let player = event.player
+    let server = event.server
     let playerName = player.username
     // 如果玩家没有 init_creative、init_start 阶段并且处于创造模式则是以创造模式创建的存档，给予玩家 init_creative 进度并给予全部阶段
     if (!(AStages.playerHasStage("init_creative", player)) && !(AStages.playerHasStage("init_start", player)) && player.isCreative()) {
