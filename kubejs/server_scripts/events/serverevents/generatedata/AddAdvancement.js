@@ -2,7 +2,7 @@
 
 // 添加自定义进度
 ServerEvents.generateData("AFTER_MODS", event => {
-    event.json("greedycraft:advancement/init.json", {
+    event.json("greedycraft:advancement/stages/init.json", {
         "criteria": {
             "impossible": {
                 "trigger": "minecraft:impossible"
@@ -30,7 +30,7 @@ ServerEvents.generateData("AFTER_MODS", event => {
         "sends_telemetry_event": false
     })
     event.json("greedycraft:advancement/stages/init_start.json", {
-        "parent": "greedycraft:init",
+        "parent": "greedycraft:stages/init",
         "criteria": {
             "impossible": {
                 "trigger": "minecraft:impossible"
@@ -57,7 +57,7 @@ ServerEvents.generateData("AFTER_MODS", event => {
         "sends_telemetry_event": false
     })
     event.json("greedycraft:advancement/stages/init_creative.json", {
-        "parent": "greedycraft:init",
+        "parent": "greedycraft:stages/init",
         "criteria": {
             "impossible": {
                 "trigger": "minecraft:impossible"
