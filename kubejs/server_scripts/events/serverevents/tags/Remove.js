@@ -1,4 +1,24 @@
 // 删除Tag
 ServerEvents.tags("item", event => {
     event.removeAll("twilightforest:portal/activator").add("greedycraft:twilight_gem")
+    event.remove("#c:chests", [
+        'projectexpansion:white_advanced_alchemical_chest',
+        'projectexpansion:orange_advanced_alchemical_chest',
+        'projectexpansion:magenta_advanced_alchemical_chest',
+        'projectexpansion:light_blue_advanced_alchemical_chest',
+        'projectexpansion:yellow_advanced_alchemical_chest',
+        'projectexpansion:lime_advanced_alchemical_chest',
+        'projectexpansion:pink_advanced_alchemical_chest',
+        'projectexpansion:gray_advanced_alchemical_chest',
+        'projectexpansion:light_gray_advanced_alchemical_chest',
+        'projectexpansion:cyan_advanced_alchemical_chest',
+        'projectexpansion:purple_advanced_alchemical_chest',
+        'projectexpansion:blue_advanced_alchemical_chest',
+        'projectexpansion:brown_advanced_alchemical_chest',
+        'projectexpansion:green_advanced_alchemical_chest',
+        'projectexpansion:red_advanced_alchemical_chest',
+        'projectexpansion:black_advanced_alchemical_chest',
+        'projectexpansion:condenser_mk3',
+        'projecte:alchemical_chest'
+    ])
 })
