@@ -3,7 +3,9 @@
 // 进入游戏是发送初始消息
 PlayerEvents.loggedIn(event => {
     let player = event.player
-    let cheat = checkCheat(player)
+    let server = event.server
+
+    let cheat = checkCheat(player, server)
 
     let antiCheatMode = KJSutils.Analysis("config/greedycraft/config.json", "$.antiCheatMode")
     let antiCheat = KJSutils.Analysis("config/greedycraft/config.json", "$.antiCheat")
@@ -53,9 +55,9 @@ PlayerEvents.loggedIn(event => {
         player.tell(message)
     }
 
-    if (AStages.playerHasStage("init_creative", player)) {
+    if (AStages.serverHasStage("init_creative", server)) {
         player.tell(Component.translatable("greedycraft.message.creative.text"))
-    } else if (!(AStages.playerHasStage("init_start", player))) {
+    } else if (!(AStages.serverHasStage("init_start", server))) {
         if (player.isCreative()) {
             player.tell(Component.translatable("greedycraft.message.creative.text"))
         }

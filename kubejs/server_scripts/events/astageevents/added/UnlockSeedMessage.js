@@ -1,6 +1,7 @@
 // 玩家解锁阶段发送消息
 
 AStageEvents.added(event => {
+    let server = event.server
     let player = event.player
     let stage = event.stage
     let packLanguage = KJSutils.Analysis("config/greedycraft/config.json", "$.language")
@@ -21,7 +22,8 @@ AStageEvents.added(event => {
 
     // 排除掉基础阶段
     if (!(stage == "init_start" || stage == "init_creative")) {
-        if (!(AStages.playerHasStage("init_creative", player))) {
+        // 非创造模式创建的存档才发送解锁消息
+        if (!(AStages.serverHasStage("init_creative", server))) {
             player.tell(borderText)
             player.tell(Component.translatable("greedycraft.message.stage.unlock.title"))
             stageUnlockMessageData.title.forEach(message => player.tell(`§6§o${stage}§r  - ${message}`))

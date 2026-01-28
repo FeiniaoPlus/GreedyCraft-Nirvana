@@ -2,11 +2,14 @@
 
 PlayerEvents.advancement(event => {
     let player = event.player
+    let playerName = player.username
+    let advancementID = event.advancement.id.toString()
     let advancementNamespace = event.advancement.id.getNamespace()
     let advancementPath = event.advancement.id.getPath().toString()
 
     let packMode = KJSutils.Analysis("config/greedycraft/config.json", "$.packMode")
 
+    // 休闲模式下不存在阶段，所以不必进行处理
     if (!(packMode == "casual")) {
         // 判断进度的命名空间是否是greedycraft
         if (advancementNamespace == "greedycraft") {
@@ -20,6 +23,7 @@ PlayerEvents.advancement(event => {
                     AStages.addStageToPlayer(stage, player)
                     // 播放声音
                     player.playNotifySound("minecraft:ui.toast.challenge_complete", "music", 1.0, 1.0)
+                    console.log(`Give Advancement for ${advancementID} to ${playerName}`)
                 }
             }
         }

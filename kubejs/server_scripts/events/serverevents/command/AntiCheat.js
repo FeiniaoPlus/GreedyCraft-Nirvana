@@ -3,6 +3,7 @@ ServerEvents.command(event => {
     let command = event.commandName
     let commandSource = event.parseResults.context.source
     let player = commandSource.getPlayer()
+    let server = commandSource.getServer()
 
     // 拦截功能不应随着游戏模式切换而热切换
     let antiCheatMode = global.antiCheatMode
@@ -15,7 +16,7 @@ ServerEvents.command(event => {
         // 判断玩家 UUID 是否在开发者列表之外
         if (!(global.creatorList.includes(playerUUID))) {
             // 判断是否是以创造模式创建的存档
-            if (!(AStages.playerHasStage("init_creative", player))) {
+            if (!(AStages.serverHasStage("init_creative", server))) {
                 // 判断反作弊是否开启
                 if (antiCheat) {
                     // 判断反作弊模式是否为冒险模式

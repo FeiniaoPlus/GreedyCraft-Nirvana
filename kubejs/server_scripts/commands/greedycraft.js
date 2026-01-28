@@ -59,7 +59,7 @@ ServerEvents.commandRegistry(event => {
                                 server.runCommandSilent("reload")
 
                                 // 更改计分板
-                                let gameMode = getScoreBoardGameMode(options, player).getString()
+                                let gameMode = getScoreBoardGameMode(options, player, server).getString()
                                 server.runCommandSilent(`scoreboard players display name gamemode packinfo "${gameMode}"`)
 
                                 server.tell(Component.translatable("greedycraft.commands.setpackmode.success").append(Component.translatable(`greedycraft.packmode.${options}`)))
