@@ -1,8 +1,6 @@
 // priority: 1000
 
 // 获取整合包基础配置
-global.packLanguage = KJSutils.Analysis("config/greedycraft/config.json", "$.language")
-global.autoSetLanguage = ConfigFormBoolean("config/greedycraft/config.json", "$.autoSetLanguage")
 global.packMode = KJSutils.Analysis("config/greedycraft/config.json", "$.packMode")
 global.checkVersionUpdate = ConfigFormBoolean("config/greedycraft/config.json", "$.checkVersionUpdate")
 global.antiCheat = ConfigFormBoolean("config/greedycraft/config.json", "$.antiCheat")
@@ -12,8 +10,6 @@ global.localPackVersionName = KJSutils.Analysis("config/greedycraft/config.json"
 global.updateLink = KJSutils.AnalysisAll("config/greedycraft/config.json", "$.updateLink")
 
 console.log(`Get GreedyCraft Config:
-    packLanguage: ${global.packLanguage}
-    autoSetLanguage: ${global.autoSetLanguage}
     packMode: ${global.packMode}
     checkVersionUpdate: ${global.checkVersionUpdate}
     antiCheat: ${global.antiCheat}

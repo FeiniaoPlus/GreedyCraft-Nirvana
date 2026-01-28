@@ -9,7 +9,6 @@ PlayerEvents.loggedIn(event => {
 
     let antiCheatMode = KJSutils.Analysis("config/greedycraft/config.json", "$.antiCheatMode")
     let antiCheat = KJSutils.Analysis("config/greedycraft/config.json", "$.antiCheat")
-    let packLanguage = KJSutils.Analysis("config/greedycraft/config.json", "$.language")
 
     let messageTitle = Component.translatable("greedycraft.message.playerlogging.system.title")
     let messageText1 = Component.translatable("greedycraft.message.playerlogging.system.text.1").append(Component.string(`§6${player.username}`))
@@ -23,7 +22,6 @@ PlayerEvents.loggedIn(event => {
     let messageText9 = Component.translatable("greedycraft.message.playerlogging.system.text.9")
     let messageEnd = Component.translatable("greedycraft.message.playerlogging.system.text.end")
 
-    let message
     let unofficialModList = checkModList()
     // 判断玩家是否没有 init 阶段
     if (!(AStages.playerHasStage("init", player))) {
@@ -40,19 +38,8 @@ PlayerEvents.loggedIn(event => {
         player.tell(messageText9)
         player.tell(messageEnd)
     } else {
-        // 根据整合包语言获取对应数组的文本（startup_scripts\global\i18n\xx_xx.js）
-        switch (packLanguage) {
-            case "zh_cn":
-                message = global.zh_cn_PlayerLogging_Message[randomInt(0, global.zh_cn_PlayerLogging_Message.length - 1)]
-                break;
-            case "en_us":
-                message = global.en_us_PlayerLogging_Message[randomInt(0, global.en_us_PlayerLogging_Message.length - 1)]
-                break;
-            default:
-                message = global.en_us_PlayerLogging_Message[randomInt(0, global.en_us_PlayerLogging_Message.length - 1)]
-        }
-
-        player.tell(message)
+        let message = global.playerLogging_Message[randomInt(0, global.playerLogging_Message.length - 1)]
+        player.tell(Component.translatable(message))
     }
 
     if (AStages.serverHasStage("init_creative", server)) {
