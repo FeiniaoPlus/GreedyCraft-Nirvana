@@ -7,7 +7,9 @@ PlayerEvents.loggedIn(event => {
     
     let scoreboard = server.scoreboard.getObjective("packinfo")
 
-    if (scoreboard == null) {
-        addScoreBoard(player, server)
+    if (!(scoreboard == null)) {
+        server.runCommandSilent("scoreboard objectives remove packinfo")
     }
+
+    addScoreBoard(player, server)
 })
