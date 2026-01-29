@@ -49,6 +49,12 @@ ServerEvents.commandRegistry(event => {
                                     return 1
                                 }
 
+                                // 不应在游戏内切换游戏模式为休闲
+                                if (options == "casual") {
+                                    player.tell(Component.translatable("greedycraft.commands.setpackmode.casual"))
+                                    return 1
+                                }
+
                                 // 发送服务器消息
                                 server.tell(Component.translatable(`greedycraft.commands.setpackmode`, player.username).append(Component.translatable(`greedycraft.packmode.${options}`)))
 
