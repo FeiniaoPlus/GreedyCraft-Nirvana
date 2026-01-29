@@ -1,7 +1,7 @@
 // 删除Tag
 ServerEvents.tags("item", event => {
     event.removeAll("twilightforest:portal/activator").add("greedycraft:twilight_gem")
-    event.remove("#c:chests", [
+    event.remove("c:chests", [
         "projectexpansion:white_advanced_alchemical_chest",
         "projectexpansion:orange_advanced_alchemical_chest",
         "projectexpansion:magenta_advanced_alchemical_chest",
