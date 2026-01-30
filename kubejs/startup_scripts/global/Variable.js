@@ -415,7 +415,10 @@ global.modList = new Set([
     "armor_visibility",
     "openloader",
     "betterfoliage",
-    "iconexporter"
+    "iconexporter",
+    "xmxw",
+    "enderio_modded_conduits",
+    "xaerolib"
 ])
 
 global.commandWhiteList = [
