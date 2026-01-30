@@ -168,6 +168,11 @@ logFoundExploits = true
 		#Determines whether this EMC Mapper is enabled.
 		enabled = true
 
+	#Registers EMC values for Avaritia mod items (neutron pile, totem, bedrock etc.)
+	[mappers.avaritia_emc_mapper]
+		#Determines whether this EMC Mapper is enabled.
+		enabled = true
+
 #Used to configure settings for the various Data Component Processors.
 [processors]
 

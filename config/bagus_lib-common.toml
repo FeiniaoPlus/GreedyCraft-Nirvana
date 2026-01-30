@@ -4,3 +4,5 @@
 "Enable AprilFool Joke" = true
 #Enable First Person Animation(When you using model change mod. should be turn off). [true / false]
 "Enable First Person Animation" = true
+#Enable April Feature Alway. [true / false]
+"Enable AprilFool Joke Alway" = false

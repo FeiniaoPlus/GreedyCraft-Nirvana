@@ -20,3 +20,7 @@
 	avoidVillages = true
 	#If true then avoid flattening the terrain around the city in case there was a structure that was avoided
 	avoidFlattening = true
+	#Time in seconds after which cached chunk data is evicted
+	# Default: 300
+	# Range: 1 ~ 86400
+	cacheCleanupSeconds = 300

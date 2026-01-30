@@ -8,7 +8,7 @@
 	# Default: 4000
 	# Range: 1000 ~ 60000
 	Next_Music_Delay = 4000
-	#Fade Out Sound Volume on Game Lost Focus. [Default: true]
+	#Fade out Ambience Mini's music when the game window is unfocused. [Default: true]
 	Lost_Focus_FadeOut = true
 	#If 'true', music volume is not affected by 'Master Volume' to make it easier to balance music volume with everything else. [Default: true]
 	Ignore_Master_Volume = true
@@ -78,3 +78,5 @@
 	Verbose_Mode = false
 	#If enabled, the mod will double-check playlist selections before switching. This can be helpful to counteract unpredictable/sporadic effects from mod-interactions. Note that this option doubles the time it takes to change to a new playlist, but this can be corrected by decreasing the 'Update_Interval' if you feel the need. [Default: false]
 	Meticulous_Playlist_Selector = false
+	#Fade out Ambience Mini's music when a jukebox is playing music nearby. [Default true]
+	Fade_On_Jukebox = true

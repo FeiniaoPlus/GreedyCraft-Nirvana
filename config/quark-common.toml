@@ -81,7 +81,7 @@
 		#Allowed values: (0,1]
 		"Love Chance" = 0.333333333
 		Range = 10.0
-		#Chance that an animal decides to look for a through. Closer it is to 1 the more performance it will take. Decreasing will make animals take longer to find one
+		#Chance that an animal decides to look for a trough. Closer it is to 1 the more performance it will take. Decreasing will make animals take longer to find one
 		"Look Chance" = 0.015
 
 	[automation.iron_rod]
@@ -96,6 +96,7 @@
 		"Render Blacklist" = ["psi:programmer", "botania:starfield"]
 		"Movement Blacklist" = ["minecraft:spawner", "minecraft:trial_spawner", "minecraft:vault", "integrateddynamics:cable", "randomthings:blockbreaker", "minecraft:ender_chest", "minecraft:enchanting_table", "minecraft:trapped_chest", "quark:trapped_oak_chest", "quark:trapped_spruce_chest", "quark:trapped_birch_chest", "quark:trapped_jungle_chest", "quark:trapped_acacia_chest", "quark:trapped_dark_oak_chest", "quark:trapped_warped_chest", "quark:trapped_crimson_chest", "quark:trapped_nether_brick_chest", "quark:trapped_purpur_chest", "quark:trapped_prismarine_chest", "quark:trapped_azalea_chest", "quark:trapped_blossom_chest", "quark:trapped_mangrove_chest", "quark:trapped_ancient_chest", "quark:trapped_cherry_chest", "quark:trapped_bamboo_chest", "endergetic:bolloom_bud"]
 		"Delayed Update List" = ["minecraft:dispenser", "minecraft:dropper"]
+		"Namespace Movement Blacklist" = []
 
 [building]
 	"Celebratory Lamps" = true
@@ -1643,8 +1644,6 @@
 		#Makes Mending II still work even if mending is nerfed.
 		#If you want Mending II, disable the sanity check on Ancient Tomes and add minecraft:mending to the tomes.
 		"No Nerf for Mending II" = false
-		#Resets all villager discounts when zombified to prevent reducing prices to ridiculous levels
-		"Nerf Villager Discount" = true
 		#Makes Iron Golems not drop Iron Ingots
 		"Disable Iron Farms" = true
 		#Makes Boats not glide on ice
