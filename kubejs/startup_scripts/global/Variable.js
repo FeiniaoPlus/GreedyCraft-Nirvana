@@ -106,6 +106,16 @@ global.stagesUnlock_Message = {
       "greedycraft.message.stagesunlock.hardmode.unlock.7",
       "greedycraft.message.stagesunlock.hardmode.unlock.8",
     ]
+  },
+  fusion_matrix: {
+    title: ["greedycraft.message.stagesunlock.fusion_matrix.title"],
+    lore: ["greedycraft.message.stagesunlock.fusion_matrix.lore"],
+    unlock: [
+        "greedycraft.message.stagesunlock.fusion_matrix.unlock",
+        "greedycraft.message.stagesunlock.fusion_matrix.unlock.1",
+        "greedycraft.message.stagesunlock.fusion_matrix.unlock.2",
+        "greedycraft.message.stagesunlock.fusion_matrix.unlock.3"
+    ]
   }
 }
 
@@ -418,7 +428,8 @@ global.modList = new Set([
     "iconexporter",
     "xmxw",
     "enderio_modded_conduits",
-    "xaerolib"
+    "xaerolib",
+    "pouchofunknownnirvana"
 ])
 
 global.commandWhiteList = [
@@ -624,6 +635,10 @@ global.stages = {
             "twilightforest:shield_scepter",
             "bigreactors:cyanite_ingot",
             "mekanism:hdpe_elytra"
+        ],
+        fusion_matrix: [
+            "greedycraft:beast_hand",
+            ""
         ]
     },
     ore: {
