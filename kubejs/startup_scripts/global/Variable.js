@@ -488,7 +488,8 @@ global.stageList = [
     "wither_killer",
     "fearless_man",
     "ender_charm",
-    "hardmode"
+    "hardmode",
+    "fusion_matrix"
 ]
 
 global.stages = {
