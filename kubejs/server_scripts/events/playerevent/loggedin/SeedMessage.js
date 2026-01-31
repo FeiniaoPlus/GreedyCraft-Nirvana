@@ -64,7 +64,7 @@ PlayerEvents.loggedIn(event => {
             player.tell(Component.translatable("greedycraft.message.cheat.modlist.text"))
             unofficialModList.forEach(modID => player.tell(modID))
             console.warn(`UnofficialModList: ${unofficialModList}`)
-        } else if (!(AStages.serverHasStage("init_creative", server))) {
+        } else if (!(AStages.serverHasStage("init_creative", server)) || !(AStages.playerHasStage("init", player))) {
             // 否则发送默认作弊消息
             player.tell(Component.translatable("greedycraft.message.cheat.text"))
         }

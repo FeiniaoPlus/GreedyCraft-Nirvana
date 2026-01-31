@@ -19,19 +19,18 @@ function checkModList() {
 
 // 函数：检查是否作弊，返回布尔值。要求提供 event.player 和 event.server 两个形参
 function checkCheat(player, server) {
-    let cheat = false
     let unofficialModList = checkModList()
 
     if (unofficialModList.length != 0) {
-        cheat = true
+        return true
     }
     
     if (player.isCreative()) {
         // 判断玩家在创造模式下有没有 init_creative 阶段
-        if (!AStages.serverHasStage("init_creative", server)) {
-            cheat = true
+        if (!(AStages.serverHasStage("init_creative", server)) && AStages.playerHasStage("init", player)) {
+            return true
         }
     }
 
-    return cheat
+    return false
 }
