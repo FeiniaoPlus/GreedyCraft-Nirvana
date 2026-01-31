@@ -272,4 +272,25 @@ ServerEvents.generateData("AFTER_MODS", event => {
             }
         },
     })
+    event.json("greedycraft:advancement/stages/fusion_matrix", {
+        "parent": "greedycraft:stages/hardmode",
+        "criteria": {
+            "impossible": {
+                "trigger": "minecraft:impossible"
+            }
+        },
+        "display": {
+            "announce_to_chat": true,
+            "description": {
+                "translate": "greedycraft.advancement.description.fusion_matrix"
+            },
+            "icon": {
+                "id": "greedycraft:fusion_matrix_ingot"
+            },
+            "show_toast": true,
+            "title": {
+                "translate": "greedycraft.advancement.title.fusion_matrix"
+            }
+        },
+    })
 })

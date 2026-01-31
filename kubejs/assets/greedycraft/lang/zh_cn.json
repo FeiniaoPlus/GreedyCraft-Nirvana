@@ -511,7 +511,7 @@
 
     "greedycraft.advancement.title.init": "§b贪婪整合包§7·§c§l涅槃",
     "greedycraft.advancement.title.init_start": "新的征程",
-    "greedycraft.advancement.title.init_creative": "以创意，建未来",
+    "greedycraft.advancement.title.init_creative": "创造模式",
     "greedycraft.advancement.title.getting_started": "§e§l初出茅庐",
     "greedycraft.advancement.title.twilight_forest": "§a§l暮色探险家",
     "greedycraft.advancement.title.twilight_shield": "§d§l暮色庇护",
@@ -521,6 +521,7 @@
     "greedycraft.advancement.title.fearless_man": "§b§l勇气可嘉",
     "greedycraft.advancement.title.ender_charm": "§5§l§n终末之路",
     "greedycraft.advancement.title.hardmode": "§4§l§n困难模式",
+    "greedycraft.advancement.title.fusion_matrix": "§9§l聚合之力",
 
     "greedycraft.advancement.description.init": "欢迎来到全新的世界！",
     "greedycraft.advancement.description.init_start": "准备好开始了吗？（以生存模式创建存档）",
@@ -534,6 +535,7 @@
     "greedycraft.advancement.description.fearless_man": "§6§o§n在与女武神的较量中，你已经证明了你的实力，你现在可以抵抗幽冥之地的黑暗侵蚀了。",
     "greedycraft.advancement.description.ender_charm": "§c§n§l请做好准备，你即将开启一段不归之旅。",
     "greedycraft.advancement.description.hardmode": "§5§o§l巨龙之力影响到了每一个维度，无尽的挑战在等着你...",
+    "greedycraft.advancement.description.fusion_matrix": "§5§n§l你获得了一种崭新的材料，你相信它有无比强大的潜力。",
 
     "greedycraft.message.playerlogging.system.title": "§9      //   §bGCTN 终端系统界面   §9//   ",
     "greedycraft.message.playerlogging.system.text.1": "§e 欢迎，用户: ",
@@ -582,9 +584,9 @@
     "greedycraft.message.stagesunlock.getting_started.lore": "§a§o§n冒险的黎明",
     "greedycraft.message.stagesunlock.getting_started.unlock": "§d各种工具与武器",
     "greedycraft.message.stagesunlock.getting_started.unlock.1": "§d§l工作台与木制品",
-    "greedycraft.message.stagesunlock.twilight_fores.title": "§a§l暮色探险家",
-    "greedycraft.message.stagesunlock.twilight_fores.lore": "§e§o§n欢迎来到暮色森林！",
-    "greedycraft.message.stagesunlock.twilight_fores.unlock": "§c§l难度有些许提升",
+    "greedycraft.message.stagesunlock.twilight_forest.title": "§a§l暮色探险家",
+    "greedycraft.message.stagesunlock.twilight_forest.lore": "§e§o§n欢迎来到暮色森林！",
+    "greedycraft.message.stagesunlock.twilight_forest.unlock": "§c§l难度有些许提升",
     "greedycraft.message.stagesunlock.twilight_shield.title": "§d§l暮色庇护",
     "greedycraft.message.stagesunlock.twilight_shield.lore": "§9§o§n再也不用惧怕地狱的炎热了！",
     "greedycraft.message.stagesunlock.twilight_shield.unlock": "§e§l可以进入下界",
