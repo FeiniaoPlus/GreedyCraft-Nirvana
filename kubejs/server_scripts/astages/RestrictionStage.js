@@ -8,7 +8,7 @@ AStages.addRestrictionForItem("greedycraft_stage/item/init", "init_start", ["gre
 AStages.addRestrictionForItem("greedycraft_stage/item/init", "init_creative", ["greedycraft:placeholder"])
 
 // 判断整合包模式是否为休闲模式
-if (!(packMode == "casual")) {
+if (packMode != "casual") {
     // 从全局变量 stages 中提取阶段类型与阶段对象
     Object.entries(global.stages).forEach(([stageType, stageMap]) => {
         // 从阶段对象中提取阶段名称与数据

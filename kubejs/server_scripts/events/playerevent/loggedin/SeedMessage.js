@@ -60,7 +60,7 @@ PlayerEvents.loggedIn(event => {
     // 判断是否作弊
     if (cheat) {
         // 判断作弊类型是否是安装了非官方模组并发送对应消息
-        if (!(unofficialModList.length == 0)) {
+        if (unofficialModList.length != 0) {
             player.tell(Component.translatable("greedycraft.message.cheat.modlist.text"))
             unofficialModList.forEach(modID => player.tell(modID))
             console.warn(`UnofficialModList: ${unofficialModList}`)

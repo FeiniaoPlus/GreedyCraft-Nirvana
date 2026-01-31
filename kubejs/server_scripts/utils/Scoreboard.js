@@ -11,7 +11,7 @@ function getScoreBoardGameMode(packMode, player, server) {
         if (packMode == "casual") {
             let unofficialModList = checkModList()
             // 判断是否存在非官方模组
-            if (!(unofficialModList.length == 0)) {
+            if (unofficialModList.length != 0) {
                 // 休闲模式只在存在非官方模组时才判定为作弊
                 gameMode = gameMode.append(Component.string("§7·").append(Component.translatable("greedycraft.scoreboard.packmode.cheat")))
             }

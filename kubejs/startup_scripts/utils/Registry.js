@@ -73,7 +73,7 @@ StartupEvents.registry("item", event => {
 	materialList.forEach(material => {
 		material.types.forEach(type => {
 			if (type == "dirtydust") {
-				if (!(material.name == "aqualite" || material.name == "cryonium" || material.name == "shadowium")) {
+				if (material.name != "aqualite" || material.name != "cryonium" || material.name != "shadowium") {
 					event.create(`greedycraft:${material.name}_dirtydust`)
 						.textures({
 							"layer0": "greedycraft:item/dirtydust/color/layer/0",
@@ -100,18 +100,18 @@ StartupEvents.registry("item", event => {
 					create.tag("minecraft:beacon_payment_items")
 				}
 			} else {
-				if (!(material.name == "aqualite" ||
-					material.name == "astral_metal" ||
-					material.name == "chromasteel" ||
-					material.name == "cosmilite" ||
-					material.name == "cryonium" ||
-					material.name == "electronium" ||
-					material.name == "manganese_steel" ||
-					material.name == "protonium" ||
-					material.name == "shadowium" ||
-					material.name == "terra_alloy" ||
-					material.name == "sculk" ||
-					material.name == "fusion_matrix")) {
+				if (material.name != "aqualite" ||
+					material.name != "astral_metal" ||
+					material.name != "chromasteel" ||
+					material.name != "cosmilite" ||
+					material.name != "cryonium" ||
+					material.name != "electronium" ||
+					material.name != "manganese_steel" ||
+					material.name != "protonium" ||
+					material.name != "shadowium" ||
+					material.name != "terra_alloy" ||
+					material.name != "sculk" ||
+					material.name != "fusion_matrix") {
 					event.create(`greedycraft:${material.name}_${type}`)
 						.texture(`greedycraft:item/${type}/color/${type}`)
 						.color(0, material.color)

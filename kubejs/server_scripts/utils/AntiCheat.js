@@ -22,7 +22,7 @@ function checkCheat(player, server) {
     let cheat = false
     let unofficialModList = checkModList()
 
-    if (!(unofficialModList.length == 0)) {
+    if (unofficialModList.length != 0) {
         cheat = true
     }
     

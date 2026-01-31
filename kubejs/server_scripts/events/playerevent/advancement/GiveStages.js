@@ -10,7 +10,7 @@ PlayerEvents.advancement(event => {
     let packMode = KJSutils.Analysis("config/greedycraft/config.json", "$.packMode")
 
     // 休闲模式下不存在阶段，所以不必进行处理
-    if (!(packMode == "casual")) {
+    if (packMode != "casual") {
         // 判断进度的命名空间是否是greedycraft
         if (advancementNamespace == "greedycraft") {
             // 判断进度路径开头是否是stages/
