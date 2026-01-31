@@ -638,8 +638,15 @@ global.stages = {
             "mekanism:hdpe_elytra"
         ],
         fusion_matrix: [
+            "#c:ores/draconium",
             "greedycraft:beast_hand",
-            ""
+            "greedycraft:electronium_block",
+            "greedycraft:electronium_ingot",
+            "summoningrituals:altar",
+            "draconicevolution:draconium_ingot",
+            "draconicevolution:draconium_dust",
+            "draconicevolution:draconium_block",
+            "mysticalagriculture:fusio_matrix_essence"
         ]
     },
     ore: {
@@ -665,7 +672,9 @@ global.stages = {
             "greedycraft:cytosinite_ore": "minecraft:mud",
             "greedycraft:cryonium_ore": "minecraft:stone",
             "greedycraft:deepslate_cryonium_ore": "minecraft:deepslate",
-            "greedycraft:titanium_ore": "minecraft:end_stone",
+            "greedycraft:titanium_ore": "minecraft:end_stone"
+        },
+        fusion_matrix: {
             "draconicevolution:overworld_draconium_ore": "minecraft:stone",
             "draconicevolution:deepslate_draconium_ore": "minecraft:deepslate",
             "draconicevolution:nether_draconium_ore": "minecraft:netherrack",

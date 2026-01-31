@@ -496,6 +496,8 @@
     "item.greedycraft.creative_soul": "§b§ka§r §d创造之魂 §b§ka§r",
     "item.greedycraft.ender_charm": "§3末影护符",
 
+    "crop.mysticalcustomization.fusio_matrix": "§9聚合矩阵",
+
     "greedycraft.item.twilight_gem.tooltip.1.text": "§b散发着神秘光辉的宝石",
     "greedycraft.item.twilight_gem.tooltip.2.text": "§6用于激活暮色传送门",
     "greedycraft.item.twilight_shield.tooltip.1.text": "§6能够抵抗地狱般的炎热",
@@ -620,5 +622,11 @@
     "greedycraft.message.stagesunlock.hardmode.unlock.5": "§a§l等价交换内容",
     "greedycraft.message.stagesunlock.hardmode.unlock.6": "§a§l怪物现在会拥有更强力的盔甲和武器",
     "greedycraft.message.stagesunlock.hardmode.unlock.7": "§a§l可以探索末地的其余部分",
-    "greedycraft.message.stagesunlock.hardmode.unlock.8": "§a§l地牢里可以开出新的宝物"
+    "greedycraft.message.stagesunlock.hardmode.unlock.8": "§a§l地牢里可以开出新的宝物",
+    "greedycraft.message.stagesunlock.fusion_matrix.title": "§9§l聚合之力",
+    "greedycraft.message.stagesunlock.fusion_matrix.lore": "§5§n§l你获得了一种崭新的材料，你相信它有无比强大的潜力。",
+    "greedycraft.message.stagesunlock.fusion_matrix.unlock": "§a§l龙锭",
+    "greedycraft.message.stagesunlock.fusion_matrix.unlock.1": "§a§l电子锭",
+    "greedycraft.message.stagesunlock.fusion_matrix.unlock.2": "§a§l可以召唤困难模式Boss",
+    "greedycraft.message.stagesunlock.fusion_matrix.unlock.3": "§a§l可以挑战冰霜巨口"
 }

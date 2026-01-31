@@ -496,6 +496,8 @@
     "item.greedycraft.creative_soul": "§b§ka§r §dCreative Soul §b§ka§r",
     "item.greedycraft.ender_charm": "§3Ender Charm",
 
+    "crop.mysticalcustomization.fusio_matrix": "§9Fusio Matrix",
+
     "greedycraft.item.twilight_gem.tooltip.1.text": "§bA gem that gives out a mystical glow.",
     "greedycraft.item.twilight_gem.tooltip.2.text": "§6Used to activate the Twilight Forest portal.",
     "greedycraft.item.twilight_shield.tooltip.1.text": "§6Can resist the heat from hell.",
@@ -620,5 +622,11 @@
     "greedycraft.message.stagesunlock.hardmode.unlock.5": "§a§lProjectE (EX) content",
     "greedycraft.message.stagesunlock.hardmode.unlock.6": "§a§lMobs now wear stronger armors and hold stronger weapons",
     "greedycraft.message.stagesunlock.hardmode.unlock.7": "§a§lYou can now explore the outer islands of the End.",
-    "greedycraft.message.stagesunlock.hardmode.unlock.8": "§a§lNew treasures can be found in dungeon loot"
+    "greedycraft.message.stagesunlock.hardmode.unlock.8": "§a§lNew treasures can be found in dungeon loot",
+    "greedycraft.message.stagesunlock.fusion_matrix.title": "§9§lPower of Fusion",
+    "greedycraft.message.stagesunlock.fusion_matrix.lore": "§5§n§lYou have obtained a new type of material which you believe to have very strong potential.",
+    "greedycraft.message.stagesunlock.fusion_matrix.unlock": "§a§lDraconium",
+    "greedycraft.message.stagesunlock.fusion_matrix.unlock.1": "§a§lElectronium",
+    "greedycraft.message.stagesunlock.fusion_matrix.unlock.2": "§a§lHardmode Bosses can be summoned",
+    "greedycraft.message.stagesunlock.fusion_matrix.unlock.3": "§a§lReady to challenge Frostmaw"
 }
