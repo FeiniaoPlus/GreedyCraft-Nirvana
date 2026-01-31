@@ -10,3 +10,6 @@ StartupEvents.modifyCreativeTab("kubejs:greedycraft_ore", event => {
 StartupEvents.modifyCreativeTab("kubejs:greedycraft_block", event => {
     event.displayName = Text.darkAqua(Component.translatable("greedycraft.creativetab.greedycraft_block.name"))
 })
+StartupEvents.modifyCreativeTab("kubejs:greedycraft_item", event => {
+    event.displayName = Text.darkAqua(Component.translatable("greedycraft.creativetab.greedycraft_block.name"))
+})
