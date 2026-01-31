@@ -639,7 +639,7 @@ global.stages = {
         ],
         fusion_matrix: [
             "#c:ores/draconium",
-            "greedycraft:beast_hand",
+            // "greedycraft:beast_hand",
             "greedycraft:electronium_block",
             "greedycraft:electronium_ingot",
             "summoningrituals:altar",
