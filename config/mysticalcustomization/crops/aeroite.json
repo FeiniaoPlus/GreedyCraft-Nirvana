@@ -1,10 +1,10 @@
 {
     "type": "mysticalagriculture:resource",
-    "tier": "mysticalagradditions:6",
+    "tier": "mysticalagriculture:4",
     "ingredient": {
-        "item": "greedycraft:fusion_matrix_ingot"
+        "item": "greedycraft:aeroite_ingot"
     },
-    "color": "25233a",
+    "color": "04e6ff",
     "textures": {
         "flower": "mysticalagriculture:block/flower_ingot",
         "essence": "mysticalagriculture:item/essence_ingot",
