@@ -198,6 +198,7 @@
     "item.greedycraft.titanium_ingot": "§e钛金锭",
     "item.greedycraft.sculk_ingot": "§3幽匿金属锭",
     "item.greedycraft.fusion_matrix_ingot": "§9聚合矩阵锭",
+    "item.greedycraft.wyvern_ingot": "§d飞龙金属锭",
 
     "item.greedycraft.aeonsteel_dust": "§3恒钢粉",
     "item.greedycraft.aeroite_dust": "§b云浮粉",
@@ -223,6 +224,7 @@
     "item.greedycraft.titanium_dust": "§e钛金粉",
     "item.greedycraft.sculk_dust": "§3幽匿金属粉",
     "item.greedycraft.fusion_matrix_dust": "§9聚合矩阵粉",
+    "item.greedycraft.wyvern_dust": "§d飞龙金属粉",
 
     "item.greedycraft.aeonsteel_rod": "§3恒钢杆",
     "item.greedycraft.aeroite_rod": "§b云浮杆",
@@ -248,6 +250,7 @@
     "item.greedycraft.titanium_rod": "§e钛金杆",
     "item.greedycraft.sculk_rod": "§3幽匿金属杆",
     "item.greedycraft.fusion_matrix_rod": "§9聚合矩阵杆",
+    "item.greedycraft.wyvern_rod": "§d飞龙金属杆",
 
     "item.greedycraft.aeonsteel_gear": "§3恒钢齿轮",
     "item.greedycraft.aeroite_gear": "§b云浮齿轮",
@@ -273,6 +276,7 @@
     "item.greedycraft.titanium_gear": "§e钛金齿轮",
     "item.greedycraft.sculk_gear": "§3幽匿金属齿轮",
     "item.greedycraft.fusion_matrix_gear": "§9聚合矩阵齿轮",
+    "item.greedycraft.wyvern_gear": "§d飞龙金属齿轮",
 
     "item.greedycraft.aeonsteel_dirtydust": "§3污浊恒钢粉",
     "item.greedycraft.aeroite_dirtydust": "§b污浊云浮粉",
@@ -298,6 +302,7 @@
     "item.greedycraft.titanium_dirtydust": "§e污浊钛金粉",
     "item.greedycraft.sculk_dirtydust": "§3污浊幽匿金属粉",
     "item.greedycraft.fusion_matrix_dirtydust": "§9污浊聚合矩阵粉",
+    "item.greedycraft.wyvern_dirtydust": "§d污浊飞龙金属粉",
 
     "item.greedycraft.aeonsteel_clump": "§3恒钢碎块",
     "item.greedycraft.aeroite_clump": "§b云浮碎块",
@@ -322,7 +327,8 @@
     "item.greedycraft.terra_alloy_clump": "§2大地合金碎块",
     "item.greedycraft.titanium_clump": "§e钛金碎块",
     "item.greedycraft.sculk_clump": "§e幽匿金属碎块",
-    "item.greedycraft.fusion_matrix_sculk_clump": "§9聚合矩阵碎块",
+    "item.greedycraft.fusion_matrix_clump": "§9聚合矩阵碎块",
+    "item.greedycraft.wyvern_clump": "§d飞龙金属碎块",
 
     "item.greedycraft.aeonsteel_crystal": "§3恒钢晶体",
     "item.greedycraft.aeroite_crystal": "§b云浮晶体",
@@ -348,6 +354,7 @@
     "item.greedycraft.titanium_crystal": "§e钛金晶体",
     "item.greedycraft.sculk_crystal": "§3幽匿金属晶体",
     "item.greedycraft.fusion_matrix_crystal": "§9聚合矩阵晶体",
+    "item.greedycraft.wyvern_crystal": "§d飞龙金属晶体",
 
     "item.greedycraft.aeonsteel_shard": "§3恒钢碎片",
     "item.greedycraft.aeroite_shard": "§b云浮碎片",
@@ -373,6 +380,7 @@
     "item.greedycraft.titanium_shard": "§e钛金碎片",
     "item.greedycraft.sculk_shard": "§3幽匿金属碎片",
     "item.greedycraft.fusion_matrix_shard": "§9聚合矩阵碎片",
+    "item.greedycraft.wyvern_shard": "§d飞龙金属碎片",
 
     "item.greedycraft.aeonsteel_rawore": "§3粗恒钢",
     "item.greedycraft.aeroite_rawore": "§b粗云浮",
@@ -423,6 +431,7 @@
     "item.greedycraft.titanium_nugget": "§e钛金粒",
     "item.greedycraft.sculk_nugget": "§3幽匿金属粒",
     "item.greedycraft.fusion_matrix_nugget": "§9聚合矩阵粒",
+    "item.greedycraft.wyvern_nugget": "§d飞龙金属粒",
 
     "item.greedycraft.aeonsteel_plate": "§3恒钢板",
     "item.greedycraft.aeroite_plate": "§b云浮板",
@@ -448,6 +457,7 @@
     "item.greedycraft.titanium_plate": "§e钛金板",
     "item.greedycraft.sculk_plate": "§3幽匿金属板",
     "item.greedycraft.fusion_matrix_plate": "§9聚合矩阵板",
+    "item.greedycraft.wyvern_plate": "§d飞龙金属板",
 
     "block.greedycraft.aeroite_ore": "§b云浮矿石",
     "block.greedycraft.aqualite_ore": "§b水华矿石",
@@ -653,5 +663,9 @@
     "greedycraft.message.stagesunlock.fusion_matrix.unlock": "§a§l龙锭",
     "greedycraft.message.stagesunlock.fusion_matrix.unlock.1": "§a§l电子锭",
     "greedycraft.message.stagesunlock.fusion_matrix.unlock.2": "§a§l可以召唤困难模式Boss",
-    "greedycraft.message.stagesunlock.fusion_matrix.unlock.3": "§a§l可以挑战冰霜巨口"
+    "greedycraft.message.stagesunlock.fusion_matrix.unlock.3": "§a§l可以挑战冰霜巨口",
+    "greedycraft.message.stagesunlock.wyvern.title": "§b§l飞龙在天",
+    "greedycraft.message.stagesunlock.wyvern.lore": "§6§o§n你获得了飞龙核心，仅仅是拿在手上就能感觉到那股力量。",
+    "greedycraft.message.stagesunlock.wyvern.unlock": "§a§l飞龙金属",
+    "greedycraft.message.stagesunlock.wyvern.unlock.1": "§a§l可以迎战太阳酋长"
 }

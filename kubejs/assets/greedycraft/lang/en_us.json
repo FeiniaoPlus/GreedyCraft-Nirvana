@@ -198,6 +198,7 @@
     "item.greedycraft.titanium_ingot": "§eTitanium Ingot",
     "item.greedycraft.sculk_ingot": "§3Sculk Ingot",
     "item.greedycraft.fusion_matrix_ingot": "§9Fusion Matrix Ingot",
+    "item.greedycraft.wyvern_ingot": "§dWyvern Ingot",
 
     "item.greedycraft.aeonsteel_dust": "§3Aeonsteel Dust",
     "item.greedycraft.aeroite_dust": "§bAeroite Dust",
@@ -223,6 +224,7 @@
     "item.greedycraft.titanium_dust": "§eTitanium Dust",
     "item.greedycraft.sculk_dust": "§3Sculk Dust",
     "item.greedycraft.fusion_matrix_dust": "§9Fusion Matrix Dust",
+    "item.greedycraft.wyvern_dust": "§dWyvern Dust",
 
     "item.greedycraft.aeonsteel_rod": "§3Aeonsteel Rod",
     "item.greedycraft.aeroite_rod": "§bAeroite Rod",
@@ -248,6 +250,7 @@
     "item.greedycraft.titanium_rod": "§eTitanium Rod",
     "item.greedycraft.sculk_rod": "§3Sculk Rod",
     "item.greedycraft.fusion_matrix_rod": "§9Fusion Matrix Rod",
+    "item.greedycraft.wyvern_rod": "§dWyvern Rod",
 
     "item.greedycraft.aeonsteel_gear": "§3Aeonsteel Gear",
     "item.greedycraft.aeroite_gear": "§bAeroite Gear",
@@ -273,6 +276,7 @@
     "item.greedycraft.titanium_gear": "§eTitanium Gear",
     "item.greedycraft.sculk_gear": "§3Sculk Gear",
     "item.greedycraft.fusion_matrix_gear": "§9Fusion Matrix Gear",
+    "item.greedycraft.wyvern_gear": "§dWyvern Gear",
 
     "item.greedycraft.aeonsteel_dirtydust": "§3Dirty Aeonsteel Dust",
     "item.greedycraft.aeroite_dirtydust": "§bDirty Aeroite Dust",
@@ -298,6 +302,7 @@
     "item.greedycraft.titanium_dirtydust": "§eDirty Titanium Dust",
     "item.greedycraft.sculk_dirtydust": "§3Dirty Sculk Dust",
     "item.greedycraft.fusion_matrix_dirtydust": "§9Dirty Fusion Matrix Dust",
+    "item.greedycraft.wyvern_dirtydust": "§dDirty Wyvern Dust",
 
     "item.greedycraft.aeonsteel_clump": "§3Aeonsteel Clump",
     "item.greedycraft.aeroite_clump": "§bAeroite Clump",
@@ -323,6 +328,7 @@
     "item.greedycraft.titanium_clump": "§eTitanium Clump",
     "item.greedycraft.sculk_clump": "§3sculk Clump",
     "item.greedycraft.fusion_matrix_clump": "§9Fusion Matrix Clump",
+    "item.greedycraft.wyvern_clump": "§dWyvern Clump",
 
     "item.greedycraft.aeonsteel_crystal": "§3Aeonsteel Crystal",
     "item.greedycraft.aeroite_crystal": "§bAeroite Crystal",
@@ -348,6 +354,7 @@
     "item.greedycraft.titanium_crystal": "§eTitanium Crystal",
     "item.greedycraft.sculk_crystal": "§3Sculk Crystal",
     "item.greedycraft.fusion_matrix_crystal": "§9Fusion Matrix Crystal",
+    "item.greedycraft.wyvern_crystal": "§dWyvern Crystal",
 
     "item.greedycraft.aeonsteel_shard": "§3Aeonsteel Shard",
     "item.greedycraft.aeroite_shard": "§bAeroite Shard",
@@ -373,6 +380,7 @@
     "item.greedycraft.titanium_shard": "§eTitanium Shard",
     "item.greedycraft.sculk_shard": "§3Sculk Shard",
     "item.greedycraft.fusion_matrix_shard": "§9Fusion Matrix Shard",
+    "item.greedycraft.wyvern_shard": "§dWyvern Shard",
 
     "item.greedycraft.aeonsteel_rawore": "§3Raw Aeonsteel",
     "item.greedycraft.aeroite_rawore": "§bRaw Aeroite",
@@ -423,6 +431,7 @@
     "item.greedycraft.titanium_nugget": "§eTitanium Nugget",
     "item.greedycraft.sculk_nugget": "§3Sculk Nugget",
     "item.greedycraft.fusion_matrix_nugget": "§9Fusion Matrix Nugget",
+    "item.greedycraft.wyvern_nugget": "§dWyvern Nugget",
 
     "item.greedycraft.aeonsteel_plate": "§3Aeonsteel Plate",
     "item.greedycraft.aeroite_plate": "§bAeroite Plate",
@@ -448,6 +457,7 @@
     "item.greedycraft.titanium_plate": "§eTitanium Plate",
     "item.greedycraft.sculk_plate": "§3Sculk Plate",
     "item.greedycraft.fusion_matrix_plate": "§9Fusion Matrix Plate",
+    "item.greedycraft.wyvern_plate": "§dWyvern Plate",
 
     "block.greedycraft.aeroite_ore": "§bAeroite Ore",
     "block.greedycraft.aqualite_ore": "§bAqualite Ore",
@@ -653,5 +663,9 @@
     "greedycraft.message.stagesunlock.fusion_matrix.unlock": "§a§lDraconium",
     "greedycraft.message.stagesunlock.fusion_matrix.unlock.1": "§a§lElectronium",
     "greedycraft.message.stagesunlock.fusion_matrix.unlock.2": "§a§lHardmode Bosses can be summoned",
-    "greedycraft.message.stagesunlock.fusion_matrix.unlock.3": "§a§lReady to challenge Frostmaw"
+    "greedycraft.message.stagesunlock.fusion_matrix.unlock.3": "§a§lReady to challenge Frostmaw",
+    "greedycraft.message.stagesunlock.wyvern.title": "§b§lDragon but With Less Legs",
+    "greedycraft.message.stagesunlock.wyvern.lore": "§6§o§nYou have obtained the Wyvern Core. You can feel the power even by just holding it.",
+    "greedycraft.message.stagesunlock.wyvern.unlock": "§a§lWyvern Metal",
+    "greedycraft.message.stagesunlock.wyvern.unlock.1": "§a§lYou can now challenge Barako, the Sun Chief"
 }
