@@ -6,8 +6,10 @@ AStageEvents.added(event => {
     let stage = event.stage
     let borderText = "§9§l=================================================="
 
+    console.log(`Astage added ${stage}`)
+
     // 排除掉基础阶段
-    if (stage != "init_start" || stage != "init_creative") {
+    if (stage != "init_start" && stage != "init_creative") {
         // 非创造模式创建的存档才发送解锁消息
         if (!(AStages.serverHasStage("init_creative", server))) {
             let stageUnlockMessageData = global.stagesUnlock_Message[stage]
