@@ -143,7 +143,6 @@ function registryItem(name) {
 	this.isGlow = false
 	this.maxCount = 64
 	this.burnTime = 0
-	this.onUse = null
 
 	itemList.push(this)
 }
@@ -174,11 +173,6 @@ registryItem.prototype.setBurnTime = function (time) {
 	return this
 }
 
-registryItem.prototype.setOnUse = function (callback) {
-	this.onUse = callback
-	return this
-}
-
 StartupEvents.registry("item", event => {
 	itemList.forEach(normalItem => {
 		let item = event.create(`greedycraft:${normalItem.name}`)
@@ -195,11 +189,6 @@ StartupEvents.registry("item", event => {
 		}
 		item.maxStackSize(normalItem.maxCount)
 		item.burnTime(normalItem.burnTime)
-		if (normalItem.onUse) {
-			item.use((level, player, hand) => {
-				return normalItem.onUse(level, player, hand)
-			})
-		}
 		console.log(`reg normal item: ${normalItem.name}`)
 	})
 })
