@@ -30,3 +30,12 @@ ItemEvents.rightClicked(event => {
         }
     })
 })
+
+// 难度调节器
+ItemEvents.rightClicked("greedycraft:difficulty_changer", event => {
+    let server = event.server
+    let playerName = event.player.username
+
+    // 增加10难度
+    server.runCommandSilent(`ps_difficulty add ${playerName} 10`)
+})
