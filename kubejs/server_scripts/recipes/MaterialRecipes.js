@@ -58,6 +58,5 @@ ServerEvents.recipes(event => {
                     console.log("unknown recipe type")
             }
         })
-        console.log(`material list: ${material}`)
-    });
+    })
 })
