@@ -237,7 +237,7 @@ StartupEvents.registry("block", event => {
           .requiresTool(true)
           .tagBlock("minecraft:mineable/pickaxe")
           .tagBlock("minecraft:needs_diamond_tool")
-     event.create("greedycraft:shadowium_block")
+     event.create("greedycraft:sculk_block")
           .lightLevel(5.0)
           .hardness(35.0)
           .resistance(50.0)
