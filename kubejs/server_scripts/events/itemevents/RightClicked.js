@@ -1,6 +1,9 @@
 // 物品右键事件
 
 // 为拥有 unlock_stage tag的物品右键解锁对应进度
+let MobEffectInstance = Java.loadClass("net.minecraft.world.effect.MobEffectInstance")
+let MobEffects = Java.loadClass("net.minecraft.world.effect.MobEffects")
+
 ItemEvents.rightClicked(event => {
     let player = event.player
     let playerName = player.username
@@ -46,4 +49,10 @@ ItemEvents.rightClicked("greedycraft:creative_controller", event => {
     let playerName = event.player.username
 
     server.runCommandSilent(`gamemode creative ${playerName}`)
+})
+
+// 肾上腺素
+ItemEvents.rightClicked("greedycraft:adrenaline", event => {
+    event.player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, 4))
+    event.player.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 200, 3))
 })
