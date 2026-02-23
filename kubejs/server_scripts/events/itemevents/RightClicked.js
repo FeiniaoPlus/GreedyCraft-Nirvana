@@ -39,3 +39,11 @@ ItemEvents.rightClicked("greedycraft:difficulty_changer", event => {
     // 增加10难度
     server.runCommandSilent(`ps_difficulty add ${playerName} 10`)
 })
+
+// 创造模式控制器
+ItemEvents.rightClicked("greedycraft:creative_controller", event => {
+    let server = event.server
+    let playerName = event.player.username
+
+    server.runCommandSilent(`gamemode creative ${playerName}`)
+})
