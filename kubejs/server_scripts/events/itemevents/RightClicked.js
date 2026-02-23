@@ -73,3 +73,10 @@ ItemEvents.rightClicked("greedycraft:cryonic_artifact", event => {
         }
     })
 })
+
+// 死亡计数器
+ItemEvents.rightClicked("greedycraft:death_counter", event => {
+    let player = event.player
+
+    player.runCommandSilent("deathcounter broadcast")
+})
