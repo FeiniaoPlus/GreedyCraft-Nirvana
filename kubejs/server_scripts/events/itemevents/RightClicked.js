@@ -1,33 +1,32 @@
 // 物品右键事件
 
-ItemEvents.rightClicked("greedycraft:twilight_shield", event => {
+// 为拥有 unlock_stage tag的物品右键解锁对应进度
+ItemEvents.rightClicked(event => {
     let player = event.player
     let playerName = player.username
     let server = event.server
+    let item = event.item
+    let tags = item.getTags()
 
-    // 将物品减1
-    event.item.shrink(1)
+    tags.forEach(tag => {
+        if (tag.namespace == "greedycraft") {
+            if (tag.path.toString().startsWith("unlock_stage/")) {
+                let stage = tag.path.toString().replace("unlock_stage/", "")
 
-    // 给予暮色庇护进度
-    server.runCommandSilent(`advancement grant ${playerName} only greedycraft:stages/twilight_shield`)
+                if (!(AStages.playerHasStage(stage, player))) {
+                    // 将物品减1
+                    event.item.shrink(1)
 
-    // 生成粒子
-    server.runCommandSilent(`execute at ${playerName} run particle minecraft:totem_of_undying ~ ~ ~ 2 2 2 5 1000 force`)
-    console.log(`Give ${playerName} for greedycraft:stages/twilight_shield Advancement`)
-})
+                    // 给予进度
+                    server.runCommandSilent(`advancement grant ${playerName} only greedycraft:stages/${stage}`)
 
-ItemEvents.rightClicked("greedycraft:ender_charm", event => {
-    let player = event.player
-    let playerName = player.username
-    let server = event.server
-
-    // 将物品减1
-    event.item.shrink(1)
-
-    // 给予终末之路进度
-    server.runCommandSilent(`advancement grant ${playerName} only greedycraft:stages/ender_charm`)
-
-    // 生成粒子
-    server.runCommandSilent(`execute at ${playerName} run particle minecraft:totem_of_undying ~ ~ ~ 2 2 2 5 1000 force`)
-    console.log(`Give ${playerName} for greedycraft:stages/ender_charm Advancement`)
+                    // 生成粒子
+                    server.runCommandSilent(`execute at ${playerName} run particle minecraft:totem_of_undying ~ ~ ~ 2 2 2 5 1000 force`)
+                    console.log(`Give ${playerName} for greedycraft:stages/twilight_shield Advancement`)
+                } else {
+                    player.tell(Component.translatable("greedycraft.message.right_clicked.has_stage"))
+                }
+            }
+        }
+    })
 })

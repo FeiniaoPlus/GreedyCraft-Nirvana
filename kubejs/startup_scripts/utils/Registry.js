@@ -177,7 +177,7 @@ StartupEvents.registry("item", event => {
 	itemList.forEach(normalItem => {
 		let item = event.create(`greedycraft:${normalItem.name}`)
 		if (normalItem.isStageUnlockItem) {
-			item.tag(`greedycraft:unlock/stage/${normalItem.stage}`)
+			item.tag(`greedycraft:unlock_stage/${normalItem.stage}`)
 		}
 		if (normalItem.tooltipCount > 0) {
 			for (let i = 1; i <= normalItem.tooltipCount; i++) {

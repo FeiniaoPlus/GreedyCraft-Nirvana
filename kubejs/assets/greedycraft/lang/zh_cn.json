@@ -1058,5 +1058,7 @@
     "greedycraft.message.stagesunlock.energy_matter_core.lore": "§5§o§n你终于学会了将物质进行转换的方法。",
     "greedycraft.message.stagesunlock.energy_matter_core.unlock": "§a§l物品现在会显示EMC值",
     "greedycraft.message.stagesunlock.energy_matter_core.unlock.1": "§a§l解锁更高级的转化桌",
-    "greedycraft.message.stagesunlock.energy_matter_core.unlock.2": "§c§l可以将物品转化为EMC"
+    "greedycraft.message.stagesunlock.energy_matter_core.unlock.2": "§c§l可以将物品转化为EMC",
+
+    "greedycraft.message.right_clicked.has_stage": "§e§l该阶段已解锁"
 }

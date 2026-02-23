@@ -1058,5 +1058,7 @@
     "greedycraft.message.stagesunlock.energy_matter_core.lore": "§5§o§nYou have finally learned how to convert between matter and energy.",
     "greedycraft.message.stagesunlock.energy_matter_core.unlock": "§a§lItems now display EMC values",
     "greedycraft.message.stagesunlock.energy_matter_core.unlock.1": "§a§lUnlocks advanced transmutation devices",
-    "greedycraft.message.stagesunlock.energy_matter_core.unlock.2": "§a§lAllows conversion between items and EMC"
+    "greedycraft.message.stagesunlock.energy_matter_core.unlock.2": "§a§lAllows conversion between items and EMC",
+
+    "greedycraft.message.right_clicked.has_stage": "§e§lThis stage is unlock"
 }
