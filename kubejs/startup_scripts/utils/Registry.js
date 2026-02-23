@@ -143,33 +143,39 @@ function registryItem(name) {
 	this.isGlow = false
 	this.maxCount = 64
 	this.burnTime = 0
+	this.onUse = null
 
 	itemList.push(this)
 }
 
-registryItem.prototype.setStageUnlockItem = function(stage) {
+registryItem.prototype.setStageUnlockItem = function (stage) {
 	this.isStageUnlockItem = true
 	this.stage = stage
 	return this
 }
 
-registryItem.prototype.setTooltips = function(count) {
+registryItem.prototype.setTooltips = function (count) {
 	this.tooltipCount = count
 	return this
 }
 
-registryItem.prototype.setGlow = function() {
+registryItem.prototype.setGlow = function () {
 	this.isGlow = true
 	return this
 }
 
-registryItem.prototype.setMaxCount = function(count) {
+registryItem.prototype.setMaxCount = function (count) {
 	this.maxCount = count
 	return this
 }
 
-registryItem.prototype.setBurnTime = function(time) {
+registryItem.prototype.setBurnTime = function (time) {
 	this.burnTime = time
+	return this
+}
+
+registryItem.prototype.setOnUse = function (callback) {
+	this.onUse = callback
 	return this
 }
 
@@ -189,6 +195,11 @@ StartupEvents.registry("item", event => {
 		}
 		item.maxStackSize(normalItem.maxCount)
 		item.burnTime(normalItem.burnTime)
+		if (normalItem.onUse) {
+			item.use((level, player, hand) => {
+				return normalItem.onUse(level, player, hand)
+			})
+		}
 		console.log(`reg normal item: ${normalItem.name}`)
 	})
 })
