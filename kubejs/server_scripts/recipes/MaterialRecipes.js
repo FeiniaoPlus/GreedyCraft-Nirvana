@@ -54,8 +54,6 @@ ServerEvents.recipes(event => {
                     )
                     break;
                 }
-                default:
-                    console.log("unknown recipe type")
             }
         })
     })
