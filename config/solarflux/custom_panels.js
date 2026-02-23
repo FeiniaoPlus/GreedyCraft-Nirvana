@@ -36,37 +36,48 @@ define english "en_us"
 var ourMaterial = false;
 
 /** This function is called when mod is being constructed */
-function init()
-{
-	// Example: (textures are extracted in /textures/ by default), uncomment to try it out! (Requires game restart)
+function init() {
+    // Example: (textures are extracted in /textures/ by default), uncomment to try it out! (Requires game restart)
 
     /* Comment Start
 
     // You might need to use CraftTweaker or something else to make the material obtainable!
-	ourMaterial = newMaterial("example")
-	    .langBuilder()
+    ourMaterial = newMaterial("example")
+        .langBuilder()
             .put(english, "Example Material")
         .build();
 
-	panel()
-		.name("example")
-		.height(8 / 16.0)
-		.generation("8388608")
-		.capacity("3355443200")
-		.transfer("50331648")
-	.buildAndRegister()
-		.langBuilder()
-			    .put(english, "Example Solar Panel")
-			.build()
-		.recipeBuilder()
-			.shape("ppp", "8c8", "8h8")
-			.bind('p', item("solarflux", "photovoltaic_cell_6"))
-			.bind('8', item("solarflux:sp_8"))
-			.bind('c', tag("forge", "storage_blocks/emerald"))
-			.bind('h', ourMaterial) // Here we use the newly added material in the recipe!
-		.build(2);
+    panel()
+        .name("example")
+        .height(8 / 16.0)
+        .generation("8388608")
+        .capacity("3355443200")
+        .transfer("50331648")
+    .buildAndRegister()
+        .langBuilder()
+                .put(english, "Example Solar Panel")
+            .build()
+        .recipeBuilder()
+            .shape("ppp", "8c8", "8h8")
+            .bind('p', item("solarflux", "photovoltaic_cell_6"))
+            .bind('8', item("solarflux:sp_8"))
+            .bind('c', tag("forge", "storage_blocks/emerald"))
+            .bind('h', ourMaterial) // Here we use the newly added material in the recipe!
+        .build(2);
 
     Comment end*/
+
+    panel()
+		.name("cosmic_solar_panel")
+		.height(6 / 16.0)
+		.generation("102400")
+		.capacity("819200000")
+		.transfer("120000")
+	.buildAndRegister()
+		.langBuilder()
+			.put("en_us", "Cosmic Solar Panel")
+			.put("zh_cn", "寰宇太阳能板")
+			.build();
 }
 
 /*
@@ -74,16 +85,14 @@ function init()
 * Below listed all vanilla options for adding recipes.
 */
 
-function registerRecipes($)
-{
+function registerRecipes($) {
     // IF you have a mod with custom recipe type, register them with the following:
     // $.add(IRecipe<?>)
     // Just don't forget to import the recipe class.
     // To pass an ingredient to a recipe wrap your item()/tag() call in a ingredient().
     // Basically this will create Minecraft Ingredient: ingredient(tag("forge", "storage_blocks/emerald"))
 
-    if(ourMaterial)
-    {
+    if (ourMaterial) {
         $.shaped() // Shaped recipe example
             .result(ourMaterial, 2)
             .shape("###", "#$#", "###")

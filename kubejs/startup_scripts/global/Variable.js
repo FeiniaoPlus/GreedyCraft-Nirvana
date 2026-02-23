@@ -366,18 +366,132 @@ global.commandBlackList = [
     "projectexpansion"
 ]
 
-global.stageList = [
-    "getting_started",
-    "twilight_forest",
-    "twilight_shield",
-    "nether",
-    "gaia_killer",
-    "wither_killer",
-    "fearless_man",
-    "ender_charm",
-    "hardmode",
-    "fusion_matrix"
-]
+global.stageListMap = {
+    getting_started: {
+        parent: "init_start",
+        icon: "minecraft:oak_log"
+    },
+    twilight_forest: {
+        parent: "getting_started",
+        icon: "greedycraft:twilight_gem"
+    },
+    twilight_shield: {
+        parent: "twilight_forest",
+        icon: "greedycraft:twilight_shield"
+    },
+    nether: {
+        parent: "twilight_shield",
+        icon: "minecraft:nether_portal"
+    },
+    gaia_killer: {
+        parent: "nether",
+        icon: "botania:life_essence"
+    },
+    wither_killer: {
+        parent: "gaia_killer",
+        icon: "minecraft:wither_skeleton_skull"
+    },
+    fearless_man: {
+        parent: "nether",
+        icon: "aether:valkyrie_lance"
+    },
+    ender_charm: {
+        parent: "gaia_killer",
+        icon: "greedycraft:ender_charm"
+    },
+    hardmode: {
+        parent: "ender_charm",
+        icon: "minecraft:dragon_head"
+    },
+    fusion_matrix: {
+        parent: "hardmode",
+        icon: "greedycraft:fusion_matrix_ingot"
+    },
+    wyvern: {
+        parent: "fusion_matrix",
+        icon: "greedycraft:wyvern_ingot"
+    },
+    awakened: {
+        parent: "wyvern",
+        icon: "greedycraft:draconic_ingot"
+    },
+    chaotic_dominator: {
+        parent: "awakened",
+        icon: "draconicevolution:chaotic_core"
+    },
+    chaotic: {
+        parent: "chaotic_dominator",
+        icon: "greedycraft:chaotic_ingot"
+    },
+    wielder_of_infinity: {
+        parent: "chaotic",
+        icon: "avaritia:infinity_catalyst"
+    },
+    graduated: {
+        parent: "wielder_of_infinity",
+        icon: "greedycraft:creative_soul"
+    },
+    novice_engineer: {
+        parent: "nether",
+        icon: "enderio:void_chassis"
+    },
+    skilled_engineer: {
+        parent: "novice_engineer",
+        icon: "mekanism:alloy_infused"
+    },
+    master_engineer: {
+        parent: "skilled_engineer",
+        icon: "mekanism:alloy_atomic"
+    },
+    novice_wizard: {
+        parent: "nether",
+        icon: "greedycraft:bound_ingot"
+    },
+    skilled_wizard: {
+        parent: "novice_wizard",
+        icon: "greedycraft:astral_metal_ingot"
+    },
+    master_wizard: {
+        parent: "skilled_wizard",
+        icon: "primal_metal_ingot"
+    },
+    descendant_of_the_sun: {
+        parent: "wyvern",
+        icon: "greedycraft:solarium_star"
+    },
+    challenger_a: {
+        parent: "getting_started",
+        icon: "mysticalagriculture:inferium_essence"
+    },
+    challenger_b: {
+        parent: "challenger_a",
+        icon: "mysticalagriculture:prudentium_essence"
+    },
+    challenger_c: {
+        parent: "challenger_b",
+        icon: "mysticalagriculture:tertium_essence"
+    },
+    challenger_d: {
+        parent: "challenger_c",
+        icon: "mysticalagriculture:imperium_essence"
+    },
+    challenger_e: {
+        parent: "challenger_d",
+        icon: "mysticalagriculture:supremium_essence"
+    },
+    challenger_f: {
+        parent: "challenger_e",
+        icon: "mysticalagradditions:insanium_essence"
+    },
+    challenger_g: {
+        parent: "challenger_f",
+        icon: "tinymobfarm:ultimate_farm"
+    },
+    energy_matter_core: {
+        parent: "master_wizard",
+        icon: "greedycraft:energy_matter_core"
+    }
+}
 
 global.dimensionDifficulty = {
     "minecraft:the_nether": 25,
@@ -427,6 +541,7 @@ global.mysticalAgricultureSeedLevelMap = {
     "mysticalagriculture:redstone_seeds": 3,
     "mysticalagriculture:obsidian_seeds": 3,
     "mysticalagriculture:prismarine_seeds": 3,
+    "mysticalagriculture:sculk_seeds": 3,
     "mysticalagriculture:zombie_seeds": 3,
     "mysticalagriculture:skeleton_seeds": 3,
     "mysticalagriculture:creeper_seeds": 3,
@@ -448,6 +563,9 @@ global.mysticalAgricultureSeedLevelMap = {
     "mysticalagriculture:ironwood_seeds": 3,
     "mysticalagriculture:sky_stone_seeds": 3,
     "mysticalagriculture:certus_quartz_seeds": 3,
+    "mysticalagriculture:aeroite_seeds": 4,
+    "mysticalagriculture:asgardium_seeds": 4,
+    "mysticalagriculture:manganese_iron_seeds": 4,
     "mysticalagriculture:gold_seeds": 4,
     "mysticalagriculture:lapis_lazuli_seeds": 4,
     "mysticalagriculture:end_seeds": 4,
@@ -478,6 +596,12 @@ global.mysticalAgricultureSeedLevelMap = {
     "mysticalagriculture:knightmetal_seeds": 4,
     "mysticalagriculture:fiery_ingot_seeds": 4,
     "mysticalagriculture:fluix_seeds": 4,
+    "mysticalagriculture:aqualite_seeds": 5,
+    "mysticalagriculture:chromium_seeds": 5,
+    "mysticalagriculture:knowledge_essence_seeds": 5,
+    "mysticalagriculture:manganese_steel_seeds": 5,
+    "mysticalagriculture:shadowium_seeds": 5,
+    "mysticalagriculture:stainless_steel_seeds": 5,
     "mysticalagriculture:diamond_seeds": 5,
     "mysticalagriculture:emerald_seeds": 5,
     "mysticalagriculture:netherite_seeds": 5,
@@ -490,6 +614,20 @@ global.mysticalAgricultureSeedLevelMap = {
     "mysticalagriculture:draconium_seeds": 5,
     "mysticalagriculture:yellorium_seeds": 5,
     "mysticalagriculture:cyanite_seeds": 5,
+    "mysticalagriculture:aeonsteel_seeds": 6,
+    "mysticalagriculture:astral_metal_seeds": 6,
+    "mysticalagriculture:chromasteel_seeds": 6,
+    "mysticalagriculture:cosmilite_seeds": 6,
+    "mysticalagriculture:crimsonite_seeds": 6,
+    "mysticalagriculture:cryonium_seeds": 6,
+    "mysticalagriculture:cytosinite_seeds": 6,
+    "mysticalagriculture:durasteel_seeds": 6,
+    "mysticalagriculture:electronium_seeds": 6,
+    "mysticalagriculture:fusion_matrix_seeds": 6,
+    "mysticalagriculture:infernium_seeds": 6,
+    "mysticalagriculture:protonium_seeds": 6,
+    "mysticalagriculture:terra_alloy_seeds": 6,
+    "mysticalagriculture:titanium_seeds": 6,
     "mysticalagriculture:nether_star_seeds": 6,
     "mysticalagriculture:dragon_egg_seeds": 6,
     "mysticalagriculture:gaia_spirit_seeds": 6,
