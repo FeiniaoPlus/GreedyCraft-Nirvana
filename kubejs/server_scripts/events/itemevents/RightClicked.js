@@ -56,3 +56,20 @@ ItemEvents.rightClicked("greedycraft:adrenaline", event => {
     event.player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, 4))
     event.player.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 200, 3))
 })
+
+// 极寒圣物
+ItemEvents.rightClicked("greedycraft:cryonic_artifact", event => {
+    let player = event.player
+    let level = event.level
+
+    let box = player.boundingBox.inflate(20.0)
+
+    let entitys = level.getEntitiesWithin(box)
+
+    entitys.forEach(entity => {
+        if (entity.type == "aether:sun_spirit" && entity.isLiving()) {
+            entity.setHealth(1.0)
+            player.runCommandSilent("particle minecraft:snowflake ~ ~ ~ 2 2 2 0.1 200 force")
+        }
+    })
+})
