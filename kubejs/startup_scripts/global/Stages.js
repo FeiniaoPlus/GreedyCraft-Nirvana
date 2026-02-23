@@ -452,7 +452,12 @@ global.stages = {
             "projecte:collector_mk1",
             "projecte:collector_mk2"
         ],
-        supper_hardmode: ["greedycraft:placeholder"]
+        supper_hardmode: ["greedycraft:placeholder"],
+        expert: [
+            "greedycraft:adrenaline",
+            "greedycraft:fake_philosopher_stone",
+            "greedycraft:goodie_bag"
+        ]
     },
     ore: {
         getting_started: {
