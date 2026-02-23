@@ -381,7 +381,7 @@ global.stageListMap = {
     },
     nether: {
         parent: "twilight_shield",
-        icon: "minecraft:nether_portal"
+        icon: "minecraft:netherrack"
     },
     gaia_killer: {
         parent: "nether",
@@ -445,7 +445,7 @@ global.stageListMap = {
     },
     novice_wizard: {
         parent: "nether",
-        icon: "greedycraft:bound_ingot"
+        icon: "botania:flugel_eye"
     },
     skilled_wizard: {
         parent: "novice_wizard",
@@ -453,7 +453,7 @@ global.stageListMap = {
     },
     master_wizard: {
         parent: "skilled_wizard",
-        icon: "primal_metal_ingot"
+        icon: "greedycraft:arcane_crystal_ball"
     },
     descendant_of_the_sun: {
         parent: "wyvern",

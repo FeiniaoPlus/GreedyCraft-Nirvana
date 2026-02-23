@@ -85,7 +85,7 @@ ServerEvents.generateData("AFTER_MODS", event => {
     })
 
     Object.entries(global.stageListMap).forEach(([stageName, data]) => {
-        event.json(`greedycraft:advancement/stages/${stageName}`, {
+        event.json(`greedycraft:advancement/stages/${stageName}.json`, {
             parent: `greedycraft:stages/${data.parent}`,
             criteria: {
                 impossible: {
