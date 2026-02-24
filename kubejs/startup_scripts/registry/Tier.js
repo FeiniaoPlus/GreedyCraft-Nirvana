@@ -7,6 +7,7 @@ ItemEvents.toolTierRegistry(event => {
         tier.speed = 0.6
         tier.attackDamageBonus = 0.0
         tier.repairIngredient = "minecraft:cobblestone"
+        tier.enchantmentValue = 2
     })
     event.add("one_punch", tier => {
         tier.uses = 0
