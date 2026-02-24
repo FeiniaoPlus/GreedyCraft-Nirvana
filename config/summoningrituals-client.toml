@@ -1,0 +1,4 @@
+#The maximum distance at which an Altar will render its inventory contents.
+# Default: 32
+# Range: 1 ~ 128
+render_distance = 32

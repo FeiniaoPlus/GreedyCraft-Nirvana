@@ -61,7 +61,7 @@
 
 [emc]
 	#Emc of Neutron Pile
-	# Default: 100
+	# Default: 512
 	# Range: > 0
 	"Neutron Pile Emc" = 512
 	#Emc of Totem Of Undying
@@ -72,10 +72,6 @@
 	# Default: 30568
 	# Range: > 0
 	"Blaze Cube Emc" = 30568
-	#Emc of Bedrock
-	# Default: 10
-	# Range: > 0
-	"Bedrock Emc" = 10
 
 [channel]
 	#

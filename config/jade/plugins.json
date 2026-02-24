@@ -52,25 +52,13 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
-  "compactmachines": {
-    "show_owner": true,
-    "bound_machine": true
-  },
-  "champions": {
-    "enable_affix_compact": false
-  },
-  "jade_access": {
-    "held_item": true,
-    "sign": true,
-    "block": true,
-    "entity": true,
-    "entity_variant": true
-  },
   "ftbquests": {
     "barrier": true
   },
-  "bonsaitrees4": {
-    "jade/bonsai_pot": true
+  "avaritia": {
+    "extreme_smithing": true,
+    "crafting_table": true,
+    "compressor": true
   },
   "fluiddrawerslegacy": {
     "controller": true,
@@ -87,11 +75,9 @@
     "block_properties": false,
     "mod_name": true
   },
-  "globalxp": {
-    "display": true
-  },
-  "balm": {
-    "jade": true
+  "extendedae": {
+    "jade_chamber": true,
+    "jade_wireless": true
   },
   "ae2": {
     "part_icon": true,
@@ -105,8 +91,34 @@
     "crafting_monitor": true,
     "part_name": true
   },
-  "jadeaddons": {
-    "equipment_requirement": ""
+  "extendedae_plus": {
+    "labeled_wireless_component": true,
+    "wt_locked": true,
+    "wt_frequency": true,
+    "wt_network_usable": true,
+    "wt_master_mode": true,
+    "wt_channels": true,
+    "wt_master_location": true,
+    "wt_owner": true
+  },
+  "hammerlib": {
+    "root": true
+  },
+  "projecte": {
+    "emc_provider": true
+  },
+  "mekanism": {
+    "chemical": true,
+    "remove_builtin": true,
+    "fluid": true,
+    "energy": true,
+    "tooltip_renderer": true
+  },
+  "projectexpansion": {
+    "provider": true
+  },
+  "waystones": {
+    "waystone": true
   },
   "gravestone": {
     "grave": true
@@ -127,5 +139,48 @@
     "main": true,
     "display.content": true,
     "display.status": true
+  },
+  "compactmachines": {
+    "show_owner": true,
+    "bound_machine": true
+  },
+  "champions": {
+    "enable_affix_compact": false
+  },
+  "jade_access": {
+    "held_item": true,
+    "sign": true,
+    "block": true,
+    "entity": true,
+    "entity_variant": true
+  },
+  "bonsaitrees4": {
+    "jade/bonsai_pot": true
+  },
+  "globalxp": {
+    "display": true
+  },
+  "balm": {
+    "jade": true
+  },
+  "jadeaddons": {
+    "equipment_requirement": ""
+  },
+  "mysticalagradditions": {
+    "infused_farmland": true
+  },
+  "twilightforest": {
+    "drying_rack": true,
+    "chiseled_bookshelf_spawner": true,
+    "quest_ram_wool": true
+  },
+  "mysticalagriculture": {
+    "infused_farmland": true,
+    "crop": true,
+    "inferium_crop": true
+  },
+  "powerscale": {
+    "mob": true,
+    "alchemy_set": true
   }
 }

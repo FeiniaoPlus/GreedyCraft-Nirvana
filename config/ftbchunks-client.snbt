@@ -55,6 +55,11 @@
 		# Default: false
 		chunk_grid: false
 		
+		# Claim mode for the chunk claiming screen
+		# Default: "freehand"
+		# Valid values: "freehand", "rectangle", "circle"
+		claim_mode: "freehand"
+		
 		# Show claimed chunks on the map
 		# Default: true
 		claimed_chunks_on_map: true
@@ -122,7 +127,7 @@
 		compass: true
 		
 		# Enable minimap
-		# Default: true
+		# Default: false
 		enabled: false
 		
 		# Show entities on minimap
@@ -133,23 +138,23 @@
 		# Default: true
 		entity_heads: true
 		entity_icon: {
+			"minecraft:chicken": true
+			"minecraft:wolf": true
+			"minecraft:zombie": true
+			"minecraft:fox": true
+			"minecraft:spider": true
+			"minecraft:dolphin": true
 			"minecraft:pig": true
+			"minecraft:zombie_villager": true
+			"minecraft:allay": true
+			"minecraft:witch": true
+			"minecraft:cod": false
 			"minecraft:squid": true
 			"minecraft:bat": true
-			"minecraft:fox": true
-			"minecraft:dolphin": true
-			"minecraft:skeleton": true
-			"minecraft:wolf": true
-			"minecraft:allay": true
 			"minecraft:enderman": true
-			"minecraft:zombie": true
-			"minecraft:witch": true
-			"minecraft:zombie_villager": true
-			"minecraft:spider": true
 			"minecraft:glow_squid": true
-			"minecraft:cod": false
+			"minecraft:skeleton": true
 			"minecraft:creeper": true
-			"minecraft:chicken": true
 		}
 		
 		# Minimap font scaling (values not a multiple of 0.5 may look bad)
