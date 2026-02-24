@@ -4,7 +4,7 @@
 StartupEvents.registry("item", event => {
     // 简易手斧
     event.create("greedycraft:crude_hatchet", "kubejs:axe")
-        .tier("wood")
+        .tier("pebble")
         .attackDamageBonus(7.0)
         .speed(0.8)
         .tooltip(Component.translatable("greedycraft.item.crude_hatchet.tooltip.1.text"))
