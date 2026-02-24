@@ -317,7 +317,10 @@ global.modList = new Set([
     "enderio_modded_conduits",
     "xaerolib",
     "pouchofunknownnirvana",
-    "summoningrituals"
+    "summoningrituals",
+    "blur",
+    "midnightlib",
+    "olddraconicmodels"
 ])
 
 global.commandWhiteList = [
