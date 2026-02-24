@@ -1345,6 +1345,22 @@
             "fileID": 7228906,
             "projectID": 671040,
             "required": true
+        },
+        {
+            "fileID": 6868592,
+            "projectID": 1314064,
+            "required": true
+        },
+        {
+            "fileID": 7655029,
+            "projectID": 393563,
+            "required": true
+        }
+        ,
+        {
+            "fileID": 7318664,
+            "projectID": 488090,
+            "required": true
         }
     ],
     "manifestType": "minecraftModpack",
