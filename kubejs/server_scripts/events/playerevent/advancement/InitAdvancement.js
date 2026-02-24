@@ -46,5 +46,7 @@ PlayerEvents.advancement("greedycraft:stages/init", event => {
     }
 
     // 保险
-    AStages.addStageToPlayer("init", player)
+    if (!(AStages.playerHasStage("init", player))) {
+        AStages.addStageToPlayer("init", player)
+    }
 })

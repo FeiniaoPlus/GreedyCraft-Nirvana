@@ -140,7 +140,7 @@ new registryItem("creative_controller")
     .setGlow()
     .setTooltips(2)
 
-// 强迫症许可证 右键发送消息
+// 强迫症许可证 右键发送消息 （无意义物品）
 new registryItem("ocd_certificate")
     .setTooltips(5)
 

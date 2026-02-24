@@ -9,6 +9,5 @@ PlayerEvents.loggedIn(event => {
     if (!(AStages.playerHasStage("init", player))) {
         // 如果没有则判断为新玩家，并给予 init 进度
         server.runCommandSilent(`advancement grant ${playerName} only greedycraft:stages/init`)
-        console.log(`New Player ${playerName} Join the Game`)
     }
 })

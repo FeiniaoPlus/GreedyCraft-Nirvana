@@ -7,7 +7,7 @@ function getScoreBoardGameMode(packMode, player, server) {
 
     // 判断是否作弊
     if (cheat) {
-        // 判断游戏模式是否等于休闲模式
+        // 判断整合包模式是否等于休闲模式
         if (packMode == "casual") {
             let unofficialModList = checkModList()
             // 判断是否存在非官方模组

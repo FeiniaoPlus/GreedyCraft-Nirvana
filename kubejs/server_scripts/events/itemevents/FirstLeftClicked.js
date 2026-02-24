@@ -14,5 +14,6 @@ ItemEvents.firstLeftClicked("greedycraft:creative_controller", event => {
     let server = event.server
     let playerName = event.player.username
 
+    // 切换生存模式
     server.runCommandSilent(`gamemode survival ${playerName}`)
 })

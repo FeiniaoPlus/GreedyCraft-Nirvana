@@ -38,12 +38,16 @@ PlayerEvents.loggedIn(event => {
         player.tell(messageText9)
         player.tell(messageEnd)
     } else {
+        // 从全局变量中随机选一条消息发送
         let message = global.playerLogging_Message[randomInt(0, global.playerLogging_Message.length - 1)]
         player.tell(Component.translatable(message))
     }
 
+    // 判断是否是以创造模式创建的存档
     if (AStages.serverHasStage("init_creative", server)) {
+        // 发送消息
         player.tell(Component.translatable("greedycraft.message.creative.text"))
+        // 保险
     } else if (!(AStages.serverHasStage("init_start", server))) {
         if (player.isCreative()) {
             player.tell(Component.translatable("greedycraft.message.creative.text"))

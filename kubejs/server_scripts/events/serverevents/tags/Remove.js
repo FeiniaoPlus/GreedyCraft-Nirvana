@@ -1,5 +1,6 @@
 // priority: 950
 
+// 删除 Tag
 ServerEvents.tags("item", event => {
     event.removeAll("twilightforest:portal/activator").add("greedycraft:twilight_gem")
     event.remove("c:dusts/iron", "enderio:powdered_iron")

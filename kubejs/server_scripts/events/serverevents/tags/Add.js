@@ -1,6 +1,6 @@
 // priority: 1000
 
-// 添加tag
+// 添加 Tag
 ServerEvents.tags("item", event => {
     // 规则表
     let rules = [
@@ -12,7 +12,7 @@ ServerEvents.tags("item", event => {
 
     Item.getList().forEach(item => {
         let id = item.id.toString()
-        let namespace = item.id.namespace
+        let namespace = item.mod
 
         rules.forEach(rule => {
             let modMatch = !rule.mods || rule.mods.includes(namespace)

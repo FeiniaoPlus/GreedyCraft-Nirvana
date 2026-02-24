@@ -2,7 +2,7 @@
 
 // 函数：注册材料，无返回值，使用链式调用
 global.materialList = []
-let itemList = []
+global.itemList = []
 function registryMetals(name, color) {
 	this.name = name
 	this.color = color
@@ -83,6 +83,7 @@ StartupEvents.registry("item", event => {
 						.color(0, material.color)
 						.tag("greedycraft:dirtydust")
 						.tag(`greedycraft:material/${material.name}`)
+						.tag("greedycraft:material")
 				} else {
 					event.create(`greedycraft:${material.name}_dirtydust`)
 						.textures({
@@ -91,6 +92,7 @@ StartupEvents.registry("item", event => {
 						})
 						.tag("greedycraft:dirtydust")
 						.tag(`greedycraft:material/${material.name}`)
+						.tag("greedycraft:material")
 				}
 			} else if (type == "ingot") {
 				let create = event.create(`greedycraft:${material.name}_ingot`)
@@ -100,6 +102,7 @@ StartupEvents.registry("item", event => {
 				if (material.beaconPayment) {
 					create.tag("minecraft:beacon_payment_items")
 				}
+				create.tag("greedycraft:material")
 			} else {
 				if (
 					material.name != "aqualite" &&
@@ -118,16 +121,26 @@ StartupEvents.registry("item", event => {
 					material.name != "draconic" &&
 					material.name != "chaotic"
 				) {
-					event.create(`greedycraft:${material.name}_${type}`)
-						.texture(`greedycraft:item/${type}/color/${type}`)
-						.color(0, material.color)
-						.tag(`greedycraft:${type}`)
-						.tag(`greedycraft:material/${material.name}`)
+					let create = event.create(`greedycraft:${material.name}_${type}`)
+					create.texture(`greedycraft:item/${type}/color/${type}`)
+					create.color(0, material.color)
+					create.tag(`greedycraft:${type}`)
+					create.tag(`greedycraft:material/${material.name}`)
+					if (type == "rawore") {
+						create.tag("greedycraft:ore")
+					} else {
+						create.tag("greedycraft:material")
+					}
 				} else {
-					event.create(`greedycraft:${material.name}_${type}`)
-						.texture(`greedycraft:item/${type}/${material.name}`)
-						.tag(`greedycraft:${type}`)
-						.tag(`greedycraft:material/${material.name}`)
+					let create = event.create(`greedycraft:${material.name}_${type}`)
+					create.texture(`greedycraft:item/${type}/${material.name}`)
+					create.tag(`greedycraft:${type}`)
+					create.tag(`greedycraft:material/${material.name}`)
+					if (type == "rawore") {
+						create.tag("greedycraft:ore")
+					} else {
+						create.tag("greedycraft:material")
+					}
 				}
 			}
 			console.log(`Registry Metals: greedycraft:${material.name}_${type}`)
@@ -144,7 +157,7 @@ function registryItem(name) {
 	this.maxCount = 64
 	this.burnTime = 0
 
-	itemList.push(this)
+	global.itemList.push(this)
 }
 
 registryItem.prototype.setStageUnlockItem = function (stage) {
@@ -174,7 +187,7 @@ registryItem.prototype.setBurnTime = function (time) {
 }
 
 StartupEvents.registry("item", event => {
-	itemList.forEach(normalItem => {
+	global.itemList.forEach(normalItem => {
 		let item = event.create(`greedycraft:${normalItem.name}`)
 		if (normalItem.isStageUnlockItem) {
 			item.tag(`greedycraft:unlock_stage/${normalItem.stage}`)
@@ -189,6 +202,7 @@ StartupEvents.registry("item", event => {
 		}
 		item.maxStackSize(normalItem.maxCount)
 		item.burnTime(normalItem.burnTime)
+		item.tag("greedycraft:item")
 		console.log(`reg normal item: ${normalItem.name}`)
 	})
 })

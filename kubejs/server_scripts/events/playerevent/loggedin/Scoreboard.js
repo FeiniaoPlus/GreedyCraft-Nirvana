@@ -7,9 +7,12 @@ PlayerEvents.loggedIn(event => {
     
     let scoreboard = server.scoreboard.getObjective("packinfo")
 
+    // 判断当前是否存在计分板
     if (scoreboard != null) {
+        // 如果存在则删除
         server.runCommandSilent("scoreboard objectives remove packinfo")
     }
 
+    // 创建计分板
     addScoreBoard(player, server)
 })
