@@ -13,10 +13,10 @@
 	#Disable this if you run into a problem or are on low-end PCs
 	blurEffect = true
 	#Whether to add blur effect to GUI screens that have a background and do not originate from Modern UI.
-	additionalBlurEffect = true
+	additionalBlurEffect = false
 	#Whether to replace Vanilla 3-pass box blur with Modern UI Gaussian blur.
 	#This gives you better quality and performance, recommend setting this to true.
-	overrideVanillaBlur = true
+	overrideVanillaBlur = false
 	#The kernel radius for gaussian convolution blur effect, 0 = disable.
 	#samples per pixel = ((radius * 2) + 1) * 2, sigma = radius / 2.
 	# Default: 7
