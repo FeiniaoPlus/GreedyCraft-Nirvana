@@ -13,7 +13,12 @@
     "me.shedaniel.rei.impl.client.gui.screen.DefaultDisplayViewingScreen"
   ],
   "forceDisabledScreens": [
-    "net.irisshaders.iris.gui.screen.ShaderPackScreen"
+    "net.irisshaders.iris.gui.screen.ShaderPackScreen",
+    "net.minecraft.client.gui.screens.TitleScreen",
+    "net.minecraft.client.gui.screens.worldselection.SelectWorldScreen",
+    "net.minecraft.client.gui.screens.multiplayer.JoinMultiplayerScreen",
+    "net.neoforged.neoforge.client.gui.ModListScreen",
+    "net.minecraft.client.gui.screens.options.OptionsScreen"
   ],
   "useGradient": true,
   "gradientStart": "#000000",
