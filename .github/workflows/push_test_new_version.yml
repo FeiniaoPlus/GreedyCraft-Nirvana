@@ -37,7 +37,7 @@ jobs:
         run: wget https://mediafilez.forgecdn.net/files/6153/239/DarkMode-ResourcePack-1.20.3_1.zip -P ActionsTemp/overrides/config/openloader/packs/resources
 
       - name: Download Shaders
-        run: wget https://cdn.modrinth.com/data/R6NEzAwj/versions/LXrX6oqm/ComplementaryUnbound_r5.6.1.zip -P ActionsTemp/overrides/shaderpacks
+        run: wget https://cdn.modrinth.com/data/R6NEzAwj/versions/d8rcvDTp/ComplementaryUnbound_r5.7.1.zip -P ActionsTemp/overrides/shaderpacks
 
       - name: Zip Pack
         run: |
@@ -52,10 +52,6 @@ jobs:
       - name: mc-publish
         uses: Kira-NT/mc-publish@v3.3.0
         with:
-          # CurseForge
-          # curseforge-id: 占位
-          # curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
-
           # Github
           github-tag: ${{ github.ref_name }}
           github-prerelease: true
