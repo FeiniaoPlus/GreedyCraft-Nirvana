@@ -9,7 +9,7 @@ ItemEvents.rightClicked(event => {
     let playerName = player.username
     let server = event.server
     let item = event.item
-    let tags = item.getTags()
+    let tags = item.tags
 
     // 从物品 tag 列表提取单个 tag
     tags.forEach(tag => {

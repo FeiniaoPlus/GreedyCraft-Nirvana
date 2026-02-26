@@ -5,8 +5,8 @@ PlayerEvents.advancement(event => {
     let playerName = player.username
     let server = event.server
     let advancementID = event.advancement.id.toString()
-    let advancementNamespace = event.advancement.id.getNamespace()
-    let advancementPath = event.advancement.id.getPath().toString()
+    let advancementNamespace = event.advancement.id.namespace
+    let advancementPath = event.advancement.id.path.toString()
 
     let packMode = KJSutils.Analysis("config/greedycraft/config.json", "$.packMode")
 

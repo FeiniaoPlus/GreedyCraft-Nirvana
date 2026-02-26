@@ -2,8 +2,8 @@
 ServerEvents.command(event => {
     let command = event.commandName
     let commandSource = event.parseResults.context.source
-    let player = commandSource.getPlayer()
-    let server = commandSource.getServer()
+    let player = commandSource.player
+    let server = commandSource.server
 
     // 拦截功能不应随着游戏模式切换而热切换
     let antiCheatMode = global.antiCheatMode
