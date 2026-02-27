@@ -13,7 +13,6 @@ StartupEvents.registry("item", event => {
         .maxStackSize(1)
         .tier("one_punch")
         .attackDamageBaseline(9999998.0)
-        .attackDamageBaseline(1.0)
         .tooltip(Component.translatable("greedycraft.item.one_punch.tooltip.1.text"))
         .tag("greedycraft:item")
 })
