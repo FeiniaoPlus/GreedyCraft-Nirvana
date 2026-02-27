@@ -17,3 +17,21 @@ ItemEvents.firstLeftClicked("greedycraft:creative_controller", event => {
     // 切换生存模式
     server.runCommandSilent(`gamemode survival ${playerName}`)
 })
+
+ItemEvents.firstLeftClicked("greedycraft:emergency_button", event => {
+    let server = event.server
+    let player = event.player
+    let level = event.level
+
+    level.entities.forEach(entity => {
+        if (entity.isMonster() && !(entity.isPlayer())) {
+            entity.discard()
+        }
+    })
+
+    player.removeAllEffects()
+
+    server.tell(Component.translatable("greedycraft.message.firstleftclicked.emergency_button", `§e§l${player.username}`, `§d§l${level.displayName}`))
+
+    event.item.shrink(1)
+})

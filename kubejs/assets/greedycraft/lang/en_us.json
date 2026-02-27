@@ -22,7 +22,7 @@
 
     "greedycraft.modpack.name": "§bGreedyCraft§7·§c§lNIRVANA",
     "greedycraft.commands.setpackmode.noupdate": "§cYou are already using this mode.",
-    "greedycraft.commands.setpackmode": "§ePlayer §6%s §eis changing the modpack mode to §7: ",
+    "greedycraft.commands.setpackmode": "§ePlayer %s §eis changing the modpack mode to §7: ",
     "greedycraft.commands.setpackmode.success": "§aSuccessfully switched to §7:",
     "greedycraft.commands.error.permissions": "§cYou do not have permission to execute this command!",
     "greedycraft.creativetab.greedycraft_material.name": "GreedyCraft Material",
@@ -865,8 +865,8 @@
     "greedycraft.message.stage.unlock.title": "§b§lGame Stage Unlocked!",
     "greedycraft.message.stage.unlock.message": "§b§lThe following items or features are now unlocked:",
     "greedycraft.message.showscoreboard.display": "§cThe scoreboard is already displayed",
-    "greedycraft.message.showscoreboard.show": "§ePlayer §6%s §eset the scoreboard status to: Shown",
-    "greedycraft.message.showscoreboard.hide": "§ePlayer §6%s §eset the scoreboard status to: Hidden",
+    "greedycraft.message.showscoreboard.show": "§ePlayer %s §eset the scoreboard status to: Shown",
+    "greedycraft.message.showscoreboard.hide": "§ePlayer %s §eset the scoreboard status to: Hidden",
     "greedycraft.message.showscoreboard.null": "§cNo scoreboard currently exists. Please use /greedycraft showscoreboard true to enable the scoreboard first.",
     "greedycraft.commands.setpackmode.casual": "§c§lYou cannot switch to Casual Mode while in-game. Doing so may cause unknown consequences. If you want to experience Casual Mode, please close the game, go to 'config/greedycraft/config.json' to change the game mode, and then create a new save.",
 
@@ -1060,5 +1060,8 @@
     "greedycraft.message.stagesunlock.energy_matter_core.unlock.1": "§a§lUnlocks advanced transmutation devices",
     "greedycraft.message.stagesunlock.energy_matter_core.unlock.2": "§a§lAllows conversion between items and EMC",
 
-    "greedycraft.message.right_clicked.has_stage": "§e§lThis stage is unlock"
+    "greedycraft.message.right_clicked.has_stage": "§e§lThis stage is unlock",
+    "greedycraft.message.right_clicked.emergency_button": "§c§lPlayer %s §c§lused the [Emergency Button] to remove all entities in %s §c§l",
+
+    "greedycraft.message.firstleftclicked.emergency_button": "§c§lPlayer %s §c§lused the [Emergency Button] to remove all hostile entities in %s §c§l"
 }

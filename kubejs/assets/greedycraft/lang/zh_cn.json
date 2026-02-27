@@ -22,7 +22,7 @@
 
     "greedycraft.modpack.name": "§b贪婪整合包§7·§c§l涅槃",
     "greedycraft.commands.setpackmode.noupdate": "§c当前已处于该模式",
-    "greedycraft.commands.setpackmode": "§e玩家 §6%s §e正在修改整合包模式为§7: ",
+    "greedycraft.commands.setpackmode": "§e玩家 %s §e正在修改整合包模式为§7: ",
     "greedycraft.commands.setpackmode.success": "§a已成功切换为§7: ",
     "greedycraft.commands.error.permissions": "§c你没有权限执行该命令！",
     "greedycraft.creativetab.greedycraft_material.name": "贪婪整合包·材料",
@@ -865,8 +865,8 @@
     "greedycraft.message.stage.unlock.title": "§b§l游戏阶段已解锁！",
     "greedycraft.message.stage.unlock.message": "§b§l以下物品或功能已解锁:",
     "greedycraft.message.showscoreboard.display": "§c计分板已是显示状态",
-    "greedycraft.message.showscoreboard.show": "§e玩家 §6%s §e设置计分板状态为: 显示",
-    "greedycraft.message.showscoreboard.hide": "§e玩家 §6%s §e设置计分板状态为: 隐藏",
+    "greedycraft.message.showscoreboard.show": "§e玩家 %s §e设置计分板状态为: 显示",
+    "greedycraft.message.showscoreboard.hide": "§e玩家 %s §e设置计分板状态为: 隐藏",
     "greedycraft.message.showscoreboard.null": "§c当前不存在计分板，请先使用/greedycraft showscoreboard true命令开启计分板",
     "greedycraft.commands.setpackmode.casual": "§c§l无法在游戏中切换为休闲模式，可能造成未知的后果，如果要体验休闲模式请关闭游戏后前往 'config/greedycraft/config.json' 修改游戏模式并创建一个新存档",
 
@@ -1060,5 +1060,8 @@
     "greedycraft.message.stagesunlock.energy_matter_core.unlock.1": "§a§l解锁更高级的转化桌",
     "greedycraft.message.stagesunlock.energy_matter_core.unlock.2": "§c§l可以将物品转化为EMC",
 
-    "greedycraft.message.right_clicked.has_stage": "§e§l该阶段已解锁"
+    "greedycraft.message.right_clicked.has_stage": "§e§l该阶段已解锁",
+    "greedycraft.message.right_clicked.emergency_button": "§c§l玩家 %s §c§l使用【应急按钮】删除了 %s §c§l的所有实体",
+
+    "greedycraft.message.firstleftclicked.emergency_button": "§c§l玩家 %s §c§l使用【应急按钮】删除了 %s §c§l的所有敌对实体"
 }

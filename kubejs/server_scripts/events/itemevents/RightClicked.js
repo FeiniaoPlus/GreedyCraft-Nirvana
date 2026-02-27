@@ -22,14 +22,14 @@ ItemEvents.rightClicked(event => {
 
                 // 判断该阶段是否已解锁
                 if (!(AStages.playerHasStage(stage, player))) {
-                    // 将物品减1
-                    event.item.shrink(1)
-
                     // 给予进度
                     server.runCommandSilent(`advancement grant ${playerName} only greedycraft:stages/${stage}`)
 
                     // 生成粒子
                     server.runCommandSilent(`execute at ${playerName} run particle minecraft:totem_of_undying ~ ~ ~ 2 2 2 5 1000 force`)
+
+                    // 将物品减1
+                    event.item.shrink(1)
                 } else {
                     // 已解锁发送提示
                     player.tell(Component.translatable("greedycraft.message.right_clicked.has_stage"))
@@ -63,6 +63,8 @@ ItemEvents.rightClicked("greedycraft:adrenaline", event => {
     event.player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, 4))
     // 力量效果
     event.player.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 200, 3))
+
+    event.item.shrink(1)
 })
 
 // 极寒圣物
@@ -86,6 +88,7 @@ ItemEvents.rightClicked("greedycraft:cryonic_artifact", event => {
             player.runCommandSilent("particle minecraft:snowflake ~ ~ ~ 2 2 2 0.1 200 force")
         }
     })
+    event.item.shrink(1)
 })
 
 // 死亡计数器
@@ -109,4 +112,23 @@ ItemEvents.rightClicked("greedycraft:delivery_order", event => {
         // 设置 nbt 战利品列表为 minecraft:chests/simple_dungeon
         entity.mergeNbt({LootTable: "minecraft:chests/simple_dungeon"})
     })
+
+    event.item.shrink(1)
+})
+
+// 应急按钮
+ItemEvents.rightClicked("greedycraft:emergency_button", event => {
+    let player = event.player
+    let server = event.server
+    let level = event.level
+
+    level.entities.forEach(entity => {
+        if (!(entity.isPlayer())) {
+            entity.discard()
+        }
+    })
+
+    server.tell(Component.translatable("greedycraft.message.right_clicked.emergency_button", `§e§l${player.username}`, `§d§l${level.displayName}`))
+
+    event.item.shrink(1)
 })
