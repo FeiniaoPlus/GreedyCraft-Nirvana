@@ -1062,6 +1062,7 @@
 
     "greedycraft.message.right_clicked.has_stage": "§e§l该阶段已解锁",
     "greedycraft.message.right_clicked.emergency_button": "§c§l玩家 %s §c§l使用【应急按钮】删除了 %s §c§l的所有实体",
+    "greedycraft.message.right_clicked.infinity_stone": "§c§l你还无法掌握这种力量",
 
     "greedycraft.message.firstleftclicked.emergency_button": "§c§l玩家 %s §c§l使用【应急按钮】删除了 %s §c§l的所有敌对实体"
 }

@@ -457,7 +457,8 @@ global.stages = {
             "greedycraft:adrenaline",
             "greedycraft:fake_philosopher_stone",
             "greedycraft:goodie_bag"
-        ]
+        ],
+        truehero: ["greedycraft:placeholder"]
     },
     ore: {
         getting_started: {

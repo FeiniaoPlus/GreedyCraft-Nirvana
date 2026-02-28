@@ -28,7 +28,7 @@ ItemEvents.rightClicked(event => {
                     // 生成粒子
                     server.runCommandSilent(`execute at ${playerName} run particle minecraft:totem_of_undying ~ ~ ~ 2 2 2 5 1000 force`)
 
-                    // 将物品减1
+                    // 将物品减 1
                     event.item.shrink(1)
                 } else {
                     // 已解锁发送提示
@@ -63,7 +63,7 @@ ItemEvents.rightClicked("greedycraft:adrenaline", event => {
     event.player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, 4))
     // 力量效果
     event.player.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 200, 3))
-
+    // 将物品减 1
     event.item.shrink(1)
 })
 
@@ -88,6 +88,7 @@ ItemEvents.rightClicked("greedycraft:cryonic_artifact", event => {
             player.runCommandSilent("particle minecraft:snowflake ~ ~ ~ 2 2 2 0.1 200 force")
         }
     })
+    // 将物品减 1
     event.item.shrink(1)
 })
 
@@ -110,9 +111,9 @@ ItemEvents.rightClicked("greedycraft:delivery_order", event => {
         // 设置位置为玩家 y 轴 + 1
         entity.setPos(player.x, player.y + 1.0, player.z)
         // 设置 nbt 战利品列表为 minecraft:chests/simple_dungeon
-        entity.mergeNbt({LootTable: "minecraft:chests/simple_dungeon"})
+        entity.mergeNbt({ LootTable: "minecraft:chests/simple_dungeon" })
     })
-
+    // 将物品减 1
     event.item.shrink(1)
 })
 
@@ -122,23 +123,56 @@ ItemEvents.rightClicked("greedycraft:emergency_button", event => {
     let server = event.server
     let level = event.level
 
+    // 获取当前世界所有实体
     level.entities.forEach(entity => {
+        // 排除玩家
         if (!(entity.isPlayer())) {
+            // 删除（非 Kill）
             entity.discard()
         }
     })
 
+    // 发送消息
     server.tell(Component.translatable("greedycraft.message.right_clicked.emergency_button", `§e§l${player.username}`, `§d§l${level.displayName}`))
 
+    // 将物品减 1
     event.item.shrink(1)
 })
 
 // 贤者之石 [赝品]
-ItemEvents.rightClicked("greedycraft:fake_philosopher_stone",event => {
+ItemEvents.rightClicked("greedycraft:fake_philosopher_stone", event => {
     let block = event.getTarget().block
     let level = event.level
 
+    // 判断右键的方块是否是沙子
     if (block.getId() == "minecraft:sand") {
+        // 重新设置为玻璃
         level.setBlock(block.getPos(), "minecraft:glass", 3)
+    }
+})
+
+// 无限宝石
+ItemEvents.rightClicked("greedycraft:infinity_stone", event => {
+    let player = event.player
+    let server = event.server
+
+    // 判断是否是开发者或者是以创造模式创建的存档
+    if (global.creatorList.includes(player.uuid.toString()) || AStages.serverHasStage("init_creative", server)) {
+        // 抗性效果
+        player.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 50, 5))
+        // 力量效果
+        player.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 50, 10))
+        // 否侧判断是否拥有 truehero 阶段并且没有作弊
+    } else if (!(checkCheat(player, server)) && AStages.playerHasStage("truehero", player)) {
+        // 抗性效果
+        player.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 50, 4))
+        // 力量效果
+        player.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 50, 8))
+        // 生命恢复效果
+        player.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 50, 5))
+        // 以上条件都不满足则发送文本消息并kill
+    } else {
+        player.tell(Component.translatable("greedycraft.message.right_clicked.infinity_stone"))
+        player.kill()
     }
 })

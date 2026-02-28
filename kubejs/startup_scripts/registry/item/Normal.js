@@ -296,7 +296,7 @@ new registryItem("guide_book")
     .setMaxCount(1)
     .setTooltips(2)
 
-// 无限宝石 等待补充作用
+// 无限宝石 根据特征给予惩罚或者奖励
 new registryItem("infinity_stone")
     .setMaxCount(1)
     .setGlow()

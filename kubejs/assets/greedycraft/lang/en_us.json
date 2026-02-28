@@ -1062,6 +1062,7 @@
 
     "greedycraft.message.right_clicked.has_stage": "§e§lThis stage is unlock",
     "greedycraft.message.right_clicked.emergency_button": "§c§lPlayer %s §c§lused the [Emergency Button] to remove all entities in %s §c§l",
+    "greedycraft.message.right_clicked.infinity_stone": "§c§lYou are not yet able to master this power",
 
     "greedycraft.message.firstleftclicked.emergency_button": "§c§lPlayer %s §c§lused the [Emergency Button] to remove all hostile entities in %s §c§l"
 }
