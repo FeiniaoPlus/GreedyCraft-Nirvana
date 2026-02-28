@@ -718,7 +718,7 @@
     "greedycraft.item.cryonic_artifact.tooltip.1.text": "§3It is cold enough to freeze the sun.",
     "greedycraft.item.cryonic_artifact.tooltip.2.text": "§3Right click to consume and nerf all nearby Sun Spirits to 1HP.",
     "greedycraft.item.death_coin.tooltip.1.text": "§bRight click to make a contract with the devil and enter §cSuper Hardmode§b, gaining max difficulty.",
-    "greedycraft.item.death_coin.tooltip.2.text": "§bLeft click air to get out of §cSuper Hardmode§b",
+    "greedycraft.item.death_coin.tooltip.2.text": "§c§lThis action cannot be undone!",
     "greedycraft.item.death_counter.tooltip.1.text": "§7§oRight click to show the death leaderboard.",
     "greedycraft.item.delivery_order.tooltip.1.text": "§bWarps a load of goods to you with future technology!",
     "greedycraft.item.delivery_order.tooltip.2.text": "§6Right click to use",

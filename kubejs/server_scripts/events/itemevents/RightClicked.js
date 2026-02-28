@@ -193,3 +193,12 @@ ItemEvents.rightClicked("greedycraft:item_purger", event => {
         player.tell(Component.translatable("greedycraft.commands.error.permissions"))
     }
 })
+
+// 通行令牌
+ItemEvents.rightClicked("greedycraft:passport", event => {
+    let player = event.player
+    let server = event.server
+
+    // 给予全部阶段与进度
+    givePlayerAllStage(server, player)
+})

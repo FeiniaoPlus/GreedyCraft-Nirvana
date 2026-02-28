@@ -718,7 +718,7 @@
     "greedycraft.item.cryonic_artifact.tooltip.1.text": "§3传说中就连太阳神也不能抵御它的寒冷。",
     "greedycraft.item.cryonic_artifact.tooltip.2.text": "§3右键可以消耗该物品并使20格以内的烈阳巨灵血量降至1。",
     "greedycraft.item.death_coin.tooltip.1.text": "§b右键与死神签订契约开启§c超级困难模式§b，直接升至满难度",
-    "greedycraft.item.death_coin.tooltip.2.text": "§b对着空气左键以解除§c超级困难模式§b",
+    "greedycraft.item.death_coin.tooltip.2.text": "§c§l此操作无法撤销！",
     "greedycraft.item.death_counter.tooltip.1.text": "§7§o拿在手上右键以显示当前所有玩家的死亡数",
     "greedycraft.item.delivery_order.tooltip.1.text": "§b通过某些你听不懂的技术，将一车快递立即送到你面前！",
     "greedycraft.item.delivery_order.tooltip.2.text": "§6右键使用",

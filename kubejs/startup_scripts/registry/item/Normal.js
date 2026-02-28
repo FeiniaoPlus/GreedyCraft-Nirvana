@@ -311,11 +311,11 @@ new registryItem("item_purger")
 new registryItem("lucky_clover")
     .setTooltips(3)
 
-// 尼龙布
+// 尼龙布 合成材料
 new registryItem("nylon_cloth")
     .setBurnTime(60)
 
-// 尼龙绳
+// 尼龙绳 合成材料
 new registryItem("nylon_string")
     .setBurnTime(10)
 

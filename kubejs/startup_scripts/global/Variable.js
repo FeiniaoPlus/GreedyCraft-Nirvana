@@ -493,6 +493,18 @@ global.stageListMap = {
     energy_matter_core: {
         parent: "master_wizard",
         icon: "greedycraft:energy_matter_core"
+    },
+    supper_hardmode: {
+        parent: "init",
+        icon: "greedycraft:death_coin"
+    },
+    expert: {
+        parent: "init",
+        icon: "greedycraft:placeholder"
+    },
+    truehero: {
+        parent: "graduated",
+        icon: "greedycraft:executor_terminal"
     }
 }
 

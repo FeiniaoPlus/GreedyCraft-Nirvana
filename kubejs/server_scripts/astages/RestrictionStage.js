@@ -6,7 +6,7 @@ let allItems = Item.getList()
 // 注册基础 Astages 阶段
 AStages.addRestrictionForItem("greedycraft_stage/item/init", "init", ["greedycraft:placeholder"])
 AStages.addRestrictionForItem("greedycraft_stage/item/init/init_start", "init_start", ["greedycraft:placeholder"])
-AStages.addRestrictionForItem("greedycraft_stage/item/init/init_creative", "init_creative", ["greedycraft:placeholder"])
+AStages.addRestrictionForItem("greedycraft_stage/item/init/init_creative", "init_creative", ["greedycraft:placeholder", "greedycraft:passport"])
 
 // 判断整合包模式是否为休闲模式
 if (packMode != "casual") {
