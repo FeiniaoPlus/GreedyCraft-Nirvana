@@ -1,5 +1,7 @@
 // 物品右键事件
 
+const { $IntComparator } = require("it.unimi.dsi.fastutil.ints.IntComparator")
+
 // 为拥有 unlock_stage tag的物品右键解锁对应进度
 let MobEffectInstance = Java.loadClass("net.minecraft.world.effect.MobEffectInstance")
 let MobEffects = Java.loadClass("net.minecraft.world.effect.MobEffects")
@@ -26,7 +28,7 @@ ItemEvents.rightClicked(event => {
                     server.runCommandSilent(`advancement grant ${playerName} only greedycraft:stages/${stage}`)
 
                     // 生成粒子
-                    server.runCommandSilent(`execute at ${playerName} run particle minecraft:totem_of_undying ~ ~ ~ 2 2 2 5 1000 force`)
+                    level.spawnParticles("minecraft:totem_of_undying", true, player.x, player.y, player.z, 2.0, 2.0, 2.0, 1000, 5)
 
                     // 将物品减 1
                     event.item.shrink(1)
@@ -85,11 +87,17 @@ ItemEvents.rightClicked("greedycraft:cryonic_artifact", event => {
             // 设置血量为 1
             entity.setHealth(1.0)
             // 生成粒子
-            player.runCommandSilent("particle minecraft:snowflake ~ ~ ~ 2 2 2 0.1 200 force")
+            level.spawnParticles("minecraft:snowflake", true, player.x, player.y, player.z, 2.0, 2.0, 2.0, 200, 0.1)
+
+            // 将物品减 1
+            event.item.shrink(1)
+
+            return
         }
     })
-    // 将物品减 1
-    event.item.shrink(1)
+
+    // 发送消息
+    server.runCommandSilent(Component.translatable("greedycraft.message.right_clicked.cryonic_artifact"))
 })
 
 // 死亡计数器
@@ -201,4 +209,19 @@ ItemEvents.rightClicked("greedycraft:passport", event => {
 
     // 给予全部阶段与进度
     givePlayerAllStage(server, player)
+})
+
+// 知识宝珠
+ItemEvents.rightClicked("greedycraft:pearl_of_knowledge", event => {
+    let player = event.player
+    let level = event.level
+
+    // 给予经验
+    player.giveExperiencePoints(60000)
+
+    // 生成粒子
+    level.spawnParticles("minecraft:happy_villager", true, player.x, player.y, player.z, 2.0, 2.0, 2.0, 300, 0.1)
+
+    // 将物品减 1
+    event.item.shrink(1)
 })

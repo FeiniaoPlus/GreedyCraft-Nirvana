@@ -1061,6 +1061,7 @@
     "greedycraft.message.stagesunlock.energy_matter_core.unlock.2": "§c§l可以将物品转化为EMC",
 
     "greedycraft.message.right_clicked.has_stage": "§e§l该阶段已解锁",
+    "greedycraft.message.right_clicked.cryonic_artifact": "§c§l没有找到太阳巨灵！",
     "greedycraft.message.right_clicked.emergency_button": "§c§l玩家 %s §c§l使用【应急按钮】删除了 %s §c§l的所有实体",
     "greedycraft.message.right_clicked.infinity_stone": "§c§l你还无法掌握这种力量",
     "greedycraft.message.right_clicked.item_purger": "§e§l玩家 %s §e§l使用【超时空扫帚】准备清理掉落物",

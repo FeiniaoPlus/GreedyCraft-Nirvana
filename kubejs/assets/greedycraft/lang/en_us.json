@@ -1061,6 +1061,7 @@
     "greedycraft.message.stagesunlock.energy_matter_core.unlock.2": "§a§lAllows conversion between items and EMC",
 
     "greedycraft.message.right_clicked.has_stage": "§e§lThis stage is unlock",
+    "greedycraft.message.right_clicked.cryonic_artifact": "§c§lNot Found Sun Spirit",
     "greedycraft.message.right_clicked.emergency_button": "§c§lPlayer %s §c§lused the [Emergency Button] to remove all entities in %s §c§l",
     "greedycraft.message.right_clicked.infinity_stone": "§c§lYou are not yet able to master this power",
     "greedycraft.message.right_clicked.item_purger": "§e§lPlayer %s §e§lis preparing to clear dropped items using the [Item Purger]",
