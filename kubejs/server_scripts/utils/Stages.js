@@ -10,7 +10,7 @@ function givePlayerAllStage(server, player) {
 }
 
 // 函数：删除玩家所有阶段与进度
-function givePlayerAllStage(server, player) {
+function removePlayerAllStage(server, player) {
     let playerName = player.username
 
     Object.entries(global.stageListMap).forEach(([stageName, data]) => {
