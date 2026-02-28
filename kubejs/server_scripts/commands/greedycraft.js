@@ -2,13 +2,6 @@
 
 let permission = 4
 
-if (Platform.isClientEnvironment()) {
-    permission = 2
-} else {
-    permission = 4
-}
-
-
 // 注册主命令
 ServerEvents.commandRegistry(event => {
     const { commands: Commands, arguments: Arguments } = event

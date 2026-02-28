@@ -1063,6 +1063,11 @@
     "greedycraft.message.right_clicked.has_stage": "§e§lThis stage is unlock",
     "greedycraft.message.right_clicked.emergency_button": "§c§lPlayer %s §c§lused the [Emergency Button] to remove all entities in %s §c§l",
     "greedycraft.message.right_clicked.infinity_stone": "§c§lYou are not yet able to master this power",
+    "greedycraft.message.right_clicked.item_purger": "§e§lPlayer %s §e§lis preparing to clear dropped items using the [Item Purger]",
 
-    "greedycraft.message.firstleftclicked.emergency_button": "§c§lPlayer %s §c§lused the [Emergency Button] to remove all hostile entities in %s §c§l"
+    "greedycraft.message.firstleftclicked.emergency_button": "§c§lPlayer %s §c§lused the [Emergency Button] to remove all hostile entities in %s §c§l",
+
+    "greedycraft.message.scheduleinticks.item_purger.1": "§e§lDropped items will be cleared in 10 seconds",
+    "greedycraft.message.scheduleinticks.item_purger.2": "§c§lDropped items will be cleared in 5 seconds",
+    "greedycraft.message.scheduleinticks.item_purger.3": "§a§lDropped items have been cleared"
 }

@@ -176,3 +176,20 @@ ItemEvents.rightClicked("greedycraft:infinity_stone", event => {
         player.kill()
     }
 })
+
+// 超时空扫帚
+ItemEvents.rightClicked("greedycraft:item_purger", event => {
+    let player = event.player
+    let server = event.server
+
+    // 判断权限
+    if (player.hasPermissions(4)) {
+        // 发送消息
+        server.tell(Component.translatable("greedycraft.message.right_clicked.item_purger", `§6§l${player.username}`))
+        // 清理掉落物
+        cleanServerDroppedItem(server)
+    } else {
+        // 发送消息
+        player.tell(Component.translatable("greedycraft.commands.error.permissions"))
+    }
+})
