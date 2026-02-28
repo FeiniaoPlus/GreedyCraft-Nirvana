@@ -132,3 +132,13 @@ ItemEvents.rightClicked("greedycraft:emergency_button", event => {
 
     event.item.shrink(1)
 })
+
+// 贤者之石 [赝品]
+ItemEvents.rightClicked("greedycraft:fake_philosopher_stone",event => {
+    let block = event.getTarget().block
+    let level = event.level
+
+    if (block.getId() == "minecraft:sand") {
+        level.setBlock(block.getPos(), "minecraft:glass", 3)
+    }
+})
