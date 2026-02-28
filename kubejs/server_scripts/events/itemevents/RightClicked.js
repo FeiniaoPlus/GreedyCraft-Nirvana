@@ -74,6 +74,8 @@ ItemEvents.rightClicked("greedycraft:cryonic_artifact", event => {
     let player = event.player
     let level = event.level
 
+    let trigger = false
+
     // 将范围设置为以玩家为中心周围 20 格
     let box = player.boundingBox.inflate(20.0)
 
@@ -92,12 +94,14 @@ ItemEvents.rightClicked("greedycraft:cryonic_artifact", event => {
             // 将物品减 1
             event.item.shrink(1)
 
-            return
+            trigger = true
         }
     })
 
-    // 发送消息
-    server.runCommandSilent(Component.translatable("greedycraft.message.right_clicked.cryonic_artifact"))
+    if (!(trigger)) {
+        // 发送消息
+        server.runCommandSilent(Component.translatable("greedycraft.message.right_clicked.cryonic_artifact"))
+    }
 })
 
 // 死亡计数器
