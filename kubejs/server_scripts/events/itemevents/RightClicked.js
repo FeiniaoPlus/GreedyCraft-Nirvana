@@ -1,13 +1,14 @@
 // 物品右键事件
 
-// 为拥有 unlock_stage tag的物品右键解锁对应进度
 let MobEffectInstance = Java.loadClass("net.minecraft.world.effect.MobEffectInstance")
 let MobEffects = Java.loadClass("net.minecraft.world.effect.MobEffects")
 
+// 为拥有 unlock_stage tag的物品右键解锁对应进度
 ItemEvents.rightClicked(event => {
     let player = event.player
     let playerName = player.username
     let server = event.server
+    let level = event.level
     let item = event.item
     let tags = item.tags
 
@@ -233,88 +234,63 @@ ItemEvents.rightClicked("greedycraft:purifying_dust", event => {
     let level = event.level
     let player = event.player
     let blockTarget = event.target.block
-    let startTime = Date.now()
 
-    // 开始计时器
+    if (blockTarget == null) {
+        player.tell(Component.translatable("greedycraft.message.right_clicked.purifying_dust.2"))
+        return
+    }
+
+    let startTime = Date.now()
+    let baseX = blockTarget.getX()
+    let baseY = blockTarget.getY()
+    let baseZ = blockTarget.getZ()
+
     let setBlockNumber = 0
 
-    if (blockTarget != null) {
-        // 展开 tag
-        let Recipes = {}
-        Object.entries(global.purifyingDustRecipes).forEach(([product, sources]) => {
-            Recipes[product] = []
-            sources.forEach(source => {
-                if (source.startsWith("#")) {
-                    let tag = source.substring(1)
-                    Block.getTaggedIds(tag).forEach(blockID => {
-                        Recipes[product].push(blockID.toString())
-                    })
-                } else {
-                    Recipes[product].push(source)
-                }
-            })
+    // 预处理净化之尘配方展开 tag 并反向映射
+    let recipesMap = {}
+    Object.entries(global.purifyingDustRecipes).forEach(([product, sources]) => {
+        sources.forEach(source => {
+            if (source.startsWith("#")) {
+                let tag = source.substring(1)
+                Block.getTaggedIds(tag).forEach(blockID => {
+                    recipesMap[blockID.toString()] = product
+                })
+            } else {
+                recipesMap[source] = product
+            }
         })
+    })
 
-        // 遍历半径 15 格范围内的所有方块 ID 和坐标
-        let blocksTarget = {}
-        let baseX = blockTarget.getX()
-        let baseY = blockTarget.getY()
-        let baseZ = blockTarget.getZ()
+    for (let dx = -15; dx <= 15; dx++) {
+        for (let dy = -15; dy <= 15; dy++) {
+            for (let dz = -15; dz <= 15; dz++) {
+                let x = baseX + dx
+                let y = baseY + dy
+                let z = baseZ + dz
 
-        for (let dx = -15; dx <= 15; dx++) {
-            for (let dy = -15; dy <= 15; dy++) {
-                for (let dz = -15; dz <= 15; dz++) {
+                let block = level.getBlock(x, y, z)
+                let blockID = block.getId()
 
-                    let x = baseX + dx
-                    let y = baseY + dy
-                    let z = baseZ + dz
+                if (blockID == "minecraft:air" || blockID == "minecraft:cave_air" || blockID == "minecraft:void_air") {
+                    continue
+                }
 
-                    let blockID = level.getBlock(x, y, z).getId()
-
-                    // 如果不存在，先初始化
-                    if (!blocksTarget[blockID]) {
-                        blocksTarget[blockID] = []
-                    }
-
-                    // 添加坐标
-                    blocksTarget[blockID].push({
-                        x: x,
-                        y: y,
-                        z: z
-                    })
+                let product = recipesMap[blockID]
+                if (product) {
+                    level.setBlock([x, y, z], product, 3)
+                    setBlockNumber++
                 }
             }
         }
+    }
 
-        // 根据以上信息按照合成表替换方块
-        Object.entries(blocksTarget).forEach(([blockID, posMap]) => {
-            Object.entries(Recipes).forEach(([product, sources]) => {
-                if (sources.includes(blockID)) {
-                    posMap.forEach(pos => {
-                        // 设置方块
-                        level.setBlock([pos.x, pos.y, pos.z], product, 3)
-                        setBlockNumber += 1
-                    })
-                }
-            })
-        })
+    let endTime = Date.now()
 
-        if (setBlockNumber > 0) {
-            // 生成粒子
-            level.spawnParticles("minecraft:poof", true, player.x, player.y, player.z, 8.0, 8.0, 8.0, 1500, 0.2)
-
-            // 停止计时器
-            let endTime = Date.now()
-
-            // 发送消息
-            player.tell(Component.translatable("greedycraft.message.right_clicked.purifying_dust", `§6${setBlockNumber}`, endTime - startTime))
-
-            // 将物品减 1
-            event.item.shrink(1)
-        } else {
-            player.tell(Component.translatable("greedycraft.message.right_clicked.purifying_dust.1"))
-        }
+    if (setBlockNumber > 0) {
+        player.tell(Component.translatable("greedycraft.message.right_clicked.purifying_dust", `§6${setBlockNumber}`, endTime - startTime))
+        event.item.shrink(1)
     } else {
-        player.tell(Component.translatable("greedycraft.message.right_clicked.purifying_dust.2"))
+        player.tell(Component.translatable("greedycraft.message.right_clicked.purifying_dust.1"))
     }
 })
