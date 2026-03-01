@@ -651,14 +651,16 @@ global.mysticalAgricultureSeedLevelMap = {
 }
 
 global.purifyingDustRecipes = {
-    'minecraft:packed_ice': 'minecraft:blue_ice',
-    '#c:netherracks': 'minecraft:cobblestone',
-    'minecraft:end_stone': 'minecraft:cobbled_deepslate',
-    '#c:stones': 'botania:livingrock',
-    '#c:stone': 'botania:livingrock',
-    'minecraft:oak_log': 'botania:livingwood_log',
-    'botania:blaze_block': 'minecraft:obsidian',
-    'minecraft:ice': 'minecraft:packed_ice',
-    'minecraft:soul_sand': 'minecraft:sand',
-    'minecraft:water': 'minecraft:snow_block'
+    'minecraft:blue_ice': ['minecraft:packed_ice'],
+    'minecraft:cobblestone': ['#c:netherracks'],
+    'minecraft:cobbled_deepslate': ['minecraft:end_stone'],
+    'botania:livingrock': [
+        '#c:stones',
+        '#c:stone'
+    ],
+    'botania:livingwood_log': ['minecraft:oak_log'],
+    'minecraft:obsidian': ['botania:blaze_block'],
+    'minecraft:packed_ice': ['minecraft:ice'],
+    'minecraft:sand': ['minecraft:soul_sand'],
+    'minecraft:snow_block': ['minecraft:water']
 }
