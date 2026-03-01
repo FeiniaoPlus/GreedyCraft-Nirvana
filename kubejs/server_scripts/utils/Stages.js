@@ -6,6 +6,7 @@ function givePlayerAllStage(server, player) {
 
     Object.entries(global.stageListMap).forEach(([stageName, data]) => {
         server.runCommandSilent(`advancement grant ${playerName} only greedycraft:stages/${stageName}`)
+        AStages.addStageToPlayer(stageName, player)
     })
 }
 

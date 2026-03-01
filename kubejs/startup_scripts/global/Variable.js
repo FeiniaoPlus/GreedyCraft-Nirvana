@@ -649,3 +649,16 @@ global.mysticalAgricultureSeedLevelMap = {
     "mysticalagriculture:awakened_draconium_seeds": 6,
     "mysticalagriculture:neutronium_seeds": 6
 }
+
+global.purifyingDustRecipes = {
+    'minecraft:packed_ice': 'minecraft:blue_ice',
+    '#c:netherracks': 'minecraft:cobblestone',
+    'minecraft:end_stone': 'minecraft:cobbled_deepslate',
+    '#c:stones': 'botania:livingrock',
+    '#c:stone': 'botania:livingrock',
+    'minecraft:oak_log': 'botania:livingwood_log',
+    'botania:blaze_block': 'minecraft:obsidian',
+    'minecraft:ice': 'minecraft:packed_ice',
+    'minecraft:soul_sand': 'minecraft:sand',
+    'minecraft:water': 'minecraft:snow_block'
+}

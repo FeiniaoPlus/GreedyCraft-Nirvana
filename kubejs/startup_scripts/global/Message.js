@@ -90,18 +90,18 @@ global.stagesUnlock_Message = {
     title: ["greedycraft.message.stagesunlock.fusion_matrix.title"],
     lore: ["greedycraft.message.stagesunlock.fusion_matrix.lore"],
     unlock: [
-        "greedycraft.message.stagesunlock.fusion_matrix.unlock",
-        "greedycraft.message.stagesunlock.fusion_matrix.unlock.1",
-        "greedycraft.message.stagesunlock.fusion_matrix.unlock.2",
-        "greedycraft.message.stagesunlock.fusion_matrix.unlock.3"
+      "greedycraft.message.stagesunlock.fusion_matrix.unlock",
+      "greedycraft.message.stagesunlock.fusion_matrix.unlock.1",
+      "greedycraft.message.stagesunlock.fusion_matrix.unlock.2",
+      "greedycraft.message.stagesunlock.fusion_matrix.unlock.3"
     ]
   },
   wyvern: {
     title: ["greedycraft.message.stagesunlock.wyvern.title"],
     lore: ["greedycraft.message.stagesunlock.wyvern.lore"],
     unlock: [
-        "greedycraft.message.stagesunlock.wyvern.unlock",
-        "greedycraft.message.stagesunlock.wyvern.unlock.1"
+      "greedycraft.message.stagesunlock.wyvern.unlock",
+      "greedycraft.message.stagesunlock.wyvern.unlock.1"
     ]
   },
   awakened: {
@@ -312,6 +312,16 @@ global.stagesUnlock_Message = {
       "greedycraft.message.stagesunlock.energy_matter_core.unlock.1",
       "greedycraft.message.stagesunlock.energy_matter_core.unlock.2"
     ]
+  },
+  expert: {
+    title: ["greedycraft.message.stagesunlock.expert.title"],
+    lore: ["greedycraft.message.stagesunlock.expert.lore"],
+    unlock: ["greedycraft.message.stagesunlock.expert.unlock"]
+  },
+  truehero: {
+    title: ["greedycraft.message.stagesunlock.truehero.title"],
+    lore: ["greedycraft.message.stagesunlock.truehero.lore"],
+    unlock: ["greedycraft.message.stagesunlock.truehero.unlock"]
   }
 }
 

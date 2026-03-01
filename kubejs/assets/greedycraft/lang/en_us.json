@@ -1059,6 +1059,12 @@
     "greedycraft.message.stagesunlock.energy_matter_core.unlock": "§a§lItems now display EMC values",
     "greedycraft.message.stagesunlock.energy_matter_core.unlock.1": "§a§lUnlocks advanced transmutation devices",
     "greedycraft.message.stagesunlock.energy_matter_core.unlock.2": "§a§lAllows conversion between items and EMC",
+    "greedycraft.message.stagesunlock.expert.title": "§c§o§n§lExpert Mode",
+    "greedycraft.message.stagesunlock.expert.lore": "§5§o§nSalute to the fearless",
+    "greedycraft.message.stagesunlock.expert.unlock": "§a§lExpert Mode exclusive items unlocked",
+    "greedycraft.message.stagesunlock.truehero.title": "§a§o§n§lThe End",
+    "greedycraft.message.stagesunlock.truehero.lore": "§5§o§nThank you for playing §bGreedyCraft§7·§c§lNirvana",
+    "greedycraft.message.stagesunlock.truehero.unlock": "§a§lThere is nothing left for you to unlock",
 
     "greedycraft.message.right_clicked.has_stage": "§e§lThis stage is unlock",
     "greedycraft.message.right_clicked.cryonic_artifact": "§c§lNot Found Sun Spirit",

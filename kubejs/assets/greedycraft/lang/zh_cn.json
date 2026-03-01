@@ -1059,6 +1059,12 @@
     "greedycraft.message.stagesunlock.energy_matter_core.unlock": "§a§l物品现在会显示EMC值",
     "greedycraft.message.stagesunlock.energy_matter_core.unlock.1": "§a§l解锁更高级的转化桌",
     "greedycraft.message.stagesunlock.energy_matter_core.unlock.2": "§c§l可以将物品转化为EMC",
+    "greedycraft.message.stagesunlock.expert.title": "§c§o§n§l专家模式",
+    "greedycraft.message.stagesunlock.expert.lore": "§5§o§n向无畏者致敬",
+    "greedycraft.message.stagesunlock.expert.unlock": "§a§l专家模式专属物品解锁",
+    "greedycraft.message.stagesunlock.truehero.title": "§a§o§n§l尽头",
+    "greedycraft.message.stagesunlock.truehero.lore": "§5§o§n感谢游玩§b贪婪整合包§7·§c§l涅槃",
+    "greedycraft.message.stagesunlock.truehero.unlock": "§a§l你已经没有什么能解锁的了",
 
     "greedycraft.message.right_clicked.has_stage": "§e§l该阶段已解锁",
     "greedycraft.message.right_clicked.cryonic_artifact": "§c§l没有找到太阳巨灵！",

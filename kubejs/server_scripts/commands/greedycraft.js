@@ -31,6 +31,7 @@ ServerEvents.commandRegistry(event => {
                                 let options = Arguments.STRING.getResult(ctx, "packmode")
                                 let server = ctx.source.server
                                 let player = ctx.source.player
+                                let playerName = player.username
 
                                 // 从配置文件获取 packMode 的值
                                 let packMode = KJSutils.Analysis("config/greedycraft/config.json", "$.packMode")
@@ -46,6 +47,32 @@ ServerEvents.commandRegistry(event => {
                                 if (options == "casual") {
                                     player.tell(Component.translatable("greedycraft.commands.setpackmode.casual"))
                                     return 1
+                                }
+
+                                if (options == "expert") {
+                                    if (!(Platform.isClientEnvironment())) {
+                                        let players = server.players
+                                        players.forEach(player => {
+                                            AStages.addStageToPlayer("expert", player)
+                                        })
+                                    } else {
+                                        AStages.addStageToPlayer("expert", player)
+                                    }
+                                }
+
+                                if (options == "adventure") {
+                                    if (!(Platform.isClientEnvironment())) {
+                                        let players = server.players
+                                        players.forEach(player => {
+                                            if (AStages.playerHasStage("expert", player)) {
+                                                server.runCommandSilent(`advancement revoke ${playerName} only greedycraft:stages/expert`)
+                                                AStages.removeStageFromPlayer("expert", player)
+                                            }
+                                        })
+                                    } else {
+                                        server.runCommandSilent(`advancement revoke ${playerName} only greedycraft:stages/expert`)
+                                        AStages.removeStageFromPlayer("expert", player)
+                                    }
                                 }
 
                                 // 发送服务器消息
