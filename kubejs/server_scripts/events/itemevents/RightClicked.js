@@ -295,6 +295,7 @@ ItemEvents.rightClicked("greedycraft:purifying_dust", event => {
     // 判断是否有方块被替换
     if (setBlockNumber > 0) {
         player.tell(Component.translatable("greedycraft.message.right_clicked.purifying_dust", `§6${setBlockNumber}`, endTime - startTime))
+        level.spawnParticles("minecraft:poof", true, player.x, player.y, player.z, 8.0, 8.0, 8.0, 1500, 0.2)
         event.item.shrink(1)
     } else {
         player.tell(Component.translatable("greedycraft.message.right_clicked.purifying_dust.1"))
