@@ -320,7 +320,8 @@ global.modList = new Set([
     "summoningrituals",
     "blur",
     "midnightlib",
-    "olddraconicmodels"
+    "olddraconicmodels",
+    "reskillable"
 ])
 
 global.commandWhiteList = [
