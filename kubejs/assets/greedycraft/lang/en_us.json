@@ -1051,7 +1051,7 @@
     "greedycraft.message.stagesunlock.challenger_all.title": "§a§lChallenger VIII",
     "greedycraft.message.stagesunlock.challenger_all.lore": "§5§o§nRewarded for completing a set amount of challenge quests.",
     "greedycraft.message.stagesunlock.challenger_all.unlock": "§a§l...Coming soon I guess?",
-    "greedycraft.message.stagesunlock.super_hardmode.title": "§c§o§n§lFeel the pain!",
+    "greedycraft.message.stagesunlock.super_hardmode.title": "§4§o§n§lFeel the pain!",
     "greedycraft.message.stagesunlock.super_hardmode.lore": "§5§o§nYou asked for challenge, here it is!",
     "greedycraft.message.stagesunlock.super_hardmode.unlock": "§a§lMaxed out difficulty!",
     "greedycraft.message.stagesunlock.energy_matter_core.title": "§b§o§n§lMass is Energy!",

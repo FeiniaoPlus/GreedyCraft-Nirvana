@@ -1051,7 +1051,7 @@
     "greedycraft.message.stagesunlock.challenger_all.title": "§a§l挑战者VIII",
     "greedycraft.message.stagesunlock.challenger_all.lore": "§5§o§n完成一定数量挑战任务的奖励。",
     "greedycraft.message.stagesunlock.challenger_all.unlock": "§a§l这个...敬请期待！",
-    "greedycraft.message.stagesunlock.super_hardmode.title": "§c§o§n§l超级困难模式！",
+    "greedycraft.message.stagesunlock.super_hardmode.title": "§4§o§n§l超级困难模式！",
     "greedycraft.message.stagesunlock.super_hardmode.lore": "§5§o§n你不是想要挑战么？这就是！",
     "greedycraft.message.stagesunlock.super_hardmode.unlock": "§a§l难度直接拉满！",
     "greedycraft.message.stagesunlock.energy_matter_core.title": "§b§o§n§l质量即能量！",
