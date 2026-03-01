@@ -233,7 +233,9 @@ ItemEvents.rightClicked("greedycraft:purifying_dust", event => {
     let level = event.level
     let player = event.player
     let blockTarget = event.target.block
+    let startTime = Date.now()
 
+    // 开始计时器
     let setBlockNumber = 0
 
     if (blockTarget != null) {
@@ -301,8 +303,11 @@ ItemEvents.rightClicked("greedycraft:purifying_dust", event => {
             // 生成粒子
             level.spawnParticles("minecraft:poof", true, player.x, player.y, player.z, 8.0, 8.0, 8.0, 1500, 0.2)
 
+            // 停止计时器
+            let endTime = Date.now()
+
             // 发送消息
-            player.tell(Component.translatable("greedycraft.message.right_clicked.purifying_dust", setBlockNumber))
+            player.tell(Component.translatable("greedycraft.message.right_clicked.purifying_dust", `§6${setBlockNumber}`, endTime - startTime))
 
             // 将物品减 1
             event.item.shrink(1)
