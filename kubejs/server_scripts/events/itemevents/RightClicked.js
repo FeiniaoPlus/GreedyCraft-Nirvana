@@ -157,7 +157,7 @@ ItemEvents.rightClicked("greedycraft:fake_philosopher_stone", event => {
     let level = event.level
 
     // 判断右键的方块是否是沙子
-    if (block.getId() == "minecraft:sand") {
+    if (block != null && block.getId() == "minecraft:sand") {
         // 重新设置为玻璃
         level.setBlock(block.getPos(), "minecraft:glass", 3)
     }
@@ -230,11 +230,13 @@ ItemEvents.rightClicked("greedycraft:pearl_of_knowledge", event => {
     event.item.shrink(1)
 })
 
+// 净化之尘
 ItemEvents.rightClicked("greedycraft:purifying_dust", event => {
     let level = event.level
     let player = event.player
     let blockTarget = event.target.block
 
+    // 判断是否右键的方块
     if (blockTarget == null) {
         player.tell(Component.translatable("greedycraft.message.right_clicked.purifying_dust.2"))
         return
@@ -262,20 +264,23 @@ ItemEvents.rightClicked("greedycraft:purifying_dust", event => {
         })
     })
 
+    // 遍历以右键方块为中心的 15x15x15 范围内的所有方块
     for (let dx = -15; dx <= 15; dx++) {
         for (let dy = -15; dy <= 15; dy++) {
             for (let dz = -15; dz <= 15; dz++) {
+                // 计算坐标
                 let x = baseX + dx
                 let y = baseY + dy
                 let z = baseZ + dz
 
-                let block = level.getBlock(x, y, z)
-                let blockID = block.getId()
+                let blockID = level.getBlock(x, y, z).getId()
 
+                // 如果是空气跳过本次循环
                 if (blockID == "minecraft:air" || blockID == "minecraft:cave_air" || blockID == "minecraft:void_air") {
                     continue
                 }
 
+                // 通过映射表替换方块
                 let product = recipesMap[blockID]
                 if (product) {
                     level.setBlock([x, y, z], product, 3)
@@ -287,6 +292,7 @@ ItemEvents.rightClicked("greedycraft:purifying_dust", event => {
 
     let endTime = Date.now()
 
+    // 判断是否有方块被替换
     if (setBlockNumber > 0) {
         player.tell(Component.translatable("greedycraft.message.right_clicked.purifying_dust", `§6${setBlockNumber}`, endTime - startTime))
         event.item.shrink(1)
