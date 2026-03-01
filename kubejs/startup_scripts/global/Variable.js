@@ -494,7 +494,7 @@ global.stageListMap = {
         parent: "master_wizard",
         icon: "greedycraft:energy_matter_core"
     },
-    supper_hardmode: {
+    super_hardmode: {
         parent: "init",
         icon: "greedycraft:death_coin"
     },
