@@ -1073,6 +1073,7 @@
     "greedycraft.message.right_clicked.item_purger": "§e§l玩家 %s §e§l使用【超时空扫帚】准备清理掉落物",
     "greedycraft.message.right_clicked.purifying_dust": "§e§l已转换 %d §e§l个方块",
     "greedycraft.message.right_clicked.purifying_dust.1": "§c§l没有找到可转换的方块",
+    "greedycraft.message.right_clicked.purifying_dust.2": "§e§l请对着方块右键",
 
     "greedycraft.message.firstleftclicked.emergency_button": "§c§l玩家 %s §c§l使用【应急按钮】删除了 %s §c§l的所有敌对实体",
 

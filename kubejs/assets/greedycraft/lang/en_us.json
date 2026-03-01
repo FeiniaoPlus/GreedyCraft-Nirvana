@@ -1073,6 +1073,7 @@
     "greedycraft.message.right_clicked.item_purger": "§e§lPlayer %s §e§lis preparing to clear dropped items using the [Item Purger]",
     "greedycraft.message.right_clicked.purifying_dust": "§e§lConverted %d §e§lblocks",
     "greedycraft.message.right_clicked.purifying_dust.1": "§c§lNo convertible blocks found",
+    "greedycraft.message.right_clicked.purifying_dust.2": "§e§lPlease right-click on a block",
 
     "greedycraft.message.firstleftclicked.emergency_button": "§c§lPlayer %s §c§lused the [Emergency Button] to remove all hostile entities in %s §c§l",
 
